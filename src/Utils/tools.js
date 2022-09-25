@@ -74,6 +74,69 @@ export const moreIcon = (
   </svg>
 );
 
+export const singleTick = (
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 11 11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M0.833191 9.49716L1.35299 9.913C2.20882 10.5977 3.45627 10.466 4.1503 9.61774L10.274 2.13324C10.6237 1.70579 10.5607 1.07577 10.1333 0.726042C9.70581 0.376315 9.07579 0.439317 8.72606 0.866762L2.60238 8.35126L1.35299 9.913L2.60238 8.35126L2.09974 7.94915L0.833191 9.49716Z"
+      fill="#0184FB"
+    />
+  </svg>
+);
+
+export const deliveredIcon = (
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 18 18"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.5 10.5L3.73309 12.1748C4.16178 12.4963 4.76772 12.4228 5.10705 12.0081L11.25 4.5"
+      stroke="#0184FB"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M7.83319 12.4972L8.35299 12.913C9.20882 13.5977 10.4563 13.466 11.1503 12.6177L17.274 5.13324C17.6237 4.70579 17.5607 4.07577 17.1333 3.72604C16.7058 3.37631 16.0758 3.43932 15.7261 3.86676L9.60238 11.3513L8.35299 12.913L9.60238 11.3513L9.09974 10.9492L7.83319 12.4972Z"
+      fill="#0184FB"
+    />
+  </svg>
+);
+
+export const readIcon = (
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 18 18"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.5 10.5L3.73309 12.1748C4.16178 12.4963 4.76772 12.4228 5.10705 12.0081L11.25 4.5"
+      stroke="rgba(154, 159, 191, 0.25)"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M7.83319 12.4972L8.35299 12.913C9.20882 13.5977 10.4563 13.466 11.1503 12.6177L17.274 5.13324C17.6237 4.70579 17.5607 4.07577 17.1333 3.72604C16.7058 3.37631 16.0758 3.43932 15.7261 3.86676L9.60238 11.3513L8.35299 12.913L9.60238 11.3513L9.09974 10.9492L7.83319 12.4972Z"
+      fill="rgba(154, 159, 191, 0.25)"
+    />
+  </svg>
+);
+
 export const arrowdownbutton = (
   <svg
     width="18"

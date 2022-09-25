@@ -106,3 +106,73 @@ export const PageInlineHeader = ({ handleClick, name }) => {
     </>
   );
 };
+
+export const HomepageTaskCard = ({
+  workspaceName,
+  taskTitle,
+  progressNumber,
+  handleClick,
+  cardColor,
+}) => {
+  return (
+    <>
+      <div
+        onClick={handleClick}
+        style={{ backgroundColor: `${cardColor}` }}
+        className="homepageTaskCard__cnt"
+      >
+        <p>{workspaceName}</p>
+        <p>{taskTitle}</p>
+        <div className="homepageTaskCard__cnt-progress">
+          <p>{progressNumber}</p>
+          <div className="hptccpbar">
+            <div style={{ width: `${progressNumber}` }} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const ChatCard = ({
+  userStatus,
+  userImage,
+  userName,
+  messageStatus,
+  messageTime,
+  handleClick,
+  message,
+}) => {
+  return (
+    <>
+      <div onClick={handleClick} className="chatCard__cnt">
+        <div className="chatCard__cnt-left">
+          <img src={userImage} alt="" />
+          {userStatus && <div />}
+        </div>
+        <div className="chatCard__cnt-right">
+          <div className="chatCard__cnt-righttop">
+            <p>{userName}</p>
+            <div className="chatCard__cnt-righttimeandstatus">
+              <div>{messageStatus}</div>
+              <p>{messageTime}</p>
+            </div>
+          </div>
+          <div className="chatCard__cnt-rightbottom">
+            <p>{message}</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const TitleCard = ({ name }) => {
+  return (
+    <>
+      <div className="titlecard__cnt">
+        <p>{name}</p>
+      </div>
+    </>
+  );
+};
