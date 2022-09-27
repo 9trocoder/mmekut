@@ -61,6 +61,43 @@ export const HomepageHeader = ({
   );
 };
 
+export const ChatHeader = ({
+  backIcon,
+  handleBackClick,
+  handleProfileClick,
+  userImage,
+  userName,
+  searchIcon,
+  moreIcon,
+  handleSearchIconClick,
+  handleMoreIconClick,
+  userStatus,
+}) => {
+  return (
+    <>
+      <div className="chatheader__cnt">
+        <div className="chatheader__left">
+          <button onClick={handleBackClick}>{backIcon}</button>
+          <div
+            onClick={handleProfileClick}
+            className="chatheader__left-profile"
+          >
+            <div className="chatheader__left-image">
+              <img src={userImage} alt="" />
+              {userStatus && <div className="chatheader__status" />}
+            </div>
+          </div>
+        </div>
+
+        <div className="chatheader__right">
+          <button onClick={handleSearchIconClick}>{searchIcon}</button>
+          <button onClick={handleMoreIconClick}>{moreIcon}</button>
+        </div>
+      </div>
+    </>
+  );
+};
+
 export const BottomNav = ({
   homeIcon,
   taskIcon,
@@ -172,6 +209,33 @@ export const TitleCard = ({ name }) => {
     <>
       <div className="titlecard__cnt">
         <p>{name}</p>
+      </div>
+    </>
+  );
+};
+
+export const Modal = ({ children, handleCloseClick, closeIcon, modalName }) => {
+  return (
+    <>
+      <div className="modal__cnt">
+        <div className="modal__cntclose" onClick={handleCloseClick} />
+        <div className="modal__cnt-body">
+          <div className="modal__cnt-top">
+            <p>{modalName}</p>
+            <button onClick={handleCloseClick}>{closeIcon}</button>
+          </div>
+          <div className="modal__cnt-bottom">{children}</div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const BigButton = ({ buttonName, handleClick }) => {
+  return (
+    <>
+      <div onClick={handleClick} className="bigButton_cnt">
+        <p>{buttonName}</p>
       </div>
     </>
   );
