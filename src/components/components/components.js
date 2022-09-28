@@ -86,6 +86,7 @@ export const ChatHeader = ({
               <img src={userImage} alt="" />
               {userStatus && <div className="chatheader__status" />}
             </div>
+            <p>{userName}</p>
           </div>
         </div>
 
@@ -236,6 +237,119 @@ export const BigButton = ({ buttonName, handleClick }) => {
     <>
       <div onClick={handleClick} className="bigButton_cnt">
         <p>{buttonName}</p>
+      </div>
+    </>
+  );
+};
+
+export const GroupCard = ({
+  workspaceName,
+  handleClick,
+  workspaceNum,
+  images,
+}) => {
+  return (
+    <>
+      <div onClick={handleClick} className="groupCard__cnt">
+        <div className="groupCard__top">
+          <p>{workspaceName}</p>
+          <div className="groupCard__membersnum">
+            <p>{workspaceNum} members</p>
+          </div>
+        </div>
+        <div className="groupCard__bottom">
+          <div className="groupCard__image">
+            <img src={images} alt="" />
+            <div className="groupCard__restnum"></div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const TaskCard = ({
+  taskTitle,
+  taskSubTitle,
+  dateIcon,
+  date,
+  priorityIcon,
+  deleteIcon,
+  handleDelete,
+  handleClick,
+  assigneeImages,
+}) => {
+  return (
+    <>
+      <div onClick={handleClick} className="taskcard__cnt">
+        <div className="taskcard__top">
+          <div className="taskcard__top-typo">
+            <p>{taskTitle}</p>
+            <p>{taskSubTitle}</p>
+          </div>
+          <div className="taskcard__top-images">
+            <img src={assigneeImages} alt="" />
+          </div>
+        </div>
+        <div className="taskCard__bottom">
+          <div className="taskCard__bottom-date">
+            {dateIcon}
+            <p>{date}</p>
+          </div>
+          <div className="taskCard__bottom-priority">
+            <p>PRIORITY</p>
+            {priorityIcon}
+          </div>
+          <button onClick={handleDelete} className="taskCard__bottom-delete">
+            {deleteIcon}
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const LeftChat = ({ message, messageTime, deliveryStatus }) => {
+  return (
+    <>
+      <div className="leftChat__cnt">
+        <p>{message}</p>
+        <div className="leftChat__cnt-delivery">
+          <p>{messageTime}</p>
+          {deliveryStatus}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const RightChat = ({ message, messageTime, deliveryStatus }) => {
+  return (
+    <>
+      <div className="rightChat__cnt">
+        <p>{message}</p>
+        <div className="rightChat__cnt-delivery">
+          <p>{messageTime}</p>
+          {deliveryStatus}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const ChatBottomNav = ({
+  handleClick,
+  attachIcon,
+  handleAttachClick,
+  chatBottomMessage,
+}) => {
+  return (
+    <>
+      <div className="chatBottomNav__cnt">
+        <button onClick={handleAttachClick}>{attachIcon}</button>
+        <div onClick={handleClick} className="chatBottomNav__message">
+          <p>{chatBottomMessage}</p>
+        </div>
       </div>
     </>
   );
