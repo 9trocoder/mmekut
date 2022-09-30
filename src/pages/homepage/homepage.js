@@ -5,6 +5,7 @@ import { calendarIcon, headerNotificationIcon } from "../../Utils/tools";
 
 import ProgressBar from "../../components/ProgressBar";
 import HomepageHeader from "../../components/HompageHeader";
+import HeaderWithButton from "../../components/HeaderWithButton";
 
 function Homepage() {
   const handleProfileClick = () => {};
@@ -12,6 +13,8 @@ function Homepage() {
   const handleCalendarClick = () => {};
 
   const handleNotificationClick = () => {};
+
+  const handleMyTaskClick = () => {};
 
   return (
     <>
@@ -44,6 +47,12 @@ function Homepage() {
           />
         </div>
       </div>
+
+      <HeaderWithButton
+        headerName="My Tasks"
+        headerButtonName="View All"
+        handleClick={handleMyTaskClick}
+      />
     </>
   );
 }
