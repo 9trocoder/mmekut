@@ -31,13 +31,13 @@ function Homepage() {
           <p>
             Your today's task <br /> almost done!
           </p>
-          <button>View Task</button>
+          <button>View Tasks</button>
         </div>
         <div className="hompagetaskoverview__cnt-right">
           <ProgressBar
             progress={60}
-            circleHeight="100"
-            circleWidth="100"
+            circleHeight="70"
+            circleWidth="70"
             borderWidth="5px"
             borderColor="#ffffff"
             strokeColor="#ffffff"
