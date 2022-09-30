@@ -250,7 +250,8 @@
 
 
 .bottomnav__cnt-itemadd {
-    background:  linear-gradient(94.38deg, #0184FB 14.99%, #46BDF0 92.22%);
+    /* background:  linear-gradient(94.38deg, #0184FB 14.99%, #46BDF0 92.22%); */
+    background-color: #0184FB;
     width: 70px;
     height: 70px;
     margin: 5px;
