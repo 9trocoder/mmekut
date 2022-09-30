@@ -2,7 +2,9 @@ import React from "react";
 import homepageprofileimage from "../../assets/images/p5.png";
 import "./homepage.css";
 import { calendarIcon, headerNotificationIcon } from "../../Utils/tools";
-import HomepageHeader from "../../components/components/HompageHeader";
+
+import ProgressBar from "../../components/ProgressBar";
+import HomepageHeader from "../../components/HompageHeader";
 
 function Homepage() {
   const handleProfileClick = () => {};
@@ -23,10 +25,27 @@ function Homepage() {
         handleCalendarClick={handleCalendarClick}
         handleNotificationClick={handleNotificationClick}
       />
+
+      <div className="hompagetaskoverview__cnt">
+        <div className="hompagetaskoverview__cnt-left">
+          <p>
+            Your today's task <br /> almost done!
+          </p>
+          <button>View Task</button>
+        </div>
+        <div className="hompagetaskoverview__cnt-right">
+          <ProgressBar
+            progress={60}
+            circleHeight="100"
+            circleWidth="100"
+            borderWidth="5px"
+            borderColor="#ffffff"
+            strokeColor="#ffffff"
+          />
+        </div>
+      </div>
     </>
   );
 }
-
-
 
 export default Homepage;

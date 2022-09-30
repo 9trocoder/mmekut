@@ -49,3 +49,21 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+
+/* Progress Bar */
+
+.svg-circle-bg {
+    fill: none;
+  }
+  
+  .svg-circle {
+    fill: none;
+  }
+  
+  .progress__container {
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
