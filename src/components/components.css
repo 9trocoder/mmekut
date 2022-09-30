@@ -191,7 +191,7 @@
 }
 
 .chatCardHomepage__cnt-righttopusername {
-    font-size: 16;
+    font-size: 14;
     font-weight: 700;
     color: #000b23
 }
@@ -214,6 +214,6 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 12px;
   color:#7b7b7b;
 }
