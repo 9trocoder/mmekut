@@ -9,7 +9,6 @@ import "./homepage.css";
 import {
   addIconWhite,
   calendarIcon,
- 
   chatNotActive,
   deliveredIcon,
   headerNotificationIcon,
@@ -24,8 +23,10 @@ import HeaderWithButton from "../../components/HeaderWithButton";
 import HomepageTaskCard from "../../components/HomepageTaskCard";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
 import BottomNav from "../../components/BottomNav";
+import { useNavigate } from "react-router-dom";
 
 function Homepage() {
+  let navigate = useNavigate();
   const handleProfileClick = () => {};
 
   const handleCalendarClick = () => {};
@@ -34,11 +35,15 @@ function Homepage() {
 
   const handleMyTaskClick = () => {};
 
-  const handleTaskClick = () => {};
+  const handleTaskClick = () => {
+    navigate("/workspace");
+  };
 
   const handleChatClick = () => {};
   const handleAddClick = () => {};
-  const handleHomeClick = () => {};
+  const handleHomeClick = () => {
+    navigate("/");
+  };
 
   return (
     <>
