@@ -100,7 +100,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="Ok, I'll call you when i get there. and bring more snacks"
         />
-        
+
         <ChatCardHomepage
           userImage={p2image}
           userStatus={true}
@@ -109,7 +109,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="Start Coding na"
         />
-        
+
         <ChatCardHomepage
           userImage={p3image}
           userStatus={true}
@@ -118,7 +118,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="On the home screen, that first content, when you click on the 'view task', it will take you here."
         />
-        
+
         <ChatCardHomepage
           userImage={p4image}
           userStatus={true}
@@ -127,7 +127,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="The containers are added to enable the user click on the group"
         />
-        
+
         <ChatCardHomepage
           userImage={p5image}
           userStatus={true}
@@ -136,7 +136,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="See here ....the task screen emmanuel adeyemi"
         />
-         <ChatCardHomepage
+        <ChatCardHomepage
           userImage={p1image}
           userStatus={true}
           userName="Alexander"
@@ -144,7 +144,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="Ok, I'll call you when i get there. and bring more snacks"
         />
-        
+
         <ChatCardHomepage
           userImage={p2image}
           userStatus={true}
@@ -153,7 +153,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="Start Coding na"
         />
-        
+
         <ChatCardHomepage
           userImage={p3image}
           userStatus={true}
@@ -162,7 +162,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="On the home screen, that first content, when you click on the 'view task', it will take you here."
         />
-        
+
         <ChatCardHomepage
           userImage={p4image}
           userStatus={true}
@@ -171,7 +171,7 @@ function Homepage() {
           messageTime="11:44 AM"
           message="The containers are added to enable the user click on the group"
         />
-        
+
         <ChatCardHomepage
           userImage={p5image}
           userStatus={true}
