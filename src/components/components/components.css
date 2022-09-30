@@ -1,0 +1,51 @@
+/* Headerbar css */
+.homepageHeader__cnt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(154, 159, 191, 0.1);
+
+}
+
+.hompageHeader__cnt-left {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    cursor: pointer;
+
+}
+
+.hompageHeader__cnt-profile img {
+    width: 45px;
+    height: 45px;
+}
+
+.hphcwrgreet {
+    font-size: 10px;
+    color: #9a9fbf;
+}
+
+.hphcwrname {
+    color: #000B23;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: .2rem;
+}
+
+.homepageHeader__cnt-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.homepageHeader__cnt-right button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

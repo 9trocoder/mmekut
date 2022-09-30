@@ -30,37 +30,7 @@ export const HeaderBar = ({
   );
 };
 
-export const HomepageHeader = ({
-  profileImage,
-  headerGreeting,
-  userName,
-  calendarIcon,
-  notificationIcon,
-  handleProfileClick,
-  handleCalendarClick,
-  handleNotificationClick,
-}) => {
-  return (
-    <>
-      <div className="homepageHeader__cnt">
-        <div onClick={handleProfileClick} className="hompageHeader__cnt-left">
-          <div className="hompageHeader__cnt-profile">
-            <img src={profileImage} alt="" />
-          </div>
-          <div className="hompageHeader__cnt-writeup">
-            <p>{headerGreeting}</p>
-            <p>{userName}</p>
-          </div>
-        </div>
 
-        <div className="homepageHeader__cnt-right">
-          <button onClick={handleCalendarClick}>{calendarIcon}</button>
-          <button onClick={handleNotificationClick}>{notificationIcon}</button>
-        </div>
-      </div>
-    </>
-  );
-};
 
 export const ChatHeader = ({
   backIcon,
