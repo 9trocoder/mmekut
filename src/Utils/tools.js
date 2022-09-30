@@ -420,4 +420,6 @@ export const profileNotActive = (
   </svg>
 );
 
+export const dividerr = <div className="ddiverder" />;
+
 // rgba(154, 159, 191, 0.25)
