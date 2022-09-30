@@ -2,13 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
+import TitleCard from "../../components/TitleCard";
 import {
   addIconBlue,
   addIconWhite,
-  calendarIcon,
   chatNotActive,
-  headerBackIcon,
-  headerNotificationIcon,
   homeIconNotActive,
   profileNotActive,
   taskActive,
@@ -36,6 +34,10 @@ function Workspacepage() {
         headerText="Workspaces"
         addIcon={addIconBlue}
       />
+
+      <div className="workspacepage__cnt">
+        <TitleCard name="My Work Spaces" />
+      </div>
       <BottomNav
         homeIcon={homeIconNotActive}
         taskIcon={taskActive}

@@ -277,25 +277,42 @@
 }
 
 .headerBar__cnt-left {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .headerBar__cnt-left p {
-    font-weight: 700;
-    font-size: 16px;
-    color: #000b23;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000b23;
 }
 
 .headerBar__cnt-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .headerBar__cnt button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Title Card */
+
+.titlecard__cnt {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 132, 251, 0.1) 0%,
+    rgba(217, 217, 217, 0) 104.21%
+  );
+  padding: 10px 16px;
+}
+
+.titlecard__cnt p {
+  color: #0184fb;
+  font-size: 12px;
+  font-weight: 600;
 }
