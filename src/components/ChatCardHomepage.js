@@ -18,7 +18,7 @@ const ChatCardHomepage = ({
         </div>
         <div className="chatCardHomepage__cnt-right">
           <div className="chatCardHomepage__cnt-righttop">
-            <p>{userName}</p>
+            <p className="chatCardHomepage__cnt-righttopusername">{userName}</p>
             <div className="chatCardHomepage__cnt-righttimeandstatus">
               <div>{messageStatus}</div>
               <p>{messageTime}</p>

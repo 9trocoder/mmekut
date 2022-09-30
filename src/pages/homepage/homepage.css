@@ -51,3 +51,9 @@
 .hompagetask__cnt::-webkit-scrollbar {
     display: none;
   }
+
+  .homepagethechat__cnt {
+    border-top: 1px solid rgba(154, 159, 191, 0.1);
+    margin-top: 16px;
+    padding: 0px 16px 16px 16px;
+}
