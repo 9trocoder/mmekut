@@ -1,94 +1,146 @@
 /* Headerbar css */
 .homepageHeader__cnt {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 16px;
-    border-bottom: 1px solid rgba(154, 159, 191, 0.1);
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.1);
 }
 
 .hompageHeader__cnt-left {
-    display: flex;
-    align-items: center;
-    gap: .6rem;
-    cursor: pointer;
-
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
 }
 
 .hompageHeader__cnt-profile img {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 .hphcwrgreet {
-    font-size: 10px;
-    color: #9a9fbf;
+  font-size: 10px;
+  color: #9a9fbf;
 }
 
 .hphcwrname {
-    color: #000B23;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: .2rem;
+  color: #000b23;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0.2rem;
 }
 
 .homepageHeader__cnt-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .homepageHeader__cnt-right button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-
 
 /* Progress Bar */
 
 .svg-circle-bg {
-    fill: none;
-  }
-  
-  .svg-circle {
-    fill: none;
-  }
-  
-  .progress__container {
-      border-radius: 9999px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+  fill: none;
+}
 
-  /* HeaderWithButton */
+.svg-circle {
+  fill: none;
+}
 
-  .headerwithbutton__cnt {
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.progress__container {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .headerwithbutton__cnt-title {
-    font-weight: 700;
-    color:#000B23;
-    font-size: 14px;
-  }
+/* HeaderWithButton */
 
-  .headerwithbutton__cnt-viewall {
-    cursor: pointer;
-    font-family: inherit;
-    border: none;
-    background-color: transparent;
-    font-size: 12px;
-    color:#9a9fbf;
-    font-weight: 500;
-  }
+.headerwithbutton__cnt {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerwithbutton__cnt-title {
+  font-weight: 700;
+  color: #000b23;
+  font-size: 14px;
+}
+
+.headerwithbutton__cnt-viewall {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #9a9fbf;
+  font-weight: 500;
+}
+
+/* Homepage task card */
+
+.homepageTaskCard__cnt {
+  border-radius: 8px;
+  padding: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.homepageTaskCard__cnt-workspaceName {
+  font-size: 10px;
+  color: #7b7b7b;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+.homepageTaskCard__cnt-taskTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000b23;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.homepageTaskCard__cnt-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.homepageTaskCard__cnt-progress p {
+  font-size: 10px;
+  font-weight: 700;
+  color: #000b23;
+}
+
+.hptccpbar {
+    background-color: #fff;
+    width: 100%;
+    height: 6px;
+    border-radius: 9999px;
+}
+
+.hptccpbarstrength {
+    height: 6px;
+    border-radius: 9999px;
+}
