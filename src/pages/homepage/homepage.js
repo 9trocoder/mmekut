@@ -1,12 +1,18 @@
 import React from "react";
 import homepageprofileimage from "../../assets/images/p5.png";
+import p1image from "../../assets/images/p1.png"
+import p2image from "../../assets/images/p2.png"
+import p3image from "../../assets/images/p3.png"
+import p4image from "../../assets/images/p4.png"
+import p5image from "../../assets/images/p5.png"
 import "./homepage.css";
-import { calendarIcon, headerNotificationIcon } from "../../Utils/tools";
+import { calendarIcon, deliveredIcon, headerNotificationIcon } from "../../Utils/tools";
 
 import ProgressBar from "../../components/ProgressBar";
 import HomepageHeader from "../../components/HompageHeader";
 import HeaderWithButton from "../../components/HeaderWithButton";
 import HomepageTaskCard from "../../components/HomepageTaskCard";
+import ChatCardHomepage from "../../components/ChatCardHomepage";
 
 function Homepage() {
   const handleProfileClick = () => {};
@@ -80,6 +86,10 @@ function Homepage() {
         headerButtonName="View All"
         handleClick={handleMyTaskClick}
       />
+
+      <div className="homepagethechat__cnt">
+        <ChatCardHomepage userImage={p1image} userStatus={true} userName="Alexander" messageStatus={deliveredIcon} messageTime="11:44 AM" message="Ok, I'll call you when i get there. and bring more snacks" />
+      </div>
     </>
   );
 }
