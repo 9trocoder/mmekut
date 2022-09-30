@@ -39,7 +39,7 @@
 
 .hompagetask__cnt {
     display: grid;
-    grid-template-columns: repeat(3, 249px);
+    grid-template-columns: repeat(2, 249px);
     width: 100%;
     grid-gap: 16px;
     padding: 16px 16px;
