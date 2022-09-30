@@ -45,13 +45,14 @@
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+ 
 }
 
 .hompagetask__cnt::-webkit-scrollbar {
   display: none;
 }
 
-.homepagethechat__cnt {
+.homepagethechat__cnt { margin-bottom: 5.5rem;
   /* border-top: 1px solid rgba(154, 159, 191, 0.1); */
   margin-top: 20px;
   padding: 32px 16px 0px 16px;

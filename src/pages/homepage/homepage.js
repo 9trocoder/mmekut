@@ -7,9 +7,15 @@ import p4image from "../../assets/images/p4.png";
 import p5image from "../../assets/images/p5.png";
 import "./homepage.css";
 import {
+  addIconWhite,
   calendarIcon,
+ 
+  chatNotActive,
   deliveredIcon,
   headerNotificationIcon,
+  homeIconActive,
+  profileNotActive,
+  taskNotActive,
 } from "../../Utils/tools";
 
 import ProgressBar from "../../components/ProgressBar";
@@ -17,6 +23,7 @@ import HomepageHeader from "../../components/HompageHeader";
 import HeaderWithButton from "../../components/HeaderWithButton";
 import HomepageTaskCard from "../../components/HomepageTaskCard";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
+import BottomNav from "../../components/BottomNav";
 
 function Homepage() {
   const handleProfileClick = () => {};
@@ -28,6 +35,10 @@ function Homepage() {
   const handleMyTaskClick = () => {};
 
   const handleTaskClick = () => {};
+
+  const handleChatClick = () => {};
+  const handleAddClick = () => {};
+  const handleHomeClick = () => {};
 
   return (
     <>
@@ -181,6 +192,19 @@ function Homepage() {
           message="See here ....the task screen emmanuel adeyemi"
         />
       </div>
+
+      <BottomNav
+        homeIcon={homeIconActive}
+        taskIcon={taskNotActive}
+        addIcon={addIconWhite}
+        chatIcon={chatNotActive}
+        profileIcon={profileNotActive}
+        handleHomeClick={handleHomeClick}
+        handleTaskClick={handleTaskClick}
+        handleAddClick={handleAddClick}
+        handleChatClick={handleChatClick}
+        handleProfileClick={handleProfileClick}
+      />
     </>
   );
 }
