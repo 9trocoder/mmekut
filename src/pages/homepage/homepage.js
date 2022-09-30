@@ -75,6 +75,11 @@ function Homepage() {
           handleClick={handleTaskClick}
         />
       </div>
+      <HeaderWithButton
+        headerName="Chat"
+        headerButtonName="View All"
+        handleClick={handleMyTaskClick}
+      />
     </>
   );
 }
