@@ -80,6 +80,7 @@
   .headerwithbutton__cnt-title {
     font-weight: 700;
     color:#000B23;
+    font-size: 14px;
   }
 
   .headerwithbutton__cnt-viewall {
@@ -87,7 +88,7 @@
     font-family: inherit;
     border: none;
     background-color: transparent;
-    font-size: 14px;
+    font-size: 12px;
     color:#9a9fbf;
     font-weight: 500;
   }
