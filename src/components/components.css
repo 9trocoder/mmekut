@@ -68,6 +68,7 @@
 /* HeaderWithButton */
 
 .headerwithbutton__cnt {
+  margin-top: 16px;
   padding: 0 16px;
   display: flex;
   align-items: center;
@@ -150,8 +151,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
- 
-  padding: 16px 0;
+
+  padding-bottom: 32px;
 }
 
 .chatCardHomepage__cnt-left {
@@ -177,43 +178,40 @@
 }
 
 .chatCardHomepage__cnt-right {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: .4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.4rem;
 }
 
-
 .chatCardHomepage__cnt-righttop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .chatCardHomepage__cnt-righttopusername {
-    font-size: 14px;
-    font-weight: 700;
-    color: #000b23
+  font-size: 14px;
+  font-weight: 700;
+  color: #000b23;
 }
 
-
-
 .chatCardHomepage__cnt-righttimeandstatus {
-    display: flex;
-    gap: .5rem;
-    align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .chatCardHomepage__cnt-righttimeandstatus p {
-    font-size: 10px;
-    color:#9a9fbf;
+  font-size: 10px;
+  color: #9a9fbf;
 }
 
 .chatCardHomepage__cnt-rightbottom {
-    display: -webkit-box;
+  display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 12px;
-  color:#7b7b7b;
+  color: #7b7b7b;
 }
