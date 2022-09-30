@@ -35,10 +35,6 @@ function Workspacepage() {
       <HeaderBar
         headerText="Workspaces"
         addIcon={addIconBlue}
-        backIcon={headerBackIcon}
-        calendarIcon={calendarIcon}
-        notificationIcon={headerNotificationIcon}
-        handleBackClick={handleBackClick}
       />
       <BottomNav
         homeIcon={homeIconNotActive}
