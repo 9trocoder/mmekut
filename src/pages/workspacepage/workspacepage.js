@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import AccordionLayout from "../../components/AccordionLayout";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
 import TitleCard from "../../components/TitleCard";
@@ -15,6 +16,7 @@ import "./workspacepage.css";
 
 function Workspacepage() {
   let navigate = useNavigate();
+  const [activeIndex, setActiveIndex] = useState(1);
   const handleProfileClick = () => {};
   const handleTaskClick = () => {
     navigate("/workspace");
@@ -25,18 +27,29 @@ function Workspacepage() {
   const handleHomeClick = () => {
     navigate("/");
   };
-  const handleBackClick = () => {
-    navigate(-1);
-  };
+
   return (
     <>
-      <HeaderBar
-        headerText="Workspaces"
-        addIcon={addIconBlue}
-      />
+      <HeaderBar headerText="Workspaces" addIcon={addIconBlue} />
 
       <div className="workspacepage__cnt">
         <TitleCard name="My Work Spaces" />
+        <AccordionLayout
+          title="Mmekut App"
+          index={1}
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+        >
+          Mmekut FrontEnd
+        </AccordionLayout>
+        <AccordionLayout
+          title="Ushy"
+          index={2}
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+        >
+          9trocoder Launching page
+        </AccordionLayout>
       </div>
       <BottomNav
         homeIcon={homeIconNotActive}
