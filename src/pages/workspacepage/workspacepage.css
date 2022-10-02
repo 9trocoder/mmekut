@@ -28,7 +28,7 @@
 }
 
 .createworkspace__inputitem input:focus {
-    color: #000b23;
+  color: #000b23;
 }
 
 .createworkspace__inputitem textarea {
@@ -50,7 +50,7 @@
 }
 
 .createworkspace__inputitem textarea:focus {
-    color: #000b23;
+  color: #000b23;
 }
 
 .createworkspace__inputitem button {

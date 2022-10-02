@@ -14,6 +14,7 @@ import {
   chatNotActive,
   closeIcon,
   dividerr,
+  headerBackIcon,
   homeIconNotActive,
   profileNotActive,
   taskActive,
@@ -94,7 +95,7 @@ function Workspacepage() {
       {showcreateworkspace && (
         <Modal
           modalName="Create a Workspace"
-          closeIcon={closeIcon}
+          closeIcon={headerBackIcon}
           handleCloseClick={handleWorkspaceAddCloseClick}
         >
           <div className="createworkspace__cnt">

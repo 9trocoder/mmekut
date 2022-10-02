@@ -7,9 +7,9 @@ const Modal = ({ children, handleCloseClick, closeIcon, modalName }) => {
       <div className="modal__cnt">
         <div className="modal__cnt-body">
           <div className="modal">
-            <div className="modal__cnt-top">
+            <div className="modal__cnt-top"><button onClick={handleCloseClick}>{closeIcon}</button>
               <p>{modalName}</p>
-              <button onClick={handleCloseClick}>{closeIcon}</button>
+              
             </div>
             <div className="modal__cnt-bottom">{children}</div>
           </div>
