@@ -1,3 +1,27 @@
 .workspacepage__cnt {
-    margin-top: 3rem;
+  margin-top: 3rem;
+}
+
+.createworkspace__inputitem p {
+  color: #9a9fbf;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
+.createworkspace__inputitem input {
+  width: 100%;
+  border: 1px solid rgba(154, 159, 191, 0.15);
+  height: 50px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9a9fbf;
+  padding: 0 16px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.createworkspace__inputitem input::placeholder {
+  color: #9a9fbf;
 }
