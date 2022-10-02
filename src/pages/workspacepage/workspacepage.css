@@ -20,8 +20,27 @@
   padding: 0 16px;
   border-radius: 8px;
   margin-bottom: 1rem;
+  outline: none;
 }
 
 .createworkspace__inputitem input::placeholder {
   color: #9a9fbf;
+}
+
+.createworkspace__inputitem textarea {
+    width: 100%;
+    border: 1px solid rgba(154, 159, 191, 0.15);
+    height: 100px;
+    font-family: inherit;
+    padding: 16px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9a9fbf;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.createworkspace__inputitem textarea::placeholder {
+    color: #9a9fbf;
 }
