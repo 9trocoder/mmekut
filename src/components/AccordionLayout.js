@@ -19,9 +19,8 @@ function AccordionLayout({
           className="accordionlayout__cnt-top"
         >
           <p>{title}</p>
-          <div className="accordionlayout__cnt-topicon">
             {activeIndex === index ? arrowdownbutton : arrowrightbutton}
-          </div>
+        
         </div>
         {dividerr}
         {activeIndex === index && (
