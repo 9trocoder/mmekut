@@ -1,5 +1,5 @@
 import React from "react";
-import "./components.css"
+import "./components.css";
 import { arrowrightbutton, arrowdownbutton, dividerr } from "../Utils/tools";
 
 function AccordionLayout({
@@ -19,8 +19,7 @@ function AccordionLayout({
           className="accordionlayout__cnt-top"
         >
           <p>{title}</p>
-            {activeIndex === index ? arrowdownbutton : arrowrightbutton}
-        
+          {activeIndex === index ? arrowdownbutton : arrowrightbutton}
         </div>
         {dividerr}
         {activeIndex === index && (

@@ -4,10 +4,12 @@ import AccordionLayout from "../../components/AccordionLayout";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
 import TitleCard from "../../components/TitleCard";
+import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import {
   addIconBlue,
   addIconWhite,
   chatNotActive,
+  dividerr,
   homeIconNotActive,
   profileNotActive,
   taskActive,
@@ -40,7 +42,17 @@ function Workspacepage() {
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
         >
-          Mmekut FrontEnd
+          <WorkspaceTasklist
+            projectName="Githarita FrontEnd"
+            numtask="15/20"
+            progressNumber={50}
+          />
+          {dividerr}
+          <WorkspaceTasklist
+            projectName="9trocoder Launching page"
+            numtask="4/16"
+            progressNumber={20}
+          />
         </AccordionLayout>
         <AccordionLayout
           title="Ushy"
@@ -48,7 +60,17 @@ function Workspacepage() {
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
         >
-          9trocoder Launching page
+           <WorkspaceTasklist
+            projectName="LC Wakiki"
+            numtask="2/4"
+            progressNumber={50}
+          />
+          {dividerr}
+          <WorkspaceTasklist
+            projectName="Gloria Jeans Clothing"
+            numtask="20/20"
+            progressNumber={100}
+          />
         </AccordionLayout>
       </div>
       <BottomNav

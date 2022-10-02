@@ -63,7 +63,6 @@
   border-radius: 9999px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 /* HeaderWithButton */
@@ -317,7 +316,6 @@
   font-weight: 600;
 }
 
-
 /* Accordion */
 
 .accordionlayout__cnt-top {
@@ -336,4 +334,32 @@
 .accordionlayout__cnt-bottom {
   background-color: #9a9fbf15;
   padding: 10px 16px;
+}
+
+/* Workspace Task list */
+.workspaceTasklist__cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.workspaceTasklist__cnt p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9a9fbf;
+}
+
+
+.workspaceTasklist__cnt-right {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.workspaceTasklist__cnt-right p {
+  font-size: 12px;
+  color: #000b23;
+  font-weight: 600;
 }

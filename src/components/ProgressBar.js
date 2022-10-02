@@ -13,7 +13,7 @@ const ProgressBar = (props) => {
             borderWidth: `${borderWidth}`,
             borderStyle: "solid",
             borderRadius: "9999px",
-            padding: "5px",
+            padding: `${borderWidth}`,
             // backgroundColor: "#73BCFF"
           }}
           height={circleHeight}
