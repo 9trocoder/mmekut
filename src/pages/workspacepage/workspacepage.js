@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AccordionLayout from "../../components/AccordionLayout";
+import BigButton from "../../components/BigButton";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
 import Modal from "../../components/Modal";
@@ -9,6 +10,7 @@ import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import {
   addIconBlue,
   addIconWhite,
+  arrowdownbutton,
   chatNotActive,
   closeIcon,
   dividerr,
@@ -32,13 +34,16 @@ function Workspacepage() {
     navigate("/");
   };
 
-  const handleWorkspaceAddClick = () => {
-
-  }
+  const handleWorkspaceAddClick = () => {};
+  const handleCreateWorkspace = () => {};
 
   return (
     <>
-      <HeaderBar headerText="Workspaces" addIcon={addIconBlue} handleAddClick={handleWorkspaceAddClick} />
+      <HeaderBar
+        headerText="Workspaces"
+        addIcon={addIconBlue}
+        handleAddClick={handleWorkspaceAddClick}
+      />
 
       <div className="workspacepage__cnt">
         <TitleCard name="My Work Spaces" />
@@ -66,7 +71,7 @@ function Workspacepage() {
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
         >
-           <WorkspaceTasklist
+          <WorkspaceTasklist
             projectName="LC Wakiki"
             numtask="2/4"
             progressNumber={50}
@@ -81,8 +86,46 @@ function Workspacepage() {
       </div>
 
       <Modal modalName="Create a Workspace" closeIcon={closeIcon}>
+        <div className="createworkspace__cnt">
+          <div className="createworkspace__inputitem">
+            <p>WORKSPACE NAME</p>
+            <input type="text" placeholder="Enter Workspace Name" />
+          </div>
+          <div className="createworkspace__inputitem">
+            <p>DESCRIPTION</p>
+            <textarea type="text" placeholder="Type some description..." />
+          </div>
+          <div className="createworkspace__inputitem">
+            <p>MEMBER</p>
+            <button>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447715 14 1 14V12ZM25 14C25.5523 14 26 13.5523 26 13C26 12.4477 25.5523 12 25 12V14ZM14 1C14 0.447715 13.5523 0 13 0C12.4477 0 12 0.447715 12 1H14ZM12 25C12 25.5523 12.4477 26 13 26C13.5523 26 14 25.5523 14 25H12ZM1 14H25V12H1V14ZM12 1V25H14V1H12Z"
+                  fill="#0184FB"
+                />
+              </svg>
+              <p>Add New Workspace Members</p>
+            </button>
+          </div>
 
-
+          <div className="createworkspace__inputitem">
+            <p>PRIVACY</p>
+            <div className="createworkspace__privacy-cnt">
+              <p>Public</p>
+              {arrowdownbutton}
+            </div>
+          </div>
+          <BigButton
+            buttonName="Create Workspace"
+            handleClick={handleCreateWorkspace}
+          />
+        </div>
       </Modal>
       <BottomNav
         homeIcon={homeIconNotActive}

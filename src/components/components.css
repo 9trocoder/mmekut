@@ -422,3 +422,18 @@
 .modal__cnt-bottom {
   padding: 16px 16px;
 }
+
+/* big button */
+.bigButton_cnt {
+  width: 100%;
+  border-radius: 8px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  border: none;
+  background-color: #0184fb;
+  color: #ffffff;
+  font-weight: 600;
+}
