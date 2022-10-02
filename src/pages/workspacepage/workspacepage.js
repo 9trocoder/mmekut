@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 import AccordionLayout from "../../components/AccordionLayout";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
+import Modal from "../../components/Modal";
 import TitleCard from "../../components/TitleCard";
 import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import {
   addIconBlue,
   addIconWhite,
   chatNotActive,
+  closeIcon,
   dividerr,
   homeIconNotActive,
   profileNotActive,
@@ -30,9 +32,13 @@ function Workspacepage() {
     navigate("/");
   };
 
+  const handleWorkspaceAddClick = () => {
+
+  }
+
   return (
     <>
-      <HeaderBar headerText="Workspaces" addIcon={addIconBlue} />
+      <HeaderBar headerText="Workspaces" addIcon={addIconBlue} handleAddClick={handleWorkspaceAddClick} />
 
       <div className="workspacepage__cnt">
         <TitleCard name="My Work Spaces" />
@@ -73,6 +79,11 @@ function Workspacepage() {
           />
         </AccordionLayout>
       </div>
+
+      <Modal modalName="Create a Workspace" closeIcon={closeIcon}>
+
+
+      </Modal>
       <BottomNav
         homeIcon={homeIconNotActive}
         taskIcon={taskActive}
