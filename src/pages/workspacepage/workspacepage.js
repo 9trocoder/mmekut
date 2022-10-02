@@ -110,7 +110,7 @@ function Workspacepage() {
                   fill="#0184FB"
                 />
               </svg>
-              <p>Add New Workspace Members</p>
+              Add Workspace Members
             </button>
           </div>
 

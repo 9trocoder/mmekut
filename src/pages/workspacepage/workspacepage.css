@@ -3,9 +3,9 @@
 }
 
 .createworkspace__inputitem p {
-  color: #9a9fbf;
+  color: #000b23;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 0.4rem;
 }
 
@@ -43,4 +43,20 @@
 
 .createworkspace__inputitem textarea::placeholder {
     color: #9a9fbf;
+}
+
+.createworkspace__inputitem button {
+    height: 50px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0184fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
 }
