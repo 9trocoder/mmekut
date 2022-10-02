@@ -12,7 +12,6 @@ const Modal = ({ children, handleCloseClick, closeIcon, modalName }) => {
               <p>{modalName}</p>
               <button onClick={handleCloseClick}>{closeIcon}</button>
             </div>
-            {dividerr}
             <div className="modal__cnt-bottom">{children}</div>
           </div>
         </div>
