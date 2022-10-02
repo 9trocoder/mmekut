@@ -27,6 +27,10 @@
   color: #9a9fbf;
 }
 
+.createworkspace__inputitem input:focus {
+    color: #000b23;
+}
+
 .createworkspace__inputitem textarea {
   width: 100%;
   border: 1px solid rgba(154, 159, 191, 0.15);
@@ -43,6 +47,10 @@
 
 .createworkspace__inputitem textarea::placeholder {
   color: #9a9fbf;
+}
+
+.createworkspace__inputitem textarea:focus {
+    color: #000b23;
 }
 
 .createworkspace__inputitem button {
