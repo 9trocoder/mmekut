@@ -402,6 +402,7 @@
 .modal__cnt-top button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__cnt-bottom {

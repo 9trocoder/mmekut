@@ -5,7 +5,6 @@ const Modal = ({ children, handleCloseClick, closeIcon, modalName }) => {
   return (
     <>
       <div className="modal__cnt">
-        <div className="modal__cntclose" onClick={handleCloseClick} />
         <div className="modal__cnt-body">
           <div className="modal">
             <div className="modal__cnt-top">
