@@ -113,12 +113,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 16px;
+  cursor: pointer;
 }
 
 .assignee__left {
   display: flex;
   align-items: center;
-  width: 100%;
   border: none;
   background-color: transparent;
   font-family: inherit;
@@ -210,6 +210,27 @@
   width: 30px;
   height: 30px;
   border-radius: 9999px;
-  border: 3px solid rgba(217, 220, 240, 0.212);
+  border: 3px solid rgb(236, 237, 241);
   background-color: #0184fb;
+}
+
+.workspace__selected-members {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 0px 16px 16px 16px;
+  overflow-x: scroll;
+  border-radius: 8px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.workspace__selected-members::-webkit-scrollbar {
+  display: none;
+}
+
+.workspace__selected-members img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 }

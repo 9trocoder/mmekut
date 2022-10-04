@@ -231,11 +231,11 @@ function Workspacepage() {
               placeholder="Search Members"
             />
           </div>
-          <>
+          <div className="workspace__selected-members">
             {selected.map((item) => (
               <img src={item} alt="" />
             ))}
-          </>
+          </div>
           {dividerr}
           <div className="workspace__memberscnt">
             {filteredList.map((item, index) => (
@@ -244,11 +244,11 @@ function Workspacepage() {
                   key={index}
                   style={{ position: "relative" }}
                   className="assignee__cnt"
+                  onClick={() => handleSelectedWorker(item.image)}
                 >
                   <button
                     key={item.id}
                     type="button"
-                    onClick={() => handleSelectedWorker(item.image)}
                     className="assignee__left"
                   >
                     <img src={item.image} alt="" />
