@@ -236,6 +236,7 @@ function Workspacepage() {
               <img src={item} alt="" />
             ))}
           </>
+          {dividerr}
           <div className="workspace__memberscnt">
             {filteredList.map((item, index) => (
               <>
