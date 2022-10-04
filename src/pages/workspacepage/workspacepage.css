@@ -204,3 +204,12 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+.workspace__selected {
+  width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+  border: 3px solid rgba(217, 220, 240, 0.212);
+  background-color: #0184fb;
+}

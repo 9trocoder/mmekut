@@ -256,6 +256,8 @@ function Workspacepage() {
                       <p className="assignee__left-position">{item.position}</p>
                     </div>
                   </button>
+
+                  <div className={selected.includes(item.image) ? "workspace__selected" : "worspace__notselected"}></div>
                 </div>
                 {dividerr}
               </>
