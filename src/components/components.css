@@ -379,7 +379,6 @@
   height: auto;
   pointer-events: all;
   overflow: auto;
-  z-index: 10001;
 }
 
 .modal__cnt-top {
@@ -424,4 +423,5 @@
   background-color: #0184fb;
   color: #ffffff;
   font-weight: 600;
+  cursor: pointer;
 }

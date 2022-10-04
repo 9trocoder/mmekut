@@ -85,8 +85,8 @@ export const editIcon = (
     <path
       d="M2.33333 14.3333L15.6667 1L19 4.33333L5.66667 17.6667M2.33333 14.3333L1 19L5.66667 17.6667M2.33333 14.3333L5.66667 17.6667M13 3.66667L16.3333 7"
       stroke="#0184FB"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -178,8 +178,8 @@ export const deliveredIcon = (
     <path
       d="M1.5 10.5L3.73309 12.1748C4.16178 12.4963 4.76772 12.4228 5.10705 12.0081L11.25 4.5"
       stroke="#0184FB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <path
       fill-rule="evenodd"
@@ -201,8 +201,8 @@ export const readIcon = (
     <path
       d="M1.5 10.5L3.73309 12.1748C4.16178 12.4963 4.76772 12.4228 5.10705 12.0081L11.25 4.5"
       stroke="rgba(154, 159, 191, 0.25)"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <path
       fill-rule="evenodd"
@@ -271,9 +271,9 @@ export const homeIconActive = (
     <path
       d="M22.0879 25C23.3833 25 24.5029 24.0945 24.6767 22.782C24.8419 21.5346 24.9978 19.8187 24.9978 17.784C24.9978 13.4545 25.2355 10.8111 20.7633 6.23849C18.7006 4.12948 16.3967 2.51359 14.8384 1.53494C13.7027 0.821686 12.2972 0.821685 11.1615 1.53494C9.60326 2.51359 7.29941 4.12948 5.23671 6.23849C0.764498 10.8111 1.00219 13.4545 1.00219 17.784C1.00219 19.8187 1.15805 21.5346 1.32328 22.782C1.49713 24.0945 2.6167 25 3.91209 25H22.0879Z"
       stroke="#0184FB"
-      stroke-width="1.65"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.65"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -289,9 +289,9 @@ export const homeIconNotActive = (
     <path
       d="M22.0879 25C23.3833 25 24.5029 24.0945 24.6767 22.782C24.8419 21.5346 24.9978 19.8187 24.9978 17.784C24.9978 13.4545 25.2355 10.8111 20.7633 6.23849C18.7006 4.12948 16.3967 2.51359 14.8384 1.53494C13.7027 0.821686 12.2972 0.821685 11.1615 1.53494C9.60326 2.51359 7.29941 4.12948 5.23671 6.23849C0.764498 10.8111 1.00219 13.4545 1.00219 17.784C1.00219 19.8187 1.15805 21.5346 1.32328 22.782C1.49713 24.0945 2.6167 25 3.91209 25H22.0879Z"
       stroke="rgba(154, 159, 191, 0.25)"
-      stroke-width="1.65"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.65"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -397,8 +397,8 @@ export const profileActive = (
     <path
       d="M1 25C1 20.5 7 20.5 10 17.5C11.5 16 7 16 7 8.5C7 3.5005 8.9995 1 13 1C17.0005 1 19 3.5005 19 8.5C19 16 14.5 16 16 17.5C19 20.5 25 20.5 25 25"
       stroke="#0184FB"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
   </svg>
 );
@@ -414,8 +414,8 @@ export const profileNotActive = (
     <path
       d="M1 25C1 20.5 7 20.5 10 17.5C11.5 16 7 16 7 8.5C7 3.5005 8.9995 1 13 1C17.0005 1 19 3.5005 19 8.5C19 16 14.5 16 16 17.5C19 20.5 25 20.5 25 25"
       stroke="rgba(154, 159, 191, 0.25)"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
   </svg>
 );

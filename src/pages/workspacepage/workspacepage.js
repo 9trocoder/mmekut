@@ -7,12 +7,17 @@ import HeaderBar from "../../components/HeaderBar";
 import Modal from "../../components/Modal";
 import TitleCard from "../../components/TitleCard";
 import WorkspaceTasklist from "../../components/WorkspaceTasklist";
+import p1 from "../../assets/images/p1.png";
+import p2 from "../../assets/images/p2.png";
+import p3 from "../../assets/images/p3.png";
+import p4 from "../../assets/images/p4.png";
+import p5 from "../../assets/images/p5.png";
+
 import {
   addIconBlue,
   addIconWhite,
   arrowdownbutton,
   chatNotActive,
-  closeIcon,
   dividerr,
   headerBackIcon,
   homeIconNotActive,
@@ -25,6 +30,53 @@ function Workspacepage() {
   let navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(1);
   const [showcreateworkspace, setShowcreateworkspace] = useState(false);
+  const [showAddWorkspaceMember, setShowAddWorkspaceMember] = useState(false);
+  const [searchText, setSearchText] = useState("");
+  const [selected, setSelected] = useState([]);
+
+  const onSearch = (text) => {
+    setSearchText(text.length > 0 ? text.toLowerCase() : "");
+  };
+
+  function filterByText(list, searchText) {
+    return list.filter(
+      (item) =>
+        item.first_name.toLowerCase().search(searchText.toLowerCase()) === 0
+    );
+  }
+
+  const orgmembers = [
+    {
+      id: 1,
+      first_name: "Alexander",
+      position: "UI/Ux",
+      image: p1,
+    },
+    {
+      id: 2,
+      first_name: "Alex Ayodele",
+      position: "Frontend Developer",
+      image: p2,
+    },
+    {
+      id: 3,
+      first_name: "Mosope",
+      position: "User Interface Designer",
+      image: p3,
+    },
+    {
+      id: 4,
+      first_name: "Oladimeji Emmanuel",
+      position: "FullStack Developer",
+      image: p4,
+    },
+    {
+      id: 5,
+      first_name: "Mmekut Mfon",
+      position: "Head of Design",
+      image: p5,
+    },
+  ];
   const handleProfileClick = () => {};
   const handleTaskClick = () => {
     navigate("/workspace");
@@ -39,10 +91,25 @@ function Workspacepage() {
   const handleWorkspaceAddClick = () => {
     setShowcreateworkspace(true);
   };
+  const handleShowWorkspaceMemeber = () => {
+    setShowAddWorkspaceMember(false);
+  };
   const handleWorkspaceAddCloseClick = () => {
     setShowcreateworkspace(false);
   };
   const handleCreateWorkspace = () => {};
+
+  const filteredList = searchText
+    ? filterByText(orgmembers, searchText)
+    : orgmembers;
+
+  const handleSelectedWorker = (id) => {
+    if (selected.includes(id)) {
+      setSelected((prevSelected) => prevSelected.filter((s) => s !== id));
+    } else {
+      setSelected((prevSelected) => [...prevSelected, id]);
+    }
+  };
 
   return (
     <>
@@ -94,9 +161,10 @@ function Workspacepage() {
 
       {showcreateworkspace && (
         <Modal
+          zIndex={10001}
           modalName="Create a Workspace"
           closeIcon={headerBackIcon}
-          handleCloseClick={handleWorkspaceAddCloseClick}
+          handleCloseClick={handleShowWorkspaceMemeber}
         >
           <div className="createworkspace__cnt">
             <div className="createworkspace__inputitem">
@@ -107,7 +175,10 @@ function Workspacepage() {
               <p>DESCRIPTION</p>
               <textarea type="text" placeholder="Type some description..." />
             </div>
-            <div className="createworkspace__inputitem">
+            <div
+              className="createworkspace__inputitem"
+              onClick={() => setShowAddWorkspaceMember(true)}
+            >
               <p>MEMBER</p>
               <button>
                 <svg
@@ -124,6 +195,11 @@ function Workspacepage() {
                 </svg>
                 Add Workspace Members
               </button>
+              <>
+                {selected.map((item) => (
+                  <img src={item} alt="" />
+                ))}
+              </>
             </div>
 
             <div className="createworkspace__inputitem">
@@ -140,6 +216,61 @@ function Workspacepage() {
           </div>
         </Modal>
       )}
+
+      {showAddWorkspaceMember && (
+        <Modal
+          zIndex={10002}
+          modalName="Add Workspace Members"
+          closeIcon={headerBackIcon}
+          handleCloseClick={handleShowWorkspaceMemeber}
+        >
+          <div className="workspacesearch">
+            <input
+              type="text"
+              onChange={(e) => onSearch(e.target.value)}
+              placeholder="Search Members"
+            />
+          </div>
+          <>
+            {selected.map((item) => (
+              <img src={item} alt="" />
+            ))}
+          </>
+          <div className="workspace__memberscnt">
+            {filteredList.map((item, index) => (
+              <>
+                <div
+                  key={index}
+                  style={{ position: "relative" }}
+                  className="assignee__cnt"
+                >
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => handleSelectedWorker(item.image)}
+                    className="assignee__left"
+                  >
+                    <img src={item.image} alt="" />
+                    <div className="assignee__left-profile">
+                      <p className="assignee__left-name">{item.first_name}</p>
+                      <p className="assignee__left-position">{item.position}</p>
+                    </div>
+                  </button>
+                </div>
+                {dividerr}
+              </>
+            ))}
+          </div>
+
+          {/* <div className="">{selected}</div>
+        {selected.map((item) => (
+          <img src={item} alt="" />
+        ))} */}
+
+          <BigButton buttonName="Add Members" handleClick={handleShowWorkspaceMemeber} />
+        </Modal>
+      )}
+
       <BottomNav
         homeIcon={homeIconNotActive}
         taskIcon={taskActive}

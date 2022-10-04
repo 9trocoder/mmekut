@@ -1,7 +1,14 @@
 import PropTypes from "prop-types";
 
 const ProgressBar = (props) => {
-  const { progress, circleTwoStroke, circleHeight, circleWidth, borderWidth, borderColor, strokeColor } = props;
+  const {
+    progress,
+    circleHeight,
+    circleWidth,
+    borderWidth,
+    borderColor,
+    strokeColor,
+  } = props;
   let dsd = `calc(${progress} * 31.4 / 100) 31.4`;
 
   return (
@@ -27,8 +34,8 @@ const ProgressBar = (props) => {
             cy="10"
             fill="transparent"
             stroke={strokeColor}
-            stroke-width="10"
-            stroke-dasharray={dsd}
+            strokeWidth="10"
+            strokeDasharray={dsd}
             transform="rotate(-90) translate(-20)"
           />
         </svg>
@@ -38,11 +45,7 @@ const ProgressBar = (props) => {
 };
 
 ProgressBar.propTypes = {
-  size: PropTypes.number.isRequired,
   progress: PropTypes.number.isRequired,
-  strokeWidth: PropTypes.number.isRequired,
-  circleOneStroke: PropTypes.string.isRequired,
-  circleTwoStroke: PropTypes.string.isRequired,
 };
 
 export default ProgressBar;
