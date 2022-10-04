@@ -195,11 +195,21 @@ function Workspacepage() {
                 </svg>
                 Add Workspace Members
               </button>
-              <>
-                {selected.map((item) => (
-                  <img src={item} alt="" />
+              {selected.length > 4 ? (
+                <>
+                  {selected.slice(0, 4).map((item, index) => (
+                    <img key={index} src={item} alt="" />
+                  ))}
+                  <h1>{selected.length - 4}</h1>
+                </>
+              ) : (
+                <p>I am less than four</p>
+              )}
+              {/* <>
+                {selected.map((item, index) => (
+                  <img key={index} src={item} alt="" />
                 ))}
-              </>
+              </> */}
             </div>
 
             <div className="createworkspace__inputitem">
@@ -258,7 +268,13 @@ function Workspacepage() {
                     </div>
                   </button>
 
-                  <div className={selected.includes(item.image) ? "workspace__selected" : "worspace__notselected"}></div>
+                  <div
+                    className={
+                      selected.includes(item.image)
+                        ? "workspace__selected"
+                        : "worspace__notselected"
+                    }
+                  ></div>
                 </div>
                 {dividerr}
               </>
@@ -270,7 +286,10 @@ function Workspacepage() {
           <img src={item} alt="" />
         ))} */}
 
-          <BigButton buttonName="Add Members" handleClick={handleShowWorkspaceMemeber} />
+          <BigButton
+            buttonName="Add Members"
+            handleClick={handleShowWorkspaceMemeber}
+          />
         </Modal>
       )}
 
