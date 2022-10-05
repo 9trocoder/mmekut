@@ -83,13 +83,7 @@ function Taskpage() {
           </div>
         </div>
 
-        <p>
-          is defined but never used no-unused-vars Line 9:8: 'WorkspaceTasklist'
-          is defined but never used no-unused-vars Line 19:3: 'arrowdownbutton'
-          is defined but never used no-unused-vars Line 33:10: 'activeIndex' is
-          assigned a value but never used no-unused-vars Line 33:23:
-          'setActiveIndex' is assigned a value but never used no-unused-vars
-        </p>
+      
       </div>
 
       <BottomNav
