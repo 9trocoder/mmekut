@@ -391,7 +391,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 10px 16px;
-  border-bottom: 1px solid #9A9FBF15;
+  border-bottom: 1px solid #9a9fbf15;
 }
 
 .modal__cnt-top p {
@@ -424,4 +424,15 @@
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* Link cards */
+.linkCards__cnt {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.linkCards__cnt p {
+  font-size: 13px;
+  font-weight: 700;
 }

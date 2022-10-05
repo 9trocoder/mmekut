@@ -26,6 +26,7 @@ import {
   taskActive,
 } from "../../Utils/tools";
 import "./workspacepage.css";
+import LinkCards from "../../components/LinkCards";
 
 function Workspacepage() {
   let navigate = useNavigate();
@@ -122,7 +123,12 @@ function Workspacepage() {
 
       <div className="workspacepage__cnt">
         <TitleCard name="My Work Spaces" />
-        <AccordionLayout
+        {dividerr}
+        <LinkCards cardName="Mmekut App" handleClick={() => {}} />
+        {dividerr}
+        <LinkCards cardName="Ushy" handleClick={() => {}} />
+        {dividerr}
+        {/* <AccordionLayout
           title="Mmekut App"
           index={1}
           activeIndex={activeIndex}
@@ -157,7 +163,7 @@ function Workspacepage() {
             numtask="20/20"
             progressNumber={100}
           />
-        </AccordionLayout>
+        </AccordionLayout> */}
       </div>
 
       {showcreateworkspace && (
