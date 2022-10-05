@@ -12,3 +12,4 @@ function LinkCards({ cardName, handleClick }) {
 }
 
 export default LinkCards;
+  
