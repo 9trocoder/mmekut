@@ -28,7 +28,7 @@
 
 .taskpage__cnt-taskprojects {
   display: grid;
-  grid-template-columns: 50px 100px 150px 1fr;
+  grid-template-columns: 50px 100px 150px 150px;
   align-items: center;
   gap: 1rem;
   width: 100%;
