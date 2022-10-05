@@ -3,25 +3,21 @@
   padding: 16px;
 }
 
-.taskpage__cnt-search {
-  padding: 8px 16px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 8px;
-  border: 1px solid rgba(154, 159, 191, 0.15);
-}
+
 
 .taskpage__cnt-search input {
   width: 100%;
-    border: none;
-  height: 40px;
+  border: none;
+  height: 50px;
+  padding: 16px;
   font-family: inherit;
   font-size: 12px;
   font-weight: 400;
   color: #9a9fbf;
   border-radius: 8px;
   outline: none;
+  border-radius: 8px;
+  border: 1px solid rgba(154, 159, 191, 0.15);
 }
 
 .taskpage__cnt-search input::placeholder {
@@ -32,51 +28,46 @@
   color: #000b23;
 }
 
-
 .taskpage__cnt-taskprojects {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    padding: 16px 0px;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 16px 0px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 .taskpage__cnt-taskprojects::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
-
-  .taskpage__cnt-taskprojectsbtn {
-    height: 40px;
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 500;
-    background-color: #F6F9FC;
-    border-radius: 8px;
-    border: none;
-    color: #0184fb;
-    cursor: pointer;
-  }
- .taskpage__cnt-taskprojectsactive {
-    background-color: #0184fb;
-    color: #ffff;
-    height: 40px;
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-  }
- 
-
- 
+.taskpage__cnt-taskprojectsbtn {
+  height: 40px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f6f9fc;
+  border-radius: 8px;
+  border: none;
+  color: #0184fb;
+  cursor: pointer;
+}
+.taskpage__cnt-taskprojectsactive {
+  background-color: #0184fb;
+  color: #ffff;
+  height: 40px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

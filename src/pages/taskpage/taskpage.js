@@ -37,7 +37,6 @@ function Taskpage() {
 
       <div className="taskpage__cnt">
         <div className="taskpage__cnt-search">
-          <div>{searchBig}</div>
           <input type="text" placeholder="Search" />
         </div>
 
