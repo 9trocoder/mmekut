@@ -40,7 +40,9 @@ function Homepage() {
   };
 
   const handleChatClick = () => {};
-  const handleAddClick = () => {};
+  const handleAddClick = () => {
+    navigate("/task");
+  };
   const handleHomeClick = () => {
     navigate("/");
   };
