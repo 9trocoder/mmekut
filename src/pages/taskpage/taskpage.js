@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
+
 import {
   addIconBlue,
   addIconWhite,
-  calendarIcon,
   chatNotActive,
-  headerNotificationIcon,
   homeIconNotActive,
   profileNotActive,
+  searchBig,
   taskNotActive,
 } from "../../Utils/tools";
 import "./taskpage.css";
 
 function Taskpage() {
+  const [activeButton, setActiveButton] = useState("all");
   let navigate = useNavigate();
 
   const handleProfileClick = () => {};
@@ -32,12 +33,57 @@ function Taskpage() {
 
   return (
     <>
-      <HeaderBar
-        headerText="Tasks"
-        addIcon={addIconBlue}
-        calendarIcon={calendarIcon}
-        notificationIcon={headerNotificationIcon}
-      />
+      <HeaderBar headerText="Tasks" addIcon={addIconBlue} />
+
+      <div className="taskpage__cnt">
+        <div className="taskpage__cnt-search">
+          <div>{searchBig}</div>
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div className="taskpage__cnt-taskprojects">
+          <button
+            className={
+              activeButton === "all"
+                ? "taskpage__cnt-taskprojectsactive"
+                : "taskpage__cnt-taskprojectsbtn"
+            }
+            onClick={() => setActiveButton("all")}
+          >
+            All
+          </button>
+          <button
+            className={
+              activeButton === "todo"
+                ? "taskpage__cnt-taskprojectsactive"
+                : "taskpage__cnt-taskprojectsbtn"
+            }
+            onClick={() => setActiveButton("todo")}
+          >
+            To Do
+          </button>
+          <button
+            className={
+              activeButton === "inprogress"
+                ? "taskpage__cnt-taskprojectsactive"
+                : "taskpage__cnt-taskprojectsbtn"
+            }
+            onClick={() => setActiveButton("inprogress")}
+          >
+            In Progress
+          </button>
+          <button
+            className={
+              activeButton === "completed"
+                ? "taskpage__cnt-taskprojectsactive"
+                : "taskpage__cnt-taskprojectsbtn"
+            }
+            onClick={() => setActiveButton("completed")}
+          >
+            Completed
+          </button>
+        </div>
+      </div>
 
       <BottomNav
         addIcon={addIconWhite}
