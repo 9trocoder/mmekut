@@ -41,7 +41,7 @@ function Taskpage() {
         </div>
 
         <div className="taskpage__cnt-taskprojects">
-          <button
+          <div
             className={
               activeButton === "all"
                 ? "taskpage__cnt-taskprojectsactive"
@@ -50,8 +50,8 @@ function Taskpage() {
             onClick={() => setActiveButton("all")}
           >
             All
-          </button>
-          <button
+          </div>
+          <div
             className={
               activeButton === "todo"
                 ? "taskpage__cnt-taskprojectsactive"
@@ -60,8 +60,8 @@ function Taskpage() {
             onClick={() => setActiveButton("todo")}
           >
             To Do
-          </button>
-          <button
+          </div>
+          <div
             className={
               activeButton === "inprogress"
                 ? "taskpage__cnt-taskprojectsactive"
@@ -70,8 +70,8 @@ function Taskpage() {
             onClick={() => setActiveButton("inprogress")}
           >
             In Progress
-          </button>
-          <button
+          </div>
+          <div
             className={
               activeButton === "completed"
                 ? "taskpage__cnt-taskprojectsactive"
@@ -80,8 +80,16 @@ function Taskpage() {
             onClick={() => setActiveButton("completed")}
           >
             Completed
-          </button>
+          </div>
         </div>
+
+        <p>
+          is defined but never used no-unused-vars Line 9:8: 'WorkspaceTasklist'
+          is defined but never used no-unused-vars Line 19:3: 'arrowdownbutton'
+          is defined but never used no-unused-vars Line 33:10: 'activeIndex' is
+          assigned a value but never used no-unused-vars Line 33:23:
+          'setActiveIndex' is assigned a value but never used no-unused-vars
+        </p>
       </div>
 
       <BottomNav

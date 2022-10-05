@@ -3,8 +3,6 @@
   padding: 16px;
 }
 
-
-
 .taskpage__cnt-search input {
   width: 100%;
   border: none;
@@ -29,7 +27,8 @@
 }
 
 .taskpage__cnt-taskprojects {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50px 100px 150px 1fr;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -45,29 +44,29 @@
 
 .taskpage__cnt-taskprojectsbtn {
   height: 40px;
-  padding: 16px 24px;
+  padding: 16px 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: inherit;
   font-size: 14px;
   font-weight: 500;
   background-color: #f6f9fc;
   border-radius: 8px;
-  border: none;
   color: #0184fb;
   cursor: pointer;
+  white-space: no-wrap;
 }
 .taskpage__cnt-taskprojectsactive {
   background-color: #0184fb;
   color: #ffff;
   height: 40px;
-  padding: 16px 24px;
+  padding: 16px 16px;
   display: flex;
   align-items: center;
   font-family: inherit;
   font-size: 14px;
   font-weight: 500;
   border-radius: 8px;
-  border: none;
   cursor: pointer;
 }
