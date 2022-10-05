@@ -250,13 +250,13 @@ function Workspacepage() {
               </> */}
             </div>
 
-            <div className="createworkspace__inputitem">
+            {/* <div className="createworkspace__inputitem">
               <p>PRIVACY</p>
               <div className="createworkspace__privacy-cnt">
                 <p>Public</p>
                 {arrowdownbutton}
               </div>
-            </div>
+            </div> */}
             <BigButton
               buttonName="Create Workspace"
               handleClick={handleCreateWorkspace}
