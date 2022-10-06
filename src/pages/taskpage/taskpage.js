@@ -132,6 +132,42 @@ function Taskpage() {
             priority="HIGH"
             taskDate="12 days ago"
           />
+           <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task1}
+            priority="HIGH"
+            taskDate="45 mins ago"
+          />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="When you click on this, it will take you to the calender by the right"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task2}
+            priority="HIGH"
+            taskDate="1hr ago"
+          />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="See here ...the task screen"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task3}
+            priority="HIGH"
+            taskDate="15 days ago"
+          />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="Containers are add to enable the user click on the group"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task4}
+            priority="HIGH"
+            taskDate="12 days ago"
+          />
         </div>
       </div>
 
