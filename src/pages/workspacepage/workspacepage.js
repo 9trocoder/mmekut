@@ -121,8 +121,6 @@ function Workspacepage() {
     <>
       <HeaderBar
         headerText="Workspaces"
-        addIcon={addIconBlue}
-        handleAddClick={handleWorkspaceAddClick}
       />
 
       <div className="workspacepage__cnt">
@@ -349,7 +347,7 @@ function Workspacepage() {
         profileIcon={profileNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
-        handleAddClick={handleAddClick}
+        handleAddClick={handleWorkspaceAddClick}
         handleChatClick={handleChatClick}
         handleProfileClick={handleProfileClick}
       />
