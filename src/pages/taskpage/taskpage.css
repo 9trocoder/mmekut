@@ -1,9 +1,12 @@
 .taskpage__cnt {
   margin-top: 3.4rem;
-  padding: 16px;
   margin-bottom: 7rem;
 }
 
+
+.taskpage__cnt-search {
+  padding: 16px 16px 0px 16px;
+}
 .taskpage__cnt-search input {
   width: 100%;
   border: none;
@@ -16,6 +19,7 @@
   border-radius: 8px;
   outline: none;
   border-radius: 8px;
+
   border: 1px solid rgba(154, 159, 191, 0.15);
 }
 
@@ -28,12 +32,13 @@
 }
 
 .taskpage__cnt-taskprojects {
+
   display: grid;
   grid-template-columns: 50px 100px 150px 150px;
   align-items: center;
   gap: 1rem;
   width: 100%;
-  padding: 16px 0px;
+  padding: 16px 16px;
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -72,3 +77,8 @@
   cursor: pointer;
 }
 
+
+
+.taskpage__cnt-tasklist {
+  padding: 16px;
+}

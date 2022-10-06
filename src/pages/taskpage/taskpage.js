@@ -13,6 +13,7 @@ import {
   addIconWhite,
   chatNotActive,
   deleteSmallIcon,
+  dividerr,
   homeIconNotActive,
   profileNotActive,
   taskNotActive,
@@ -93,7 +94,7 @@ function Taskpage() {
             Completed
           </div>
         </div>
-
+            {dividerr}
         <div className="taskpage__cnt-tasklist">
           <TaskListCard
             projectName="Food Delivery App"
