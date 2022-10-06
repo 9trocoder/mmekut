@@ -1,3 +1,5 @@
+import { addIconWhite } from "../Utils/tools";
+
 const BottomNav = ({
   homeIcon,
   taskIcon,
@@ -12,6 +14,13 @@ const BottomNav = ({
 }) => {
   return (
     <>
+      <div
+        onClick={handleAddClick}
+        className="bottomnav__cnt-item bottomnav__cnt-itemadd"
+      >
+        <button>{addIconWhite}</button>
+      </div>
+
       <div className="bottomnav__cnt">
         <div onClick={handleHomeClick} className="bottomnav__cnt-item">
           <button>{homeIcon}</button>
@@ -19,9 +28,7 @@ const BottomNav = ({
         <div onClick={handleTaskClick} className="bottomnav__cnt-item">
           <button>{taskIcon}</button>
         </div>
-        <div onClick={handleAddClick} className="bottomnav__cnt-item bottomnav__cnt-itemadd">
-          <button>{addIcon}</button>
-        </div>
+
         <div onClick={handleChatClick} className="bottomnav__cnt-item">
           <button>{chatIcon}</button>
         </div>

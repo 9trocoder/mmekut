@@ -228,7 +228,7 @@
   width: 100%;
   border-top: 0.944073px solid rgba(154, 159, 191, 0.15);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr  1fr 1fr;
   padding: 20px 0;
   align-items: center;
   justify-content: center;
@@ -248,8 +248,9 @@
 }
 
 .bottomnav__cnt-itemadd {
-  /* background:  linear-gradient(94.38deg, #0184FB 14.99%, #46BDF0 92.22%); */
-  /* background-color: #0184fb;
+  position: fixed;
+  /* background:  linear-gradient(94.38deg, #0184FB 14.99%, #46BDF0 92.22%);  */
+  background-color: #0184fb;
   width: 70px;
   height: 70px;
   margin: 5px;
@@ -258,7 +259,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -3.5rem; */
+  margin-top: -3.5rem;
+  z-index: 100003;
+  bottom: 5rem;
+  right: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Header bar */
