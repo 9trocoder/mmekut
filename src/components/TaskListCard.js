@@ -20,7 +20,6 @@ function TaskListCard({
           <div className="taskListCard__cnt-topleft">
             <p className="tlctlprojectname">{projectName}</p>
             <p className="tlctltasktitle">{taskTitle}</p>
-            <p className="tlctltaskdescription">{taskDescription}</p>
           </div>
           {taskImage.length > 2 ? (
             <div className="taskimage__image_cnt">
@@ -53,6 +52,8 @@ function TaskListCard({
             </div>
           )}
         </div>
+        {dividerr}
+        <p className="tlctltaskdescription">{taskDescription}</p>
         {dividerr}
         <div className="taskListCard__cnt-bottom">
           <div className="taskListCard__cnt-bottomleft">

@@ -445,8 +445,9 @@
 }
 
 .taskListCard__cnt-top {
-  padding: 16px;
+  padding: 8px 16px;
   display: flex;
+  justify-content: space-between;
   gap: 2rem;
   cursor: pointer;
 
@@ -473,7 +474,6 @@
   font-size: 13px;
   font-weight: 600;
   color: #000b23;
-  margin-bottom: 1rem;
 }
 
 .tlctltaskdescription {
@@ -484,10 +484,65 @@
   font-size: 14px;
   font-weight: 400;
   color: #000b23;
+  padding: 16px 16px;
+}
+
+
+.taskimage__image_cnt {
+  display: flex;
+  position: relative;
+}
+
+.taskimage__image_cnt img {
+  width: 30px;
+  height: 30px;
+}
+
+.taskimage1 {
+  position: absolute;
+  left: 25px;
+  z-index: 1;
+}
+
+.taskimage2 {
+  position: absolute;
+  left: 50px;
+  z-index: 2;
+}
+
+
+
+.taskimage__members-num {
+  border: 1px solid rgba(154, 159, 191, 0.15);
+  width: max-content;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 9999px;
+
+}
+
+
+
+.taskimage__image-remaining {
+  left: 50px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #0184fb;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  z-index: 3;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
 }
 
 .taskListCard__cnt-bottom {
-  padding: 16px;
+  padding: 8px 16px;
   display: grid;
   grid-template-columns: 1fr 1fr 40px;
   align-items: center;
