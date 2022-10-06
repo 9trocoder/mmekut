@@ -33,7 +33,12 @@ function Homepage() {
 
   const handleNotificationClick = () => {};
 
-  const handleMyTaskClick = () => {};
+  const handleMyTaskClick = () => {
+    navigate("/task")
+  };
+  const handleMyChatClick = () => {
+    navigate("/chat")
+  };
 
   const handleTaskClick = () => {
     navigate("/workspace");
@@ -108,7 +113,7 @@ function Homepage() {
       <HeaderWithButton
         headerName="Chat"
         headerButtonName="View All"
-        handleClick={handleMyTaskClick}
+        handleClick={handleMyChatClick}
       />
 
       <div className="homepagethechat__cnt">
