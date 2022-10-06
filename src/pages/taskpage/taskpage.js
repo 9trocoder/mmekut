@@ -2,17 +2,23 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
+import p1 from "../../assets/images/p1.png";
+import p2 from "../../assets/images/p2.png";
+import p3 from "../../assets/images/p3.png";
+import p4 from "../../assets/images/p4.png";
+import p5 from "../../assets/images/p5.png";
 
 import {
   addIconBlue,
   addIconWhite,
   chatNotActive,
+  deleteSmallIcon,
   homeIconNotActive,
   profileNotActive,
-  searchBig,
   taskNotActive,
 } from "../../Utils/tools";
 import "./taskpage.css";
+import TaskListCard from "../../components/TaskListCard";
 
 function Taskpage() {
   const [activeButton, setActiveButton] = useState("all");
@@ -83,7 +89,9 @@ function Taskpage() {
           </div>
         </div>
 
-      
+        <div className="taskpage__cnt-tasklist">
+          <TaskListCard projectName="Food Delivery App" taskTitle="Design two app screens" taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen" deleteIcon={deleteSmallIcon}  />
+        </div>
       </div>
 
       <BottomNav

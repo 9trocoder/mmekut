@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AccordionLayout from "../../components/AccordionLayout";
+// import AccordionLayout from "../../components/AccordionLayout";
 import BigButton from "../../components/BigButton";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
 import Modal from "../../components/Modal";
 import TitleCard from "../../components/TitleCard";
-import WorkspaceTasklist from "../../components/WorkspaceTasklist";
+// import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import p1 from "../../assets/images/p1.png";
 import p2 from "../../assets/images/p2.png";
 import p3 from "../../assets/images/p3.png";
@@ -16,7 +16,7 @@ import p5 from "../../assets/images/p5.png";
 import {
   addIconBlue,
   addIconWhite,
-  arrowdownbutton,
+  // arrowdownbutton,
   chatNotActive,
   dividerr,
   editIcon,
@@ -30,7 +30,7 @@ import LinkCards from "../../components/LinkCards";
 
 function Workspacepage() {
   let navigate = useNavigate();
-  const [activeIndex, setActiveIndex] = useState(1);
+  // const [activeIndex, setActiveIndex] = useState(1);
   const [showcreateworkspace, setShowcreateworkspace] = useState(false);
   const [showAddWorkspaceMember, setShowAddWorkspaceMember] = useState(false);
   const [searchText, setSearchText] = useState("");
