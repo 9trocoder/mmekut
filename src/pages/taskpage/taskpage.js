@@ -102,6 +102,7 @@ function Taskpage() {
             deleteIcon={deleteSmallIcon}
             taskImage={task1}
             priority="HIGH"
+            taskDate="Mon, 10 July 2022"
           />
         </div>
       </div>

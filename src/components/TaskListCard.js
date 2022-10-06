@@ -18,9 +18,9 @@ function TaskListCard({
       <div className="taskListCard__cnt">
         <div onClick={handleClick} className="taskListCard__cnt-top">
           <div className="taskListCard__cnt-topleft">
-            <p>{projectName}</p>
-            <p>{taskTitle}</p>
-            <p>{taskDescription}</p>
+            <p className="tlctlprojectname">{projectName}</p>
+            <p className="tlctltasktitle">{taskTitle}</p>
+            <p className="tlctltaskdescription">{taskDescription}</p>
           </div>
           {taskImage.length > 2 ? (
             <div className="taskimage__image_cnt">
@@ -56,13 +56,16 @@ function TaskListCard({
         {dividerr}
         <div className="taskListCard__cnt-bottom">
           <div className="taskListCard__cnt-bottomleft">
-            <p>{taskDate}</p>
+            <p className="tlccbltaskdate">{taskDate}</p>
           </div>
           <div className="taskListCard__cnt-bottommiddle">
-            <p>PRIORITY</p>
-            <p>{priority}</p>
+            <p className="tlccblpriority">
+              PRIORITY <span>{priority}</span>
+            </p>
           </div>
-          <button onClick={handleDeleteClick}>{deleteIcon}</button>
+          <button className="tlccblbutton" onClick={handleDeleteClick}>
+            {deleteIcon}
+          </button>
         </div>
       </div>
     </>

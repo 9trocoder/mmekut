@@ -446,8 +446,79 @@
 
 .taskListCard__cnt-top {
   padding: 16px;
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+
+}
+
+
+
+.tlctlprojectname {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 600;
+  color:#9a9fbf;
+  margin-bottom: .2rem;
+}
+
+.tlctltasktitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000b23;
+  margin-bottom: 1rem;
+}
+
+.tlctltaskdescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000b23;
 }
 
 .taskListCard__cnt-bottom {
   padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 40px;
+  align-items: center;
+  
+}
+
+
+.tlccbltaskdate {
+  font-size: 11px;
+  font-weight: 700;
+  color: #000b23;
+}
+
+.tlccblpriority {
+  font-size: 11px;
+  font-weight: 700;
+  color:#9a9fbf;
+}
+
+.tlccblpriority span {
+  color:#27ae60;
+  margin-left: .5rem;
+}
+
+.tlccblbutton {
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
