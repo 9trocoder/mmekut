@@ -439,9 +439,10 @@
 
 /* Task list Card */
 .taskListCard__cnt {
-  border: 1px solid #9a9fbf15;
+  /* border: 1px solid #9a9fbf15; */
   border-radius: 8px;
   margin-bottom: 16px;
+  background-color: #9a9fbf15;
 }
 
 .taskListCard__cnt-top {
@@ -484,7 +485,7 @@ p.tlctltaskdescription {
 }
 
 .taskliscarddes__cnt {
-  padding: 8px 16px;
+  padding: 16px 16px;
 }
 
 .taskimage__image_cnt {
@@ -534,16 +535,16 @@ p.tlctltaskdescription {
 }
 
 .taskListCard__cnt-bottom {
-  padding: 8px 16px;
+  padding: 16px 16px;
   display: grid;
   grid-template-columns: 1fr 1fr 40px;
   align-items: center;
 }
 
 .tlccbltaskdate {
-  font-size: 11px;
-  font-weight: 700;
-  color: #000b23;
+  font-size: 10px;
+  font-weight: 500;
+  color: #0184fb;
 }
 
 .tlccblpriority {

@@ -16,7 +16,7 @@ function TaskListCard({
   return (
     <>
       <div className="taskListCard__cnt">
-        <div onClick={handleClick} className="taskListCard__cnt-top">
+        {/* <div onClick={handleClick} className="taskListCard__cnt-top">
           <div className="taskListCard__cnt-topleft">
             <p className="tlctlprojectname">{projectName}</p>
             <p className="tlctltasktitle">{taskTitle}</p>
@@ -52,7 +52,7 @@ function TaskListCard({
             </div>
           )}
         </div>
-        {dividerr}
+        {dividerr} */}
         <div className="taskliscarddes__cnt">
             <p className="tlctltaskdescription">{taskDescription}</p>
         </div>
