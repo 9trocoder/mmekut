@@ -437,23 +437,20 @@
   font-weight: 700;
 }
 
-
 /* Task list Card */
 .taskListCard__cnt {
   border: 1px solid #9a9fbf15;
   border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 .taskListCard__cnt-top {
   padding: 8px 16px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
   cursor: pointer;
-
 }
-
-
 
 .tlctlprojectname {
   display: -webkit-box;
@@ -462,8 +459,8 @@
   overflow: hidden;
   font-size: 10px;
   font-weight: 600;
-  color:#9a9fbf;
-  margin-bottom: .2rem;
+  color: #9a9fbf;
+  margin-bottom: 0.2rem;
 }
 
 .tlctltasktitle {
@@ -487,7 +484,6 @@
   padding: 16px 16px;
 }
 
-
 .taskimage__image_cnt {
   display: flex;
   position: relative;
@@ -497,20 +493,16 @@
   width: 30px;
   height: 30px;
 }
-
-.taskimage1 {
+.taskimage0 {
   position: absolute;
-  left: 25px;
+  right: 50px;
   z-index: 1;
 }
-
-.taskimage2 {
+.taskimage1 {
   position: absolute;
-  left: 50px;
+  right: 25px;
   z-index: 2;
 }
-
-
 
 .taskimage__members-num {
   border: 1px solid rgba(154, 159, 191, 0.15);
@@ -519,13 +511,10 @@
   font-size: 12px;
   font-weight: 400;
   border-radius: 9999px;
-
 }
 
-
-
 .taskimage__image-remaining {
-  left: 50px;
+  right: 0px;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -546,9 +535,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 40px;
   align-items: center;
-  
 }
-
 
 .tlccbltaskdate {
   font-size: 11px;
@@ -559,12 +546,12 @@
 .tlccblpriority {
   font-size: 11px;
   font-weight: 700;
-  color:#9a9fbf;
+  color: #9a9fbf;
 }
 
 .tlccblpriority span {
-  color:#27ae60;
-  margin-left: .5rem;
+  color: #27ae60;
+  margin-left: 0.5rem;
 }
 
 .tlccblbutton {

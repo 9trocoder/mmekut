@@ -104,6 +104,33 @@ function Taskpage() {
             priority="HIGH"
             taskDate="Mon, 10 July 2022"
           />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task2}
+            priority="HIGH"
+            taskDate="Mon, 10 July 2022"
+          />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task3}
+            priority="HIGH"
+            taskDate="Mon, 10 July 2022"
+          />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task4}
+            priority="HIGH"
+            taskDate="Mon, 10 July 2022"
+          />
         </div>
       </div>
 
