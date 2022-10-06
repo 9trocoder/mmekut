@@ -15,7 +15,7 @@ import p5 from "../../assets/images/p5.png";
 
 import {
   addIconBlue,
-  addIconWhite,
+  addIconNotActive,
   // arrowdownbutton,
   chatNotActive,
   dividerr,
@@ -84,9 +84,11 @@ function Workspacepage() {
     navigate("/workspace");
   };
 
-  const handleChatClick = () => {};
+  const handleChatClick = () => {
+    navigate("/chat");
+  };
   const handleAddClick = () => {
-    navigate("/task")
+    navigate("/task");
   };
   const handleHomeClick = () => {
     navigate("/");
@@ -342,7 +344,7 @@ function Workspacepage() {
       <BottomNav
         homeIcon={homeIconNotActive}
         taskIcon={taskActive}
-        addIcon={addIconWhite}
+        addIcon={addIconNotActive}
         chatIcon={chatNotActive}
         profileIcon={profileNotActive}
         handleHomeClick={handleHomeClick}

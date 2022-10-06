@@ -7,7 +7,7 @@ import p4image from "../../assets/images/p4.png";
 import p5image from "../../assets/images/p5.png";
 import "./homepage.css";
 import {
-  addIconWhite,
+  addIconNotActive,
   calendarIcon,
   chatNotActive,
   deliveredIcon,
@@ -39,7 +39,9 @@ function Homepage() {
     navigate("/workspace");
   };
 
-  const handleChatClick = () => {};
+  const handleChatClick = () => {
+    navigate("/chat");
+  };
   const handleAddClick = () => {
     navigate("/task");
   };
@@ -203,7 +205,7 @@ function Homepage() {
       <BottomNav
         homeIcon={homeIconActive}
         taskIcon={taskNotActive}
-        addIcon={addIconWhite}
+        addIcon={addIconNotActive}
         chatIcon={chatNotActive}
         profileIcon={profileNotActive}
         handleHomeClick={handleHomeClick}

@@ -9,8 +9,8 @@ import p4 from "../../assets/images/p4.png";
 import p5 from "../../assets/images/p5.png";
 
 import {
+  addIconActive,
   addIconBlue,
-  addIconWhite,
   chatNotActive,
   deleteSmallIcon,
   dividerr,
@@ -30,7 +30,9 @@ function Taskpage() {
     navigate("/workspace");
   };
 
-  const handleChatClick = () => {};
+  const handleChatClick = () => {
+    navigate("/chat");
+  };
   const handleAddClick = () => {
     navigate("/task");
   };
@@ -94,7 +96,7 @@ function Taskpage() {
             Completed
           </div>
         </div>
-            {dividerr}
+        {dividerr}
         <div className="taskpage__cnt-tasklist">
           <TaskListCard
             projectName="Food Delivery App"
@@ -132,7 +134,7 @@ function Taskpage() {
             priority="HIGH"
             taskDate="12 days ago"
           />
-           <TaskListCard
+          <TaskListCard
             projectName="Food Delivery App"
             taskTitle="Design two app screens"
             taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
@@ -172,7 +174,7 @@ function Taskpage() {
       </div>
 
       <BottomNav
-        addIcon={addIconWhite}
+        addIcon={addIconActive}
         taskIcon={taskNotActive}
         chatIcon={chatNotActive}
         profileIcon={profileNotActive}

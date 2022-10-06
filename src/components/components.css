@@ -229,10 +229,9 @@
   border-top: 0.944073px solid rgba(154, 159, 191, 0.15);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  height: 90px;
+  padding: 20px 0;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1.5rem;
   border-top: 1px solid #9a9fbf15;
 }
 
@@ -250,7 +249,7 @@
 
 .bottomnav__cnt-itemadd {
   /* background:  linear-gradient(94.38deg, #0184FB 14.99%, #46BDF0 92.22%); */
-  background-color: #0184fb;
+  /* background-color: #0184fb;
   width: 70px;
   height: 70px;
   margin: 5px;
@@ -259,7 +258,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -3.5rem;
+  margin-top: -3.5rem; */
 }
 
 /* Header bar */
