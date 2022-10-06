@@ -42,7 +42,7 @@ function TaskListCard({
               {taskImage.map((item, index) => (
                 <>
                   <img
-                    className={`taskimage${index}`}
+                    className="taskdjimage"
                     key={index}
                     src={item}
                     alt=""
@@ -53,7 +53,10 @@ function TaskListCard({
           )}
         </div>
         {dividerr}
-        <p className="tlctltaskdescription">{taskDescription}</p>
+        <div className="taskliscarddes__cnt">
+            <p className="tlctltaskdescription">{taskDescription}</p>
+        </div>
+        
         {dividerr}
         <div className="taskListCard__cnt-bottom">
           <div className="taskListCard__cnt-bottomleft">

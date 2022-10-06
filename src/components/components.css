@@ -473,7 +473,7 @@
   color: #000b23;
 }
 
-.tlctltaskdescription {
+p.tlctltaskdescription {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -481,7 +481,10 @@
   font-size: 13px;
   font-weight: 400;
   color: #000b23;
-  padding: 16px 16px;
+}
+
+.taskliscarddes__cnt {
+  padding: 8px 16px;
 }
 
 .taskimage__image_cnt {
