@@ -37,6 +37,11 @@ function Taskpage() {
     navigate("/");
   };
 
+  let task1 = [p1];
+  let task2 = [p2, p3, p4];
+  let task3 = [p4, p1, p5];
+  let task4 = [p3, p1, p4, p2, p5];
+
   return (
     <>
       <HeaderBar headerText="Tasks" addIcon={addIconBlue} />
@@ -90,7 +95,14 @@ function Taskpage() {
         </div>
 
         <div className="taskpage__cnt-tasklist">
-          <TaskListCard projectName="Food Delivery App" taskTitle="Design two app screens" taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen" deleteIcon={deleteSmallIcon}  />
+          <TaskListCard
+            projectName="Food Delivery App"
+            taskTitle="Design two app screens"
+            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+            deleteIcon={deleteSmallIcon}
+            taskImage={task1}
+            priority="HIGH"
+          />
         </div>
       </div>
 

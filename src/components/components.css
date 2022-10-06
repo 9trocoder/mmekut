@@ -436,3 +436,18 @@
   font-size: 13px;
   font-weight: 700;
 }
+
+
+/* Task list Card */
+.taskListCard__cnt {
+  border: 1px solid #9a9fbf15;
+  border-radius: 8px;
+}
+
+.taskListCard__cnt-top {
+  padding: 16px;
+}
+
+.taskListCard__cnt-bottom {
+  padding: 16px;
+}
