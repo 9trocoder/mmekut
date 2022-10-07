@@ -56,6 +56,10 @@ function Chatpage() {
           </div>
         </div>
         {dividerr}
+
+        <div className="chatpage__cnt-chat">
+            
+        </div>
       </div>
       <BottomNav
         addIcon={addIconNotActive}
