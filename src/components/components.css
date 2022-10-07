@@ -101,7 +101,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
 .homepageTaskCard__cnt-workspaceName {
@@ -112,7 +112,7 @@
 }
 
 .homepageTaskCard__cnt-taskTitle {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #000b23;
   display: -webkit-box;
