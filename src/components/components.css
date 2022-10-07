@@ -585,6 +585,7 @@ p.tlctltaskdescription {
 .groupsCard__cnt-top {
   display: flex;
   align-items: center;
+  gap: 2rem;
   justify-content: space-between;
 }
 
