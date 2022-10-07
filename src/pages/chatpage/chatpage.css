@@ -45,3 +45,8 @@
   cursor: pointer;
   border: none;
 }
+
+
+.chatpage__cnt-chat {
+    padding: 16px 16px;
+}
