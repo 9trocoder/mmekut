@@ -48,5 +48,14 @@
 
 
 .chatpage__cnt-chat {
+    height: 90vh;
     padding: 16px 16px;
-}
+    overflow-y: scroll;
+    margin-bottom: 3rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .chatpage__cnt-chat::-webkit-scrollbar {
+    display: none;
+  }
