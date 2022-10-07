@@ -167,6 +167,7 @@ function Chatpage() {
           {activeChatButton === "group" && (
             <>
               <GroupsCard groupName="Mmekut App" handleClick={handleGroupClick} groupUserImages={task4} notificationIcon={groupCardNotificationIcon} />
+              <GroupsCard groupName="9trocoder Tutorial Website" handleClick={handleGroupClick} groupUserImages={task3} notificationIcon={groupCardNotificationIcon} />
             </>
           )}
         </div>
