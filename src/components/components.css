@@ -571,3 +571,37 @@ p.tlctltaskdescription {
   background-color: transparent;
   cursor: pointer;
 }
+
+
+/* groups card */
+.groupsCard__cnt {
+  cursor: pointer;
+  border: 1px solid rgba(154, 159, 191, 0.15);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.groupsCard__cnt-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.groupsCard__cnt-topleft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.groupsCard__cnt-topgroupname {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.groupsCard__cnt-topgroupmembers {
+  font-size: 11px;
+  color:#9a9fbf;
+  border: 1px solid rgba(154, 159, 191, 0.15);
+  padding: 5px 10px;
+  border-radius: 9999px;
+}

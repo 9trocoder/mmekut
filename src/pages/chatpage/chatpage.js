@@ -12,6 +12,7 @@ import {
   chatActive,
   deliveredIcon,
   dividerr,
+  groupCardNotificationIcon,
   homeIconNotActive,
   profileNotActive,
   searchBig,
@@ -19,6 +20,11 @@ import {
 } from "../../Utils/tools";
 import "./chatpage.css";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
+import GroupsCard from "../../components/GroupsCard";
+let task1 = [p1image];
+let task2 = [p2image, p3image, p4image];
+let task3 = [p4image, p1image, p5image];
+let task4 = [p3image, p1image, p4image, p2image, p5image];
 
 function Chatpage() {
   const [activeChatButton, setActiveChatButton] = useState("all");
@@ -35,6 +41,7 @@ function Chatpage() {
   const handleHomeClick = () => {
     navigate("/");
   };
+  const handleGroupClick = () => {};
   return (
     <>
       <HeaderBar headerText="Chat" addIcon={searchBig} />
@@ -52,9 +59,9 @@ function Chatpage() {
           </div>
 
           <div
-            onClick={() => setActiveChatButton("org")}
+            onClick={() => setActiveChatButton("group")}
             className={
-              activeChatButton === "org"
+              activeChatButton === "group"
                 ? "chatpage__cnt-allbutton"
                 : "chatpage__cnt-allbuttonnotactive"
             }
@@ -155,6 +162,11 @@ function Chatpage() {
                 messageTime="11:44 AM"
                 message="See here ....the task screen emmanuel adeyemi"
               />
+            </>
+          )}
+          {activeChatButton === "group" && (
+            <>
+              <GroupsCard groupName="Mmekut App" handleClick={handleGroupClick} groupUserImages={task4} notificationIcon={groupCardNotificationIcon} />
             </>
           )}
         </div>
