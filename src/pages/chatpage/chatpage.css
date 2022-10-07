@@ -51,7 +51,7 @@
     height: 90vh;
     padding: 16px 16px;
     overflow-y: scroll;
-    margin-bottom: 3rem;
+    padding-bottom: 4rem;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
