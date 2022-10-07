@@ -14,7 +14,7 @@ import {
 import "./chatpage.css";
 
 function Chatpage() {
-  const [activeChatButton, setActiveChatButton] = useState("all")
+  const [activeChatButton, setActiveChatButton] = useState("all");
   let navigate = useNavigate();
   const handleProfileClick = () => {};
   const handleTaskClick = () => {
@@ -33,11 +33,25 @@ function Chatpage() {
       <HeaderBar headerText="Chat" addIcon={searchBig} />
       <div className="chatpage__cnt">
         <div className="chatpage__cnt-top">
-          <div className="chatpage__cnt-allbutton">
+          <div
+            onClick={() => setActiveChatButton("all")}
+            className={
+              activeChatButton === "all"
+                ? "chatpage__cnt-allbutton"
+                : "chatpage__cnt-allbuttonnotactive"
+            }
+          >
             <button>All Chats</button>
           </div>
 
-          <div className="chatpage__cnt-orgbutton">
+          <div
+            onClick={() => setActiveChatButton("org")}
+            className={
+              activeChatButton === "org"
+                ? "chatpage__cnt-allbutton"
+                : "chatpage__cnt-allbuttonnotactive"
+            }
+          >
             <button>Organisation</button>
           </div>
         </div>

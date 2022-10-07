@@ -1,56 +1,48 @@
 .chatpage__cnt {
-    margin-top: 2.6rem;
+  margin-top: 2.6rem;
 }
 
-.chatpage__cnt-top{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+.chatpage__cnt-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .chatpage__cnt-allbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-bottom: 3px solid #0184fb
+
+}
+
+.chatpage__cnt-allbuttonnotactive {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer
+    cursor: pointer;
+    border: 3px solid #fff;
 }
 
 .chatpage__cnt-allbutton button {
+  font-family: inherit;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.chatpage__cnt-allbuttonnotactive button {
     font-family: inherit;
-    background-color: transparent;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px;
-    cursor: pointer;
-    border: 3px solid #fff;
-
-}
-
-.chatpage__cnt-allbutton:hover button {
-    border-bottom: 3px solid #0184fb;
-}
-
-.chatpage__cnt-orgbutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.chatpage__cnt-orgbutton button {
-    font-family: inherit;
-    background-color: transparent;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px;
-    cursor: pointer;
-    border: 3px solid #fff;
-    
-
-}
-
-.chatpage__cnt-orgbutton:hover button {
-    border-bottom: 3px solid #0184fb;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
 }
