@@ -54,6 +54,7 @@
     padding-bottom: 4rem;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-color: rgba(154, 159, 191, 0.05);
   }
   
   .chatpage__cnt-chat::-webkit-scrollbar {
