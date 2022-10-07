@@ -29,7 +29,7 @@
 .chatpage__cnt-allbutton button {
   font-family: inherit;
   background-color: transparent;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   padding: 12px;
   cursor: pointer;
@@ -39,7 +39,7 @@
 .chatpage__cnt-allbuttonnotactive button {
     font-family: inherit;
   background-color: transparent;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   padding: 10px;
   cursor: pointer;
