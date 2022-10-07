@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
@@ -8,11 +8,13 @@ import {
   dividerr,
   homeIconNotActive,
   profileNotActive,
+  searchBig,
   taskNotActive,
 } from "../../Utils/tools";
 import "./chatpage.css";
 
 function Chatpage() {
+  const [activeChatButton, setActiveChatButton] = useState("all")
   let navigate = useNavigate();
   const handleProfileClick = () => {};
   const handleTaskClick = () => {
@@ -28,7 +30,7 @@ function Chatpage() {
   };
   return (
     <>
-      <HeaderBar headerText="Chat" />
+      <HeaderBar headerText="Chat" addIcon={searchBig} />
       <div className="chatpage__cnt">
         <div className="chatpage__cnt-top">
           <div className="chatpage__cnt-allbutton">
