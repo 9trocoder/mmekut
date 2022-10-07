@@ -22,7 +22,7 @@ function GroupsCard({
           </div>
         </div>
         {groupUserImages.length > 4 ? (
-          <div className="selected__image_cnt">
+          <div className="selected__image_cntt">
             {groupUserImages.slice(0, 4).map((item, index) => (
               <>
                 <img
@@ -39,7 +39,7 @@ function GroupsCard({
             </div>
           </div>
         ) : (
-          <div className="selected__image_cnt">
+          <div className="selected__image_cntt">
             {groupUserImages.map((item, index) => (
               <>
                 <img

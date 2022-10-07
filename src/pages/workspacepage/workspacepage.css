@@ -249,6 +249,12 @@
   position: relative;
 }
 
+.selected__image_cntt {
+  display: flex;
+  padding: 12px 16px 0px 0px;
+  position: relative;
+}
+
 .selected__image_cnt img {
   width: 45px;
   height: 45px;
