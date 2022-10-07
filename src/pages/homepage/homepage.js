@@ -87,7 +87,7 @@ function Homepage() {
       </div>
 
       <HeaderWithButton
-        headerName="My Tasks"
+        headerName="Projects"
         headerButtonName="View All"
         handleClick={handleMyTaskClick}
       />
