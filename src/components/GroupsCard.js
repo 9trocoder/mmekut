@@ -13,15 +13,14 @@ function GroupsCard({
         <div className="groupsCard__cnt-top">
           <div className="groupsCard__cnt-topleft">
             <p className="groupsCard__cnt-topgroupname">{groupName}</p>
-            <p className="groupsCard__cnt-topgroupmembers">
-              {groupUserImages.length} Members
-            </p>
+           
           </div>
           <div className="groupsCard__cnt-topnotification">
             {notificationIcon}
           </div>
         </div>
-        {groupUserImages.length > 4 ? (
+        <div className="letseeamlike">
+             {groupUserImages.length > 4 ? (
           <div className="selected__image_cntt">
             {groupUserImages.slice(0, 4).map((item, index) => (
               <>
@@ -32,6 +31,7 @@ function GroupsCard({
                   src={item}
                   alt=""
                 />
+                
               </>
             ))}
             <div style={{width: "40px", height: "40px"}} className="selected__image-remaining">
@@ -53,6 +53,11 @@ function GroupsCard({
             ))}
           </div>
         )}
+         <p className="groupsCard__cnt-topgroupmembers">
+              {groupUserImages.length} Members
+            </p>
+        </div>
+       
       </div>
     </>
   );
