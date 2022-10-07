@@ -597,6 +597,10 @@ p.tlctltaskdescription {
 .groupsCard__cnt-topgroupname {
   font-weight: 600;
   font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .groupsCard__cnt-topgroupmembers {
