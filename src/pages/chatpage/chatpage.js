@@ -5,6 +5,7 @@ import HeaderBar from "../../components/HeaderBar";
 import {
   addIconNotActive,
   chatActive,
+  dividerr,
   homeIconNotActive,
   profileNotActive,
   taskNotActive,
@@ -21,15 +22,25 @@ function Chatpage() {
   const handleChatClick = () => {
     navigate("/chat");
   };
-  const handleAddClick = () => {
-    navigate("/task");
-  };
+  const handleAddClick = () => {};
   const handleHomeClick = () => {
     navigate("/");
   };
   return (
     <>
       <HeaderBar headerText="Chat" />
+      <div className="chatpage__cnt">
+        <div className="chatpage__cnt-top">
+          <div className="chatpage__cnt-allbutton">
+            <button>All Chats</button>
+          </div>
+
+          <div className="chatpage__cnt-orgbutton">
+            <button>Organisation</button>
+          </div>
+        </div>
+        {dividerr}
+      </div>
       <BottomNav
         addIcon={addIconNotActive}
         taskIcon={taskNotActive}
