@@ -18,13 +18,16 @@ import {
   moreIcon,
   otherIcon,
   profileNotActive,
+  readIcon,
   searchBig,
+  singleTick,
   taskNotActive,
 } from "../../Utils/tools";
 import "./chatpage.css";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
 import GroupsCard from "../../components/GroupsCard";
 import ChatMessageModal from "../../components/ChatMessageHeader";
+import LeftChat from "../../components/LeftChat";
 let task1 = [p1image];
 let task2 = [p2image, p3image, p4image];
 let task3 = [p4image, p1image, p5image];
@@ -191,7 +194,11 @@ function Chatpage() {
                   userStatus={true}
                   searchIcon={searchBig}
                   moreIcon={otherIcon}
-                ></ChatMessageModal>
+                >
+                <LeftChat message="Hello world i am oladimeji adeyemi i am the programmer of mmekut app it is great meeting you guys" messageTime="1:10 PM" deliveryStatus={readIcon} />
+                
+
+                </ChatMessageModal>
               )}
             </>
           )}
