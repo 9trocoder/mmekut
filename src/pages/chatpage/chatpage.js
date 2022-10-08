@@ -195,7 +195,7 @@ function Chatpage() {
                   searchIcon={searchBig}
                   moreIcon={otherIcon}
                 >
-                <LeftChat message="Hello world i am oladimeji adeyemi i am the programmer of mmekut app it is great meeting you guys" messageTime="1:10 PM" deliveryStatus={readIcon} />
+                <LeftChat message="Hello, we have a meeting by 10" messageTime="1:10 PM" deliveryStatus={readIcon} />
                 
 
                 </ChatMessageModal>
