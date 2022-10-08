@@ -13,7 +13,10 @@ import {
   deliveredIcon,
   dividerr,
   groupCardNotificationIcon,
+  headerBackIcon,
   homeIconNotActive,
+  moreIcon,
+  otherIcon,
   profileNotActive,
   searchBig,
   taskNotActive,
@@ -21,6 +24,7 @@ import {
 import "./chatpage.css";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
 import GroupsCard from "../../components/GroupsCard";
+import ChatMessageModal from "../../components/ChatMessageHeader";
 let task1 = [p1image];
 let task2 = [p2image, p3image, p4image];
 let task3 = [p4image, p1image, p5image];
@@ -28,6 +32,7 @@ let task4 = [p3image, p1image, p4image, p2image, p5image];
 
 function Chatpage() {
   const [activeChatButton, setActiveChatButton] = useState("all");
+  const [userChatPage, setUserChatPage] = useState(false);
   let navigate = useNavigate();
   const handleProfileClick = () => {};
   const handleTaskClick = () => {
@@ -40,6 +45,9 @@ function Chatpage() {
   const handleAddClick = () => {};
   const handleHomeClick = () => {
     navigate("/");
+  };
+  const handleUserChatPageClose = () => {
+    setUserChatPage(false);
   };
   const handleGroupClick = () => {};
   return (
@@ -81,6 +89,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="Ok, I'll call you when i get there. and bring more snacks"
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -90,6 +99,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="Start Coding na"
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -99,6 +109,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="On the home screen, that first content, when you click on the 'view task', it will take you here."
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -108,6 +119,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="The containers are added to enable the user click on the group"
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -117,6 +129,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="See here ....the task screen emmanuel adeyemi"
+                handleClick={() => setUserChatPage(true)}
               />
               <ChatCardHomepage
                 userImage={p1image}
@@ -125,6 +138,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="Ok, I'll call you when i get there. and bring more snacks"
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -134,6 +148,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="Start Coding na"
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -143,6 +158,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="On the home screen, that first content, when you click on the 'view task', it will take you here."
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -152,6 +168,7 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="The containers are added to enable the user click on the group"
+                handleClick={() => setUserChatPage(true)}
               />
 
               <ChatCardHomepage
@@ -161,13 +178,37 @@ function Chatpage() {
                 messageStatus={deliveredIcon}
                 messageTime="11:44 AM"
                 message="See here ....the task screen emmanuel adeyemi"
+                handleClick={() => setUserChatPage(true)}
               />
+
+              {userChatPage && (
+                <ChatMessageModal
+                  zIndex={10002}
+                  handleCloseClick={handleUserChatPageClose}
+                  closeIcon={headerBackIcon}
+                  userName="Alexander"
+                  userImage={p4image}
+                  userStatus={true}
+                  searchIcon={searchBig}
+                  moreIcon={otherIcon}
+                ></ChatMessageModal>
+              )}
             </>
           )}
           {activeChatButton === "group" && (
             <>
-              <GroupsCard groupName="Mmekut App" handleClick={handleGroupClick} groupUserImages={task4} notificationIcon={groupCardNotificationIcon} />
-              <GroupsCard groupName="9trocoder Tutorial Website with UI/UX design" handleClick={handleGroupClick} groupUserImages={task3} notificationIcon={groupCardNotificationIcon} />
+              <GroupsCard
+                groupName="Mmekut App"
+                handleClick={handleGroupClick}
+                groupUserImages={task4}
+                notificationIcon={groupCardNotificationIcon}
+              />
+              <GroupsCard
+                groupName="9trocoder Tutorial Website with UI/UX design"
+                handleClick={handleGroupClick}
+                groupUserImages={task3}
+                notificationIcon={groupCardNotificationIcon}
+              />
             </>
           )}
         </div>
