@@ -715,8 +715,8 @@ p.tlctltaskdescription {
   min-width: 10vw;
   width: max-content;
   max-width: 80vw;
-  padding: 10px 12px;
-  border-radius: 8px 8px 8px 8px;
+  padding: 16px 16px;
+  border-radius: 20px 20px 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -732,11 +732,13 @@ p.tlctltaskdescription {
 .leftChat__cnt-delivery {
   display: flex;
   gap: 0.4rem;
+  margin-top: .5rem;
 }
 
 .leftChat__cnt-delivery p {
   color: #9a9fbf;
   font-size: 11px;
   font-weight: 500;
+  margin-bottom: 0rem !important;
 }
 

@@ -5,12 +5,11 @@ const LeftChat = ({ message, messageTime, deliveryStatus }) => {
     <>
       <div className="leftChat__cnt">
         <p>{message}</p>
-        <div className="leftChat__cnt-delivery">
-          <p>{messageTime}</p>
-          {deliveryStatus}
-        </div>
       </div>
-      <div className="leftChat__cnticon" />
+      <div className="leftChat__cnt-delivery">
+        <p>{messageTime}</p>
+        {deliveryStatus}
+      </div>
     </>
   );
 };
