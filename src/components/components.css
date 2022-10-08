@@ -705,7 +705,7 @@ p.tlctltaskdescription {
   padding: 16px 16px;
   display: flex;
   flex-direction: column;
-  /* background-color: #9a9fbf15; */
+  background-color: #9a9fbf15;
   height: 85vh;
 }
 
@@ -718,7 +718,7 @@ p.tlctltaskdescription {
   padding: 10px 12px;
   border-radius: 8px 8px 8px 0px;
 
-  border-left: 2px solid #0184fb;
+  border-left: 1px solid #0184fb;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -743,11 +743,3 @@ p.tlctltaskdescription {
   font-weight: 500;
 }
 
-.leftChat__cnticon {
-  width: 10px;
-  height: 10px;
-  background-color: #0184fb;
-  border-bottom-right-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
