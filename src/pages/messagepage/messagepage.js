@@ -14,7 +14,7 @@ import "./messagepage.css";
 function Messagepage() {
   let navigate = useNavigate();
   const handleUserChatPageClose = () => {
-    navigate(-1);
+    navigate("/chat");
   };
   return (
     <>
