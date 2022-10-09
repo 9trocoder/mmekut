@@ -39,6 +39,16 @@ function Messagepage() {
           messageTime="11:00 AM"
           deliveryStatus={readIcon}
         />
+        <LeftChat
+          message="Website for donkeyfarm!"
+          messageTime="2:11 PM"
+          deliveryStatus={readIcon}
+        />
+        <RightChat
+          message="Oh, my God, I completely forgot, sorry, of course, I'll be there!"
+          messageTime="11:15 Am"
+          deliveryStatus={readIcon}
+        />
       </ChatMessageModal>
     </>
   );
