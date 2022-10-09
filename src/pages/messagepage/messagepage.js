@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ChatMessageModal from "../../components/ChatMessageHeader";
 import LeftChat from "../../components/LeftChat";
 import {
+  addIconWhite,
   headerBackIcon,
   otherIcon,
   readIcon,
@@ -49,6 +50,10 @@ function Messagepage() {
           messageTime="11:15 AM"
           deliveryStatus={readIcon}
         />
+        <div className="chatMessageBottom__cnt">
+          <div className="chatMessageBottom__cnt-left">{addIconWhite}</div>
+          <input type="text" placeholder="Write a message..." />
+        </div>
       </ChatMessageModal>
     </>
   );
