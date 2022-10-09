@@ -1,7 +1,7 @@
 export const headerNotificationIcon = (
   <svg
-    width="30"
-    height="30"
+    width="26"
+    height="26"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -193,8 +193,8 @@ export const singleTick = (
 
 export const calendarIcon = (
   <svg
-    width="26"
-    height="26"
+    width="24"
+    height="24"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -374,8 +374,8 @@ export const addIconNotActive = (
 
 export const homeIconActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -392,8 +392,8 @@ export const homeIconActive = (
 
 export const homeIconNotActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -440,8 +440,8 @@ export const homeIconNotActive = (
 
 export const chatActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -455,8 +455,8 @@ export const chatActive = (
 
 export const chatNotActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -470,8 +470,8 @@ export const chatNotActive = (
 
 export const taskActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -485,8 +485,8 @@ export const taskActive = (
 
 export const taskNotActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -500,8 +500,8 @@ export const taskNotActive = (
 
 export const profileActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -517,8 +517,8 @@ export const profileActive = (
 
 export const profileNotActive = (
   <svg
-    width="26"
-    height="26"
+    width="20"
+    height="20"
     viewBox="0 0 26 26"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

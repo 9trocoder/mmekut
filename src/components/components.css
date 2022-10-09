@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 9999;
-  padding: 8px 16px;
+  padding: 6px 16px;
   border-bottom: 1px solid #9a9fbf15;
 }
 
@@ -229,7 +229,7 @@
   border-top: 0.944073px solid rgba(154, 159, 191, 0.15);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 20px 0;
+  padding: 12px 0;
   align-items: center;
   justify-content: center;
   border-top: 1px solid #9a9fbf15;

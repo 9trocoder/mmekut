@@ -35,7 +35,7 @@ function Messagepage() {
           deliveryStatus={readIcon}
         />
         <RightChat
-          message="Alright i will fix the meeting to the time is okay for everyone"
+          message="Alright i will fix the meeting to the time is okay for everyone. So the meeting would be on Google Meeting or Zoom meeting. Please kindly attend all meeting."
           messageTime="11:00 AM"
           deliveryStatus={readIcon}
         />
