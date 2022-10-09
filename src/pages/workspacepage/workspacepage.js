@@ -17,12 +17,16 @@ import {
   addIconNotActive,
   // arrowdownbutton,
   chatNotActive,
+  chatTextNotActive,
   dividerr,
   editIcon,
   headerBackIcon,
   homeIconNotActive,
+  homeTextNotActive,
   profileNotActive,
+  profileTextNotActive,
   taskActive,
+  workspaceTextActive,
 } from "../../Utils/tools";
 import "./workspacepage.css";
 import LinkCards from "../../components/LinkCards";
@@ -337,10 +341,14 @@ function Workspacepage() {
 
       <BottomNav
         homeIcon={homeIconNotActive}
+        homeText={homeTextNotActive}
         taskIcon={taskActive}
+        taskText={workspaceTextActive}
         addIcon={addIconNotActive}
         chatIcon={chatNotActive}
+        chatText={chatTextNotActive}
         profileIcon={profileNotActive}
+        profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
         handleAddClick={handleWorkspaceAddClick}
