@@ -10,13 +10,18 @@ import p5image from "../../assets/images/p5.png";
 import {
   addIconNotActive,
   chatActive,
+  chatTextActive,
+  chatTextNotActive,
   deliveredIcon,
   dividerr,
   groupCardNotificationIcon,
   homeIconNotActive,
+  homeTextNotActive,
   profileNotActive,
+  profileTextNotActive,
   searchBig,
   taskNotActive,
+  workspaceTextNotActive,
 } from "../../Utils/tools";
 import "./chatpage.css";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
@@ -198,9 +203,13 @@ function Chatpage() {
       <BottomNav
         addIcon={addIconNotActive}
         taskIcon={taskNotActive}
+        taskText={workspaceTextNotActive}
         chatIcon={chatActive}
+        chatText={chatTextActive}
         profileIcon={profileNotActive}
+        profileText={profileTextNotActive}
         homeIcon={homeIconNotActive}
+        homeText={homeTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
         handleAddClick={handleAddClick}
