@@ -554,10 +554,8 @@ export const dividerr = <div className="ddiverder" />;
 export const homeTextActive = <p className="text__active">Home</p>;
 export const homeTextNotActive = <p className="text__not-active">Home</p>;
 
-export const workspaceTextActive = <p className="text__active">Workspace</p>;
-export const workspaceTextNotActive = (
-  <p className="text__not-active">Workspace</p>
-);
+export const workspaceTextActive = <p className="text__active">Task</p>;
+export const workspaceTextNotActive = <p className="text__not-active">Task</p>;
 export const chatTextActive = <p className="text__active">Chat</p>;
 export const chatTextNotActive = <p className="text__not-active">Chat</p>;
 export const profileTextActive = <p className="text__active">Profile</p>;
