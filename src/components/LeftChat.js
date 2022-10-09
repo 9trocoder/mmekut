@@ -2,7 +2,7 @@ import "./components.css";
 
 const LeftChat = ({ message, messageTime, deliveryStatus }) => {
   return (
-    <>
+    <div className="leftChatcnt">
       <div className="leftChat__cnt">
         <p>{message}</p>
       </div>
@@ -10,7 +10,7 @@ const LeftChat = ({ message, messageTime, deliveryStatus }) => {
         <p>{messageTime}</p>
         {deliveryStatus}
       </div>
-    </>
+    </div>
   );
 };
 

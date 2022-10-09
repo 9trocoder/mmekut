@@ -10,6 +10,7 @@ import {
 } from "../../Utils/tools";
 import p4image from "../../assets/images/p4.png";
 import "./messagepage.css";
+import RightChat from "../../components/RightChat";
 
 function Messagepage() {
   let navigate = useNavigate();
@@ -31,6 +32,11 @@ function Messagepage() {
         <LeftChat
           message="Hello, we have a meeting by 10"
           messageTime="1:10 PM"
+          deliveryStatus={readIcon}
+        />
+        <RightChat
+          message="Alright i will fix the meeting to the time is okay for everyone"
+          messageTime="11:00 AM"
           deliveryStatus={readIcon}
         />
       </ChatMessageModal>

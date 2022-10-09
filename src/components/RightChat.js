@@ -1,9 +1,19 @@
 import React from 'react'
 import "./components.css"
 
-function RightChat() {
+function RightChat({message, messageTime, deliveryStatus}) {
   return (
-    <div>RightChat</div>
+    <>
+      <div className="rightChatcnt">
+        <div className="rightChat__cnt">
+          <p>{message}</p>
+        </div>
+        <div className="rightChat__cnt-delivery">
+          <p>{messageTime}</p>
+          {deliveryStatus}
+        </div>
+      </div>
+    </>
   )
 }
 

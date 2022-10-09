@@ -710,6 +710,9 @@ p.tlctltaskdescription {
 }
 
 /* Left Chat */
+.leftChatcnt {
+  padding: 8px 0;
+}
 .leftChat__cnt {
   background-color: #fff;
   min-width: 10vw;
@@ -733,6 +736,7 @@ p.tlctltaskdescription {
   display: flex;
   gap: 0.4rem;
   margin-top: .5rem;
+  align-items: center;
 }
 
 .leftChat__cnt-delivery p {
@@ -742,3 +746,46 @@ p.tlctltaskdescription {
   margin-bottom: 0rem !important;
 }
 
+
+/* Right Chat */
+
+.rightChatcnt {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end
+}
+
+.rightChat__cnt {
+  min-width: 10vw;
+  width: max-content;
+  max-width: 80vw;
+  padding: 16px 16px;
+  border-radius: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #0184fb;
+  margin-top: 8px;
+}
+
+.rightChat__cnt p {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.rightChat__cnt-delivery {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+.rightChat__cnt-delivery p {
+  color: #9a9fbf;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 0rem !important;
+}
