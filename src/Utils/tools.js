@@ -551,7 +551,6 @@ export const dividerr = <div className="ddiverder" />;
 
 // rgba(154, 159, 191, 0.25)
 
-
 export const homeTextActive = <p className="text__active">Home</p>;
 export const homeTextNotActive = <p className="text__not-active">Home</p>;
 
@@ -560,10 +559,6 @@ export const workspaceTextNotActive = (
   <p className="text__not-active">Workspace</p>
 );
 export const chatTextActive = <p className="text__active">Chat</p>;
-export const chatTextNotActive = (
-  <p className="text__not-active">Messages</p>
-);
+export const chatTextNotActive = <p className="text__not-active">Chat</p>;
 export const profileTextActive = <p className="text__active">Profile</p>;
-export const profileTextNotActive = (
-  <p className="text__not-active">Settings</p>
-);
+export const profileTextNotActive = <p className="text__not-active">Profile</p>;
