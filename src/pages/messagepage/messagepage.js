@@ -51,8 +51,10 @@ function Messagepage() {
           deliveryStatus={readIcon}
         />
         <div className="chatMessageBottom__cnt">
-          <div className="chatMessageBottom__cnt-left">{addIconWhite}</div>
-          <input type="text" placeholder="Write a message..." />
+          <div className="cmbc_look">
+            <div className="chatMessageBottom__cnt-left">{addIconWhite}</div>
+            <textarea type="text" placeholder="Write a message..." />
+          </div>
         </div>
       </ChatMessageModal>
     </>
