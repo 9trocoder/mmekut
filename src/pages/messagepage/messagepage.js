@@ -4,6 +4,7 @@ import ChatMessageModal from "../../components/ChatMessageHeader";
 import LeftChat from "../../components/LeftChat";
 import {
   addIconWhite,
+  addIconWhiteSmall,
   headerBackIcon,
   otherIcon,
   readIcon,
@@ -52,9 +53,10 @@ function Messagepage() {
         />
         <div className="chatMessageBottom__cnt">
           <div className="cmbc_look">
-            <div className="chatMessageBottom__cnt-left">{addIconWhite}</div>
-            <textarea type="text" placeholder="Write a message..." />
+            <div className="chatMessageBottom__cnt-left">{addIconWhiteSmall}</div>
+            <input type="text" placeholder="Write a message..." />
           </div>
+          <button>Send</button>
         </div>
       </ChatMessageModal>
     </>
