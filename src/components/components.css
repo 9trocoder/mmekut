@@ -244,7 +244,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 0 0;
+  font-family: inherit;
 }
 
 .bottomnav__cnt-itemadd {

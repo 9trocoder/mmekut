@@ -10,11 +10,16 @@ import {
   addIconNotActive,
   calendarIcon,
   chatNotActive,
+  chatTextActive,
+  chatTextNotActive,
   deliveredIcon,
   headerNotificationIcon,
   homeIconActive,
+  homeTextActive,
   profileNotActive,
+  profileTextNotActive,
   taskNotActive,
+  workspaceTextNotActive,
 } from "../../Utils/tools";
 
 import ProgressBar from "../../components/ProgressBar";
@@ -222,10 +227,14 @@ function Homepage() {
 
       <BottomNav
         homeIcon={homeIconActive}
+        homeText={homeTextActive}
         taskIcon={taskNotActive}
+        taskText={workspaceTextNotActive}
         addIcon={addIconNotActive}
         chatIcon={chatNotActive}
+        chatText={chatTextNotActive}
         profileIcon={profileNotActive}
+        profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
         handleAddClick={handleAddClick}

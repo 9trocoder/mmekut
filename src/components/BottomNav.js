@@ -2,10 +2,15 @@ import { addIconWhite } from "../Utils/tools";
 
 const BottomNav = ({
   homeIcon,
+  homeText,
+  workspaceText,
   taskIcon,
+  taskText,
   addIcon,
   chatIcon,
+  chatText,
   profileIcon,
+  profileText,
   handleHomeClick,
   handleTaskClick,
   handleAddClick,
@@ -23,17 +28,29 @@ const BottomNav = ({
 
       <div className="bottomnav__cnt">
         <div onClick={handleHomeClick} className="bottomnav__cnt-item">
-          <button>{homeIcon}</button>
+          <button>
+            <div className="bottomnav__icon">{homeIcon}</div>
+            <div className="bottomnav__text">{homeText}</div>
+          </button>
         </div>
         <div onClick={handleTaskClick} className="bottomnav__cnt-item">
-          <button>{taskIcon}</button>
+          <button>
+            <div className="bottomnav__icon">{taskIcon}</div>
+            <div className="bottomnav__text">{taskText}</div>
+          </button>
         </div>
 
         <div onClick={handleChatClick} className="bottomnav__cnt-item">
-          <button>{chatIcon}</button>
+          <button>
+            <div className="bottomnav__icon">{chatIcon}</div>
+            <div className="bottomnav__text">{chatText}</div>
+          </button>
         </div>
         <div onClick={handleProfileClick} className="bottomnav__cnt-item">
-          <button>{profileIcon}</button>
+          <button>
+            <div className="bottomnav__icon">{profileIcon}</div>
+            <div className="bottomnav__text">{profileText}</div>
+          </button>
         </div>
       </div>
     </>
