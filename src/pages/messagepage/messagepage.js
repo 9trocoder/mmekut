@@ -46,7 +46,7 @@ function Messagepage() {
         />
         <RightChat
           message="Oh, my God, I completely forgot, sorry, of course, I'll be there!"
-          messageTime="11:15 Am"
+          messageTime="11:15 AM"
           deliveryStatus={readIcon}
         />
       </ChatMessageModal>
