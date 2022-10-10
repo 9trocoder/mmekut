@@ -5,7 +5,6 @@ import BigButton from "../../components/BigButton";
 import BottomNav from "../../components/BottomNav";
 import HeaderBar from "../../components/HeaderBar";
 import Modal from "../../components/Modal";
-import TitleCard from "../../components/TitleCard";
 // import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import p1 from "../../assets/images/p1.png";
 import p2 from "../../assets/images/p2.png";
@@ -30,7 +29,6 @@ import {
   workspaceTextActive,
 } from "../../Utils/tools";
 import "./workspacepage.css";
-import LinkCards from "../../components/LinkCards";
 import TaskListCard from "../../components/TaskListCard";
 
 function Workspacepage() {
