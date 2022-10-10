@@ -23,6 +23,7 @@ import {
   headerBackIcon,
   homeIconNotActive,
   homeTextNotActive,
+  otherIcon,
   profileNotActive,
   profileTextNotActive,
   taskActive,
