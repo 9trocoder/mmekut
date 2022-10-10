@@ -3,14 +3,13 @@
   margin-bottom: 3.5rem;
 }
 
-
 .taskpage__cnt-search {
   padding: 16px 16px 0px 16px;
 }
 .taskpage__cnt-search input {
   width: 100%;
   border: none;
-  height: 50px;
+  height: 40px;
   padding: 16px;
   font-family: inherit;
   font-size: 12px;
@@ -32,13 +31,12 @@
 }
 
 .taskpage__cnt-taskprojects {
-
   display: grid;
   grid-template-columns: 50px 100px 150px 150px;
   align-items: center;
   gap: 1rem;
   width: 100%;
-  padding: 16px 16px;
+  padding: 16px 16px 16px 16px;
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -76,8 +74,6 @@
   border-radius: 8px;
   cursor: pointer;
 }
-
-
 
 .taskpage__cnt-tasklist {
   padding: 16px;
