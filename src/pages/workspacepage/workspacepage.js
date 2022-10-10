@@ -23,9 +23,9 @@ import {
   headerBackIcon,
   homeIconNotActive,
   homeTextNotActive,
-  otherIcon,
   profileNotActive,
   profileTextNotActive,
+  searchBig,
   taskActive,
   workspaceTextActive,
 } from "../../Utils/tools";
@@ -122,7 +122,7 @@ function Workspacepage() {
 
   return (
     <>
-      <HeaderBar headerText="Project" />
+      <HeaderBar headerText="Project" addIcon={searchBig} />
 
       <div className="workspacepage__cnt">
         <div className="chatpage__cnt-top">
