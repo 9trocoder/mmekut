@@ -201,9 +201,9 @@ function Workspacepage() {
         {activeTaskButton === "task" && (
           <>
             <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
-              <div className="taskpage__cnt-search">
+              {/* <div className="taskpage__cnt-search">
                 <input type="text" placeholder="Search" />
-              </div>
+              </div> */}
               <div className="taskpage__cnt-taskprojects">
                 <div
                   className={
