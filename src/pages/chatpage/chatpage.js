@@ -11,7 +11,6 @@ import {
   addIconNotActive,
   chatActive,
   chatTextActive,
-  chatTextNotActive,
   deliveredIcon,
   dividerr,
   groupCardNotificationIcon,

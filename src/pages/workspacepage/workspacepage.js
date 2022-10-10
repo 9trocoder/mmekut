@@ -18,6 +18,7 @@ import {
   // arrowdownbutton,
   chatNotActive,
   chatTextNotActive,
+  deleteSmallIcon,
   dividerr,
   editIcon,
   headerBackIcon,
@@ -30,6 +31,7 @@ import {
 } from "../../Utils/tools";
 import "./workspacepage.css";
 import LinkCards from "../../components/LinkCards";
+import TaskListCard from "../../components/TaskListCard";
 
 function Workspacepage() {
   let navigate = useNavigate();
@@ -38,6 +40,8 @@ function Workspacepage() {
   const [showAddWorkspaceMember, setShowAddWorkspaceMember] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [selected, setSelected] = useState([]);
+  const [activeTaskButton, setActiveTaskButton] = useState("workspace");
+  const [activeButton, setActiveButton] = useState("all");
 
   const onSearch = (text) => {
     setSearchText(text.length > 0 ? text.toLowerCase() : "");
@@ -119,18 +123,43 @@ function Workspacepage() {
 
   return (
     <>
-      <HeaderBar
-        headerText="Workspaces"
-      />
+      <HeaderBar headerText="Task" />
 
       <div className="workspacepage__cnt">
-        <TitleCard name="My Work Spaces" />
+        <div className="chatpage__cnt-top">
+          <div
+            onClick={() => setActiveTaskButton("workspace")}
+            className={
+              activeTaskButton === "workspace"
+                ? "chatpage__cnt-allbutton"
+                : "chatpage__cnt-allbuttonnotactive"
+            }
+          >
+            <button>Workspace</button>
+          </div>
+          <div
+            onClick={() => setActiveTaskButton("task")}
+            className={
+              activeTaskButton === "task"
+                ? "chatpage__cnt-allbutton"
+                : "chatpage__cnt-allbuttonnotactive"
+            }
+          >
+            <button>Tasks</button>
+          </div>
+        </div>
         {dividerr}
-        <LinkCards cardName="Mmekut App" handleClick={() => {}} />
-        {dividerr}
-        <LinkCards cardName="Ushy" handleClick={() => {}} />
-        {dividerr}
-        {/* <AccordionLayout
+
+        {activeTaskButton === "workspace" && (
+          <>
+            <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
+              {/* <TitleCard name="My Work Spaces" />
+              {dividerr}
+              <LinkCards cardName="Mmekut App" handleClick={() => {}} />
+              {dividerr}
+              <LinkCards cardName="Ushy" handleClick={() => {}} />
+              {dividerr} */}
+              {/* <AccordionLayout
           title="Mmekut App"
           index={1}
           activeIndex={activeIndex}
@@ -166,6 +195,128 @@ function Workspacepage() {
             progressNumber={100}
           />
         </AccordionLayout> */}
+            </div>
+          </>
+        )}
+
+        {activeTaskButton === "task" && (
+          <>
+            <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
+              <div className="taskpage__cnt-search">
+                <input type="text" placeholder="Search" />
+              </div>
+              <div className="taskpage__cnt-taskprojects">
+                <div
+                  className={
+                    activeButton === "all"
+                      ? "taskpage__cnt-taskprojectsactive"
+                      : "taskpage__cnt-taskprojectsbtn"
+                  }
+                  onClick={() => setActiveButton("all")}
+                >
+                  All
+                </div>
+                <div
+                  className={
+                    activeButton === "todo"
+                      ? "taskpage__cnt-taskprojectsactive"
+                      : "taskpage__cnt-taskprojectsbtn"
+                  }
+                  onClick={() => setActiveButton("todo")}
+                >
+                  To Do
+                </div>
+                <div
+                  className={
+                    activeButton === "inprogress"
+                      ? "taskpage__cnt-taskprojectsactive"
+                      : "taskpage__cnt-taskprojectsbtn"
+                  }
+                  onClick={() => setActiveButton("inprogress")}
+                >
+                  In Progress
+                </div>
+                <div
+                  className={
+                    activeButton === "completed"
+                      ? "taskpage__cnt-taskprojectsactive"
+                      : "taskpage__cnt-taskprojectsbtn"
+                  }
+                  onClick={() => setActiveButton("completed")}
+                >
+                  Completed
+                </div>
+              </div>
+              {dividerr}
+              <div className="taskpage__cnt-tasklist">
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="45 mins ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="When you click on this, it will take you to the calender by the right"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="1hr ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="See here ...the task screen"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="15 days ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="Containers are add to enable the user click on the group"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="12 days ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="45 mins ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="When you click on this, it will take you to the calender by the right"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="1hr ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="See here ...the task screen"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="15 days ago"
+                />
+                <TaskListCard
+                  projectName="Food Delivery App"
+                  taskTitle="Design two app screens"
+                  taskDescription="Containers are add to enable the user click on the group"
+                  deleteIcon={deleteSmallIcon}
+                  priority="HIGH"
+                  taskDate="12 days ago"
+                />
+              </div>
+            </div>
+          </>
+        )}
       </div>
 
       {showcreateworkspace && (

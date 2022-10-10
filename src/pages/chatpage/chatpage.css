@@ -14,16 +14,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border-bottom: 2px solid #0184fb
-
+  border-bottom: 2px solid #0184fb;
 }
 
 .chatpage__cnt-allbuttonnotactive {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-bottom: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
 }
 
 .chatpage__cnt-allbutton button {
@@ -37,7 +36,7 @@
 }
 
 .chatpage__cnt-allbuttonnotactive button {
-    font-family: inherit;
+  font-family: inherit;
   background-color: transparent;
   font-size: 12px;
   font-weight: 600;
@@ -46,17 +45,21 @@
   border: none;
 }
 
-
 .chatpage__cnt-chat {
-    height: 85vh;
-    padding: 16px 16px;
-    overflow-y: scroll;
-    padding-bottom: 4rem;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    background-color: rgba(154, 159, 191, 0.05);
-  }
-  
-  .chatpage__cnt-chat::-webkit-scrollbar {
-    display: none;
-  }
+  height: 85vh;
+  padding: 16px 16px;
+  overflow-y: scroll;
+  padding-bottom: 4rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: rgba(154, 159, 191, 0.05);
+}
+
+.chatpage__cnt-chatdif {
+  background-color: #fff;
+  padding: 0px 0px;
+}
+
+.chatpage__cnt-chat::-webkit-scrollbar {
+  display: none;
+}
