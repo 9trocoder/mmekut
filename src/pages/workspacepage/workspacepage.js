@@ -123,7 +123,7 @@ function Workspacepage() {
 
   return (
     <>
-      <HeaderBar headerText="Task" />
+      <HeaderBar headerText="Project" />
 
       <div className="workspacepage__cnt">
         <div className="chatpage__cnt-top">
