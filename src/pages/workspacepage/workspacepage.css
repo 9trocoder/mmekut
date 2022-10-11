@@ -276,7 +276,6 @@
   position: absolute;
   left: 75px;
   z-index: 3;
-
 }
 
 .image4 {
@@ -292,10 +291,7 @@
   font-size: 12px;
   font-weight: 400;
   border-radius: 9999px;
-
 }
-
-
 
 .selected__image-remaining {
   left: 100px;
@@ -312,4 +308,63 @@
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+}
+
+.showaddWorkspace {
+  position: fixed;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 9999px;
+  z-index: 10001;
+  bottom: 5.5rem;
+  right: 16px;
+  background-color: #0184fb;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.showaddtaskmenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  right: 0;
+  z-index: 10001;
+}
+
+.showmetaskmenuoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10002;
+}
+
+.showmetaskmenubody {
+  position: absolute;
+  background-color: #ffffff;
+  right: 16px;
+  bottom: 5.5rem;
+  border-radius: 8px;
+  z-index: 10003;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.showmetaskmenu-item {
+  padding: 16px 16px;
+  cursor: pointer;
+}
+
+.showmetaskmenu-item p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9a9fbf;
 }

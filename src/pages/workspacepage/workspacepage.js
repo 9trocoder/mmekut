@@ -14,6 +14,7 @@ import p5 from "../../assets/images/p5.png";
 
 import {
   addIconNotActive,
+  addIconWhite,
   // arrowdownbutton,
   chatNotActive,
   chatTextNotActive,
@@ -41,6 +42,8 @@ function Workspacepage() {
   const [selected, setSelected] = useState([]);
   const [activeTaskButton, setActiveTaskButton] = useState("workspace");
   const [activeButton, setActiveButton] = useState("all");
+  const [showaddTaskButton, setShowaddTaskButton] = useState(true);
+  const [showaddTaskMenu, setShowaddTaskMenu] = useState(false);
 
   const onSearch = (text) => {
     setSearchText(text.length > 0 ? text.toLowerCase() : "");
@@ -194,6 +197,12 @@ function Workspacepage() {
             progressNumber={100}
           />
         </AccordionLayout> */}
+              <button
+                onClick={() => handleWorkspaceAddClick()}
+                className="showaddWorkspace"
+              >
+                {addIconWhite}
+              </button>
             </div>
           </>
         )}
@@ -313,6 +322,59 @@ function Workspacepage() {
                   taskDate="12 days ago"
                 />
               </div>
+              {showaddTaskMenu && (
+                <div className="showaddtaskmenu">
+                  <div
+                    onClick={() => {
+                      setShowaddTaskMenu(false);
+                      setShowaddTaskButton(true);
+                    }}
+                    className="showmetaskmenuoverlay"
+                  />
+                  <div className="showmetaskmenubody">
+                    <div
+                      onClick={() => {
+                        setShowaddTaskMenu(false);
+                        setShowaddTaskButton(true);
+                      }}
+                      className="showmetaskmenu-item"
+                    >
+                      <p>Create a new Task</p>
+                    </div>
+                    {dividerr}
+                    <div
+                      onClick={() => {
+                        setShowaddTaskMenu(false);
+                        setShowaddTaskButton(true);
+                      }}
+                      className="showmetaskmenu-item"
+                    >
+                      <p>Create a To-do</p>
+                    </div>
+                    {dividerr}
+                    <div
+                      onClick={() => {
+                        setShowaddTaskMenu(false);
+                        setShowaddTaskButton(true);
+                      }}
+                      className="showmetaskmenu-item"
+                    >
+                      <p>Assign a Task</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {showaddTaskButton && (
+                <button
+                  onClick={() => {
+                    setShowaddTaskMenu(true);
+                    setShowaddTaskButton(false);
+                  }}
+                  className="showaddWorkspace"
+                >
+                  {addIconWhite}
+                </button>
+              )}
             </div>
           </>
         )}
@@ -490,6 +552,7 @@ function Workspacepage() {
       )}
 
       <BottomNav
+        showAddButton={false}
         homeIcon={homeIconNotActive}
         homeText={homeTextNotActive}
         taskIcon={taskActive}

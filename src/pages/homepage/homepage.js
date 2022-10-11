@@ -226,6 +226,7 @@ function Homepage() {
       </div>
 
       <BottomNav
+      showAddButton={true}
         homeIcon={homeIconActive}
         homeText={homeTextActive}
         taskIcon={taskNotActive}

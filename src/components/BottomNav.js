@@ -3,6 +3,7 @@ import { addIconWhite } from "../Utils/tools";
 const BottomNav = ({
   homeIcon,
   homeText,
+  showAddButton,
   workspaceText,
   taskIcon,
   taskText,
@@ -19,12 +20,12 @@ const BottomNav = ({
 }) => {
   return (
     <>
-      <div
+      {showAddButton && <div
         onClick={handleAddClick}
         className="bottomnav__cnt-item bottomnav__cnt-itemadd"
       >
         <button>{addIconWhite}</button>
-      </div>
+      </div>}
 
       <div className="bottomnav__cnt">
         <div onClick={handleHomeClick} className="bottomnav__cnt-item">
