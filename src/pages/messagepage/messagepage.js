@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ChatMessageModal from "../../components/ChatMessageHeader";
 import LeftChat from "../../components/LeftChat";
 import {
-  addIconWhite,
   addIconWhiteSmall,
+  dividerr,
   headerBackIcon,
   otherIcon,
   readIcon,
@@ -15,6 +15,7 @@ import "./messagepage.css";
 import RightChat from "../../components/RightChat";
 
 function Messagepage() {
+  const [messageMenu, setMessageMenu] = useState(false);
   let navigate = useNavigate();
   const handleUserChatPageClose = () => {
     navigate("/chat");
@@ -30,6 +31,9 @@ function Messagepage() {
         userStatus={true}
         searchIcon={searchBig}
         moreIcon={otherIcon}
+        handleMoreIconClick={() => {
+          setMessageMenu(true);
+        }}
       >
         <LeftChat
           message="Hello, we have a meeting by 10"
@@ -53,11 +57,78 @@ function Messagepage() {
         />
         <div className="chatMessageBottom__cnt">
           <div className="cmbc_look">
-            <div className="chatMessageBottom__cnt-left">{addIconWhiteSmall}</div>
+            <div className="chatMessageBottom__cnt-left">
+              {addIconWhiteSmall}
+            </div>
             <input type="text" placeholder="Write a message..." />
           </div>
           <button>Send</button>
         </div>
+        {messageMenu && (
+          <div className="showmessagemenu">
+            <div
+              onClick={() => {
+                setMessageMenu(false);
+              }}
+              className="showmessagemenuoverlay"
+            />
+            <div className="showmessagemenubody">
+              <div
+                onClick={() => {
+                  setMessageMenu(false);
+                }}
+                className="showmessagemenu-item"
+              >
+                <p>View contact</p>
+              </div>
+              {dividerr}
+              <div
+                onClick={() => {
+                  setMessageMenu(false);
+                }}
+                className="showmessagemenu-item"
+              >
+                <p>Search</p>
+              </div>
+              {dividerr}
+              <div
+                onClick={() => {
+                  setMessageMenu(false);
+                }}
+                className="showmessagemenu-item"
+              >
+                <p>Mute notifications</p>
+              </div>
+              {dividerr}
+              <div
+                onClick={() => {
+                  setMessageMenu(false);
+                }}
+                className="showmessagemenu-item"
+              >
+                <p>Block</p>
+              </div>
+              {dividerr}
+              <div
+                onClick={() => {
+                  setMessageMenu(false);
+                }}
+                className="showmessagemenu-item"
+              >
+                <p>Clear chat</p>
+              </div>
+              {dividerr}
+              <div
+                onClick={() => {
+                  setMessageMenu(false);
+                }}
+                className="showmessagemenu-item"
+              >
+                <p>Report</p>
+              </div>
+            </div>
+          </div>
+        )}
       </ChatMessageModal>
     </>
   );

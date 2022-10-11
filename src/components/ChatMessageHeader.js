@@ -10,6 +10,7 @@ function ChatMessageModal({
   userStatus,
   searchIcon,
   moreIcon,
+  handleMoreIconClick,
   zIndex,
 }) {
   return (
@@ -30,7 +31,7 @@ function ChatMessageModal({
               </div>
               <div className="chatmessagemodal__cnt-topright">
                 <button>{searchIcon}</button>
-                <button>{moreIcon}</button>
+                <button onClick={handleMoreIconClick}>{moreIcon}</button>
               </div>
             </div>
             <div className="chatmessagemodal__cnt-bottom">{children}</div>

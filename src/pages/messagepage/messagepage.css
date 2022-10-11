@@ -58,3 +58,43 @@
 .chatMessageBottom__cnt input:focus {
   color: #111;
 }
+
+.showmessagemenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10003;
+}
+
+.showmessagemenuoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10004;
+}
+
+.showmessagemenubody {
+  position: absolute;
+  background-color: #ffffff;
+  right: 16px;
+  top: 3rem;
+  border-radius: 8px;
+  z-index: 10005;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.showmessagemenu-item {
+  padding: 16px 16px;
+  cursor: pointer;
+}
+
+.showmessagemenu-item p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000b23;
+}
