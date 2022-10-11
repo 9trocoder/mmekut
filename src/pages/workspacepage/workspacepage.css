@@ -352,9 +352,9 @@
   background-color: #ffffff;
   right: 16px;
   bottom: 5.5rem;
-  border-radius: 8px;
+  border-radius: 3px;
   z-index: 10003;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 .showmetaskmenu-item {
