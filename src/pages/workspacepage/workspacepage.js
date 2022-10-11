@@ -332,6 +332,16 @@ function Workspacepage() {
                     className="showmetaskmenuoverlay"
                   />
                   <div className="showmetaskmenubody">
+                  <div
+                      onClick={() => {
+                        setShowaddTaskMenu(false);
+                        setShowaddTaskButton(true);
+                      }}
+                      className="showmetaskmenu-item"
+                    >
+                      <p>Search</p>
+                    </div>
+                    {dividerr}
                     <div
                       onClick={() => {
                         setShowaddTaskMenu(false);
