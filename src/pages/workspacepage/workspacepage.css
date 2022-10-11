@@ -352,6 +352,7 @@
   position: absolute;
   background-color: #ffffff;
   right: 16px;
+  left: 16px;
   bottom: 5.5rem;
   border-radius: 8px;
   z-index: 10003;
