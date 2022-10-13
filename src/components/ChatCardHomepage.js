@@ -1,3 +1,5 @@
+import "./components.css"
+
 const ChatCardHomepage = ({
   userStatus,
   userImage,
