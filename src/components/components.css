@@ -152,7 +152,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 
   padding-bottom: 32px;
 }
@@ -164,8 +164,8 @@
 }
 
 .chatCardHomepage__cnt-left img {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
 }
 
@@ -183,7 +183,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 0.2rem;
 }
 
 .chatCardHomepage__cnt-righttop {
@@ -194,7 +193,7 @@
 
 .chatCardHomepage__cnt-righttopusername {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000b23;
 }
 
