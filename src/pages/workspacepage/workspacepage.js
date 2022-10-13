@@ -15,6 +15,7 @@ import p5 from "../../assets/images/p5.png";
 import {
   addIconNotActive,
   addIconWhite,
+  addIconWhiteSmall,
   // arrowdownbutton,
   chatNotActive,
   chatTextNotActive,
@@ -201,7 +202,7 @@ function Workspacepage() {
                 onClick={() => handleWorkspaceAddClick()}
                 className="showaddWorkspace"
               >
-                {addIconWhite}
+                {addIconWhiteSmall}
               </button>
             </div>
           </>
@@ -382,7 +383,7 @@ function Workspacepage() {
                   }}
                   className="showaddWorkspace"
                 >
-                  {addIconWhite}
+                  {addIconWhiteSmall}
                 </button>
               )}
             </div>
