@@ -367,3 +367,25 @@
   font-weight: 500;
   color: #000b23;
 }
+
+
+.workspacepage__searchcnt {
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.workspacepage__searchcnt input {
+  background-color: rgba(154, 159, 191, 0.05);
+  border: .5px solid #9A9FBF15;
+  width: 100%;
+  border-radius: 9999px;
+  padding: 10px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  outline: none;
+}
+
+.workspacepage__searchcnt input::placeholder {
+  color: #666;
+}

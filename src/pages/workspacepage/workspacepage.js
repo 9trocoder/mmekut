@@ -151,6 +151,9 @@ function Workspacepage() {
             <button>Tasks</button>
           </div>
         </div>
+        <div className="workspacepage__searchcnt">
+          <input type="text" placeholder="Search Workspace" />
+        </div>
         {dividerr}
 
         {activeTaskButton === "workspace" && (
@@ -333,7 +336,7 @@ function Workspacepage() {
                     className="showmetaskmenuoverlay"
                   />
                   <div className="showmetaskmenubody">
-                  <div
+                    <div
                       onClick={() => {
                         setShowaddTaskMenu(false);
                         setShowaddTaskButton(true);
