@@ -206,7 +206,8 @@
 
 .chatCardHomepage__cnt-righttimeandstatus p {
   font-size: 10px;
-  color: #9a9fbf;
+  font-weight: 400;
+  color: #111;
 }
 
 .chatCardHomepage__cnt-rightbottom {
