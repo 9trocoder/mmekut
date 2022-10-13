@@ -16,6 +16,7 @@ import {
   groupCardNotificationIcon,
   homeIconNotActive,
   homeTextNotActive,
+  otherIcon,
   profileNotActive,
   profileTextNotActive,
   searchBig,
@@ -51,10 +52,10 @@ function Chatpage() {
   };
   return (
     <>
-      <HeaderBar headerText="Chat" addIcon={searchBig} />
+      {/* <HeaderBar headerText="Chat" addIcon={searchBig} /> */}
       <div className="chatpage__cnt">
-        <div className="chatpage__cnt-top">
-          <div
+        <div className="chatpage__cnt-topheader">
+          {/* <div
             onClick={() => setActiveChatButton("all")}
             className={
               activeChatButton === "all"
@@ -74,9 +75,13 @@ function Chatpage() {
             }
           >
             <button>Groups</button>
-          </div>
+          </div> */}
+
+          <img src={p2image} alt="" />
+          <input type="text" placeholder="Search Direct Messages" />
+          {otherIcon}
         </div>
-        {dividerr}
+        <div className="diffbottomna" />
 
         <div className="chatpage__cnt-chat">
           {activeChatButton === "all" && (
@@ -181,7 +186,7 @@ function Chatpage() {
               />
             </>
           )}
-          {activeChatButton === "group" && (
+          {/* {activeChatButton === "group" && (
             <>
               <GroupsCard
                 groupName="Mmekut App"
@@ -196,7 +201,7 @@ function Chatpage() {
                 notificationIcon={groupCardNotificationIcon}
               />
             </>
-          )}
+          )} */}
         </div>
       </div>
       <BottomNav

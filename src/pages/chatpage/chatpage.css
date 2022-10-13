@@ -1,5 +1,5 @@
 .chatpage__cnt {
-  margin-top: 2.6rem;
+  margin-top: 0rem;
 }
 
 .chatpage__cnt-top {
@@ -7,6 +7,38 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+}
+
+.chatpage__cnt-topheader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+}
+
+
+.chatpage__cnt-topheader img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.chatpage__cnt-topheader input {
+  width: 100%;
+  background-color: rgba(154, 159, 191, 0.05);
+  border: .5px solid #9A9FBF15;
+  width: 100%;
+  border-radius: 9999px;
+  padding: 10px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  outline: none;
+}
+
+
+.chatpage__cnt-topheader input::placeholder {
+  color: #666;
 }
 
 .chatpage__cnt-allbutton {
