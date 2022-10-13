@@ -226,13 +226,12 @@
   left: 0;
   background-color: #fff;
   width: 100%;
-  border-top: 0.944073px solid rgba(154, 159, 191, 0.15);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 12px 0;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #9a9fbf15;
+  border-top: .1px solid rgba(63, 62, 62, 0.479);
 }
 
 .bottomnav__cnt-item {
