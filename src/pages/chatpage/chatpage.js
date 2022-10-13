@@ -79,7 +79,7 @@ function Chatpage() {
 
           <img src={p2image} alt="" />
           <input type="text" placeholder="Search Direct Messages" />
-          {otherIcon}
+         <button>{otherIcon}</button> 
         </div>
         <div className="diffbottomna" />
 

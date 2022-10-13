@@ -21,6 +21,7 @@
   width: 35px;
   height: 35px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .chatpage__cnt-topheader input {
@@ -39,6 +40,12 @@
 
 .chatpage__cnt-topheader input::placeholder {
   color: #666;
+}
+
+.chatpage__cnt-topheader button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .chatpage__cnt-allbutton {
