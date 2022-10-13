@@ -126,7 +126,7 @@ function Workspacepage() {
 
   return (
     <>
-      <HeaderBar headerText="Project" addIcon={searchBig} />
+      {/* <HeaderBar headerText="Project" addIcon={searchBig} /> */}
 
       <div className="workspacepage__cnt">
         <div className="chatpage__cnt-top">
