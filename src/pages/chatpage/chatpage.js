@@ -207,13 +207,13 @@ function Chatpage() {
       <BottomNav
         addIcon={addIconNotActive}
         taskIcon={taskNotActive}
-        taskText={workspaceTextNotActive}
+        // taskText={workspaceTextNotActive}
         chatIcon={chatActive}
-        chatText={chatTextActive}
+        // chatText={chatTextActive}
         profileIcon={profileNotActive}
-        profileText={profileTextNotActive}
+        // profileText={profileTextNotActive}
         homeIcon={homeIconNotActive}
-        homeText={homeTextNotActive}
+        // homeText={homeTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
         handleAddClick={handleAddClick}

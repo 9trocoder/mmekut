@@ -566,14 +566,14 @@ function Workspacepage() {
       <BottomNav
         showAddButton={false}
         homeIcon={homeIconNotActive}
-        homeText={homeTextNotActive}
+        // homeText={homeTextNotActive}
         taskIcon={taskActive}
-        taskText={workspaceTextActive}
+        // taskText={workspaceTextActive}
         addIcon={addIconNotActive}
         chatIcon={chatNotActive}
-        chatText={chatTextNotActive}
+        // chatText={chatTextNotActive}
         profileIcon={profileNotActive}
-        profileText={profileTextNotActive}
+        // profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
         handleAddClick={handleWorkspaceAddClick}

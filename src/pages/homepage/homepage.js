@@ -227,14 +227,14 @@ function Homepage() {
       <BottomNav
       showAddButton={true}
         homeIcon={homeIconActive}
-        homeText={homeTextActive}
+        // homeText={homeTextActive}
         taskIcon={taskNotActive}
-        taskText={workspaceTextNotActive}
+        // taskText={workspaceTextNotActive}
         addIcon={addIconNotActive}
         chatIcon={chatNotActive}
-        chatText={chatTextNotActive}
+        // chatText={chatTextNotActive}
         profileIcon={profileNotActive}
-        profileText={profileTextNotActive}
+        // profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
         handleAddClick={handleAddClick}
