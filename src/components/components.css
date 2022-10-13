@@ -251,8 +251,8 @@
   position: fixed;
   /* background:  linear-gradient(94.38deg, #0184FB 14.99%, #46BDF0 92.22%);  */
   background-color: #0184fb;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 5px;
   justify-self: center;
   border-radius: 9999px;
@@ -260,7 +260,7 @@
   align-items: center;
   justify-content: center;
   margin-top: -3.5rem;
-  bottom: 5rem;
+  bottom: 4.5rem;
   right: 16px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
