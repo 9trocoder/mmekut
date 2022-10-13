@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 // import AccordionLayout from "../../components/AccordionLayout";
 import BigButton from "../../components/BigButton";
 import BottomNav from "../../components/BottomNav";
-import HeaderBar from "../../components/HeaderBar";
 import Modal from "../../components/Modal";
 // import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import p1 from "../../assets/images/p1.png";
@@ -14,7 +13,6 @@ import p5 from "../../assets/images/p5.png";
 
 import {
   addIconNotActive,
-  addIconWhite,
   addIconWhiteSmall,
   // arrowdownbutton,
   chatNotActive,
@@ -27,7 +25,6 @@ import {
   homeTextNotActive,
   profileNotActive,
   profileTextNotActive,
-  searchBig,
   taskActive,
   workspaceTextActive,
 } from "../../Utils/tools";
@@ -155,6 +152,7 @@ function Workspacepage() {
           <input type="text" placeholder="Search Workspace" />
         </div>
         {dividerr}
+        <div className="diffbottomna" />
 
         {activeTaskButton === "workspace" && (
           <>

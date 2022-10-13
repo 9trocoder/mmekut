@@ -132,3 +132,7 @@ select {
 .ddiverder {
   border-bottom: 1px solid #9A9FBF15;
 }
+
+.diffbottomna {
+  border-bottom: .1px solid rgba(63, 62, 62, 0.315);
+}

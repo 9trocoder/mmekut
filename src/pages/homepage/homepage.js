@@ -10,7 +10,6 @@ import {
   addIconNotActive,
   calendarIcon,
   chatNotActive,
-  chatTextActive,
   chatTextNotActive,
   deliveredIcon,
   headerNotificationIcon,

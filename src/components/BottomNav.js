@@ -1,4 +1,4 @@
-import { addIconWhite, addIconWhiteSmall } from "../Utils/tools";
+import {addIconWhiteSmall } from "../Utils/tools";
 
 const BottomNav = ({
   homeIcon,
