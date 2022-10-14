@@ -129,7 +129,7 @@ function Workspacepage() {
       {/* <HeaderBar headerText="Project" addIcon={searchBig} /> */}
 
       <div className="workspacepage__cnt">
-        <div className="chatpage__cnt-top">
+        {/* <div className="chatpage__cnt-top">
           <div
             onClick={() => setActiveTaskButton("workspace")}
             className={
@@ -150,7 +150,7 @@ function Workspacepage() {
           >
             <button>Tasks</button>
           </div>
-        </div>
+        </div> */}
         <div className="workspacepage__searchcnt">
           <input type="text" placeholder="Search Workspace" />
         </div>
