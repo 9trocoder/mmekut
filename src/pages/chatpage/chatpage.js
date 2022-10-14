@@ -56,7 +56,7 @@ function Chatpage() {
     <>
       {/* <HeaderBar headerText="Chat" addIcon={searchBig} /> */}
       <div className="chatpage__cnt">
-        <div className="chatpage__cnt-topheader">
+        <div className="chatpage__cnt-topheader diffbottomna">
           {/* <div
             onClick={() => setActiveChatButton("all")}
             className={
@@ -83,7 +83,6 @@ function Chatpage() {
           <input type="text" placeholder="Search Direct Messages" />
          <button>{otherIcon}</button> 
         </div>
-        <div className="diffbottomna" />
 
         <div className="chatpage__cnt-chat">
           {activeChatButton === "all" && (

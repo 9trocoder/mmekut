@@ -152,7 +152,7 @@ function Workspacepage() {
             <button>Tasks</button>
           </div>
         </div> */}
-        <div className="chatpage__cnt-topheader">
+        <div className="chatpage__cnt-topheader diffbottomna" >
           {/* <div
             onClick={() => setActiveChatButton("all")}
             className={
@@ -182,8 +182,6 @@ function Workspacepage() {
         {/* <div className="workspacepage__searchcnt">
           <input type="text" placeholder="Search Workspace" />
         </div> */}
-        {dividerr}
-        <div className="diffbottomna" />
 
         {activeTaskButton === "workspace" && (
           <>
