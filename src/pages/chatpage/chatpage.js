@@ -16,6 +16,7 @@ import {
   groupCardNotificationIcon,
   homeIconNotActive,
   homeTextNotActive,
+  notificationNotActive,
   otherIcon,
   profileNotActive,
   profileTextNotActive,
@@ -213,6 +214,7 @@ function Chatpage() {
         profileIcon={profileNotActive}
         // profileText={profileTextNotActive}
         homeIcon={homeIconNotActive}
+        notificationIcon={notificationNotActive}
         // homeText={homeTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}

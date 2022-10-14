@@ -15,6 +15,7 @@ import {
   headerNotificationIcon,
   homeIconActive,
   homeTextActive,
+  notificationNotActive,
   profileNotActive,
   profileTextNotActive,
   taskNotActive,
@@ -234,6 +235,7 @@ function Homepage() {
         chatIcon={chatNotActive}
         // chatText={chatTextNotActive}
         profileIcon={profileNotActive}
+        notificationIcon={notificationNotActive}
         // profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}

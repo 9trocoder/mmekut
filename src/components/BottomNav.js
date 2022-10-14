@@ -1,4 +1,4 @@
-import {addIconWhiteSmall } from "../Utils/tools";
+import { addIconWhiteSmall } from "../Utils/tools";
 
 const BottomNav = ({
   homeIcon,
@@ -8,6 +8,8 @@ const BottomNav = ({
   taskIcon,
   taskText,
   addIcon,
+  notificationIcon,
+  notificationText,
   chatIcon,
   chatText,
   profileIcon,
@@ -17,6 +19,7 @@ const BottomNav = ({
   handleAddClick,
   handleChatClick,
   handleProfileClick,
+  handleNotificationClick,
 }) => {
   return (
     <>
@@ -42,7 +45,12 @@ const BottomNav = ({
             <div className="bottomnav__text">{taskText}</div>
           </button>
         </div>
-
+        <div onClick={handleNotificationClick} className="bottomnav__cnt-item">
+          <button>
+            <div className="bottomnav__icon">{notificationIcon}</div>
+            <div className="bottomnav__text">{notificationText}</div>
+          </button>
+        </div>
         <div onClick={handleChatClick} className="bottomnav__cnt-item">
           <button>
             <div className="bottomnav__icon">{chatIcon}</div>

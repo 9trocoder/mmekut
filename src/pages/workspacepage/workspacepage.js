@@ -23,6 +23,8 @@ import {
   headerBackIcon,
   homeIconNotActive,
   homeTextNotActive,
+  notificationActive,
+  notificationNotActive,
   profileNotActive,
   profileTextNotActive,
   taskActive,
@@ -573,6 +575,7 @@ function Workspacepage() {
         chatIcon={chatNotActive}
         // chatText={chatTextNotActive}
         profileIcon={profileNotActive}
+        notificationIcon={notificationNotActive}
         // profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}
