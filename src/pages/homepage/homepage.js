@@ -68,7 +68,7 @@ function Homepage() {
       <HomepageHeader
         profileImage={p2image}
         calendarIcon={calendarIcon}
-        notificationIcon={headerNotificationIcon}
+        // notificationIcon={headerNotificationIcon}
         handleProfileClick={handleProfileClick}
         handleCalendarClick={handleCalendarClick}
         handleNotificationClick={handleNotificationClick}

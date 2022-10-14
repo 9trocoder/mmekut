@@ -19,7 +19,7 @@ export default function HomepageHeader({
 
         <div className="homepageHeader__cnt-right">
           <button onClick={handleCalendarClick}>{calendarIcon}</button>
-          <button onClick={handleNotificationClick}>{notificationIcon}</button>
+          {/* <button onClick={handleNotificationClick}>{notificationIcon}</button> */}
         </div>
       </div>
     </>
