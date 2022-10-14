@@ -22,6 +22,7 @@ import {
   profileTextNotActive,
   searchBig,
   taskNotActive,
+  tasksNotActive,
   workspaceTextNotActive,
 } from "../../Utils/tools";
 import "./chatpage.css";
@@ -211,7 +212,7 @@ function Chatpage() {
         // taskText={workspaceTextNotActive}
         chatIcon={chatActive}
         // chatText={chatTextActive}
-        profileIcon={profileNotActive}
+        profileIcon={tasksNotActive}
         // profileText={profileTextNotActive}
         homeIcon={homeIconNotActive}
         notificationIcon={notificationNotActive}

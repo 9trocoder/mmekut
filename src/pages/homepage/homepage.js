@@ -19,6 +19,7 @@ import {
   profileNotActive,
   profileTextNotActive,
   taskNotActive,
+  tasksNotActive,
   workspaceTextNotActive,
 } from "../../Utils/tools";
 
@@ -234,7 +235,7 @@ function Homepage() {
         addIcon={addIconNotActive}
         chatIcon={chatNotActive}
         // chatText={chatTextNotActive}
-        profileIcon={profileNotActive}
+        profileIcon={tasksNotActive}
         notificationIcon={notificationNotActive}
         // profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}

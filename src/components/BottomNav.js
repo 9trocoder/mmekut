@@ -45,6 +45,12 @@ const BottomNav = ({
             <div className="bottomnav__text">{taskText}</div>
           </button>
         </div>
+        <div onClick={handleProfileClick} className="bottomnav__cnt-item">
+          <button>
+            <div className="bottomnav__icon">{profileIcon}</div>
+            <div className="bottomnav__text">{profileText}</div>
+          </button>
+        </div>
         <div onClick={handleNotificationClick} className="bottomnav__cnt-item">
           <button>
             <div className="bottomnav__icon">{notificationIcon}</div>
@@ -55,12 +61,6 @@ const BottomNav = ({
           <button>
             <div className="bottomnav__icon">{chatIcon}</div>
             <div className="bottomnav__text">{chatText}</div>
-          </button>
-        </div>
-        <div onClick={handleProfileClick} className="bottomnav__cnt-item">
-          <button>
-            <div className="bottomnav__icon">{profileIcon}</div>
-            <div className="bottomnav__text">{profileText}</div>
           </button>
         </div>
       </div>

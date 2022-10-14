@@ -28,6 +28,7 @@ import {
   profileNotActive,
   profileTextNotActive,
   taskActive,
+  tasksNotActive,
   workspaceTextActive,
 } from "../../Utils/tools";
 import "./workspacepage.css";
@@ -574,7 +575,7 @@ function Workspacepage() {
         addIcon={addIconNotActive}
         chatIcon={chatNotActive}
         // chatText={chatTextNotActive}
-        profileIcon={profileNotActive}
+        profileIcon={tasksNotActive}
         notificationIcon={notificationNotActive}
         // profileText={profileTextNotActive}
         handleHomeClick={handleHomeClick}
