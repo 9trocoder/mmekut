@@ -12,9 +12,9 @@ export default function HomepageHeader({
     <>
       <div className="homepageHeader__cnt">
         <div onClick={handleProfileClick} className="hompageHeader__cnt-left">
-          <div className="hompageHeader__cnt-profile">
-            <img src={profileImage} alt="" />
-          </div>
+
+            <img className="hompageHeader__cnt-profile" src={profileImage} alt="" />
+          
         </div>
 
         <div className="homepageHeader__cnt-right">

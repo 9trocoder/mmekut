@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 9999;
-  padding: 6px 16px;
+  padding: 7.5px 16px;
   border-bottom: .1px solid rgba(63, 62, 62, 0.315);
 }
 
@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-.hompageHeader__cnt-profile img {
+.hompageHeader__cnt-profile {
   width: 35px;
   height: 35px;
 }
