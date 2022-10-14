@@ -25,6 +25,7 @@ import {
   homeTextNotActive,
   notificationActive,
   notificationNotActive,
+  otherIcon,
   profileNotActive,
   profileTextNotActive,
   taskActive,
@@ -151,9 +152,36 @@ function Workspacepage() {
             <button>Tasks</button>
           </div>
         </div> */}
-        <div className="workspacepage__searchcnt">
-          <input type="text" placeholder="Search Workspace" />
+        <div className="chatpage__cnt-topheader">
+          {/* <div
+            onClick={() => setActiveChatButton("all")}
+            className={
+              activeChatButton === "all"
+                ? "chatpage__cnt-allbutton"
+                : "chatpage__cnt-allbuttonnotactive"
+            }
+          >
+            <button>Direct Messages</button>
+          </div>
+
+          <div
+            onClick={() => setActiveChatButton("group")}
+            className={
+              activeChatButton === "group"
+                ? "chatpage__cnt-allbutton"
+                : "chatpage__cnt-allbuttonnotactive"
+            }
+          >
+            <button>Groups</button>
+          </div> */}
+
+          <img src={p2} alt="" />
+          <input type="text" placeholder="Search For Workspace" />
+         <button>{otherIcon}</button> 
         </div>
+        {/* <div className="workspacepage__searchcnt">
+          <input type="text" placeholder="Search Workspace" />
+        </div> */}
         {dividerr}
         <div className="diffbottomna" />
 
