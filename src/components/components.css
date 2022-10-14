@@ -21,8 +21,8 @@
 }
 
 .hompageHeader__cnt-profile img {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 
 .hphcwrgreet {
@@ -262,7 +262,7 @@
   bottom: 4.5rem;
   right: 16px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
 }
 
 /* Header bar */

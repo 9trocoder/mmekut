@@ -66,9 +66,7 @@ function Homepage() {
   return (
     <>
       <HomepageHeader
-        profileImage={homepageprofileimage}
-        headerGreeting="Good Evening!"
-        userName="Jade Peter"
+        profileImage={p2image}
         calendarIcon={calendarIcon}
         notificationIcon={headerNotificationIcon}
         handleProfileClick={handleProfileClick}

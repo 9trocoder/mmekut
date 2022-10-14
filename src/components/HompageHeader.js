@@ -2,8 +2,6 @@ import "./components.css"
 
 export default function HomepageHeader({
   profileImage,
-  headerGreeting,
-  userName,
   calendarIcon,
   notificationIcon,
   handleProfileClick,
@@ -16,10 +14,6 @@ export default function HomepageHeader({
         <div onClick={handleProfileClick} className="hompageHeader__cnt-left">
           <div className="hompageHeader__cnt-profile">
             <img src={profileImage} alt="" />
-          </div>
-          <div className="hompageHeader__cnt-writeup">
-            <p className="hphcwrgreet">{headerGreeting}</p>
-            <p className="hphcwrname">{userName}</p>
           </div>
         </div>
 
