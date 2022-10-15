@@ -830,7 +830,7 @@ p.tlctltaskdescription {
   padding: 0px 16px 16px 16px;
   color: #fff;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .workspacecard__cnt-middlememberscnt {
@@ -908,14 +908,14 @@ p.tlctltaskdescription {
   font-size: 12px;
   padding: 3px 8px;
   border-radius: 8px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .workspacecard__aboutworkspace {
   font-size: 12px;
   color: #fff;
-  padding-top: 16px;
-  font-weight: 400;
+  padding-top: 10px;
+  font-weight: 300;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
