@@ -816,7 +816,7 @@ p.tlctltaskdescription {
   background-color: transparent;
 }
 
-.workspacecard__description {
+.workspacecard__description p {
   font-size: 18px;
   font-weight: 700;
   color: #fff;

@@ -25,7 +25,7 @@ function WorkspaceCard({
           <p className="workspacecard__cnt-topcategory">{workspaceName}</p>
           <button onClick={handleOptionClick}>{otherIconWorkspace}</button>
         </div>
-        <div className="workspacecard__description">{workspaceDescription}</div>
+        <div className="workspacecard__description"><p>{workspaceDescription}</p></div>
         <p className="workspacecard__category">{workspaceCategory}</p>
         <div className="workspacecard__cnt-middle">
           
