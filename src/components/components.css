@@ -797,7 +797,7 @@ p.tlctltaskdescription {
 }
 
 .workspacecard__cnt-top {
-  padding: 16px 16px;
+  padding: 16px 16px 10px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
