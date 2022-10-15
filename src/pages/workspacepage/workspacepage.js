@@ -249,8 +249,8 @@ function Workspacepage() {
               <WorkspaceCard
                 workspaceName="Mmekut App"
                 workspaceMembersImage={workspacemembers}
-                workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
-                aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
+                workspaceDescription="Yes we are trying to build this very soon they are gonna see us in the future. Mmekut the Super fast Tasking and Chatting app in Nigeria"
+                aboutWorkspace="The super fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
                 workspaceCreatorName="9trocoder"
                 workspaceCreatorImage={p2}
                 workspaceCategory="Mobile App & Web Development"
