@@ -28,7 +28,8 @@ function WorkspaceCard({
         <div className="workspacecard__description">{workspaceDescription}</div>
         <p className="workspacecard__category">{workspaceCategory}</p>
         <div className="workspacecard__cnt-middle">
-          {workspaceMembersImage > 4 ? (
+          
+          {workspaceMembersImage.length > 4 ? (
             <div className="workspacecard__cnt-middlememberscnt">
               {workspaceMembersImage.slice(0, 4).map((item, index) => (
                 <>
@@ -41,7 +42,7 @@ function WorkspaceCard({
                 </>
               ))}
               <div className="workspaceCard__cnt-middleimage-num">
-                {workspaceMembersImage.length - 4} Members
+                {workspaceMembersImage.length} Members
               </div>
             </div>
           ) : (
@@ -56,6 +57,9 @@ function WorkspaceCard({
                   />
                 </>
               ))}
+              <div className="workspaceCard__cnt-middleimage-num">
+                {workspaceMembersImage.length} Members
+              </div>
             </div>
           )}
         </div>

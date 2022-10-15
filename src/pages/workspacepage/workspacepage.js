@@ -243,7 +243,7 @@ function Workspacepage() {
                 workspaceCreatorImage={p2}
                 workspaceCategory="Mobile App & Web Development"
                 workspaceColor="#991B1A"
-                workspaceCreatorPosition="Mobile/Web Developer"
+                workspaceCreatorPosition="Creator"
               />
 
               <button

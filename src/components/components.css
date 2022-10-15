@@ -792,7 +792,7 @@ p.tlctltaskdescription {
 /* Workspace Card */
 .workspacecard__cnt {
   margin: 16px 16px 8px 16px;
-  border-radius: 8px;
+  border-radius: 16px;
   cursor: pointer;
 }
 
@@ -872,16 +872,17 @@ p.tlctltaskdescription {
 
 .workspaceCard__cnt-middleimage-num {
   position: absolute;
-  left: 115px;
+  left: 100px;
   color: #fff;
   font-size: 12px;
   font-weight: 400;
+  z-index: 5;
 }
 
 .workspacecard__cnt-bottom {
   background-color: rgba(17, 17, 17, 0.062);
   padding: 16px 16px;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .workspacecard__cnt-bottomtop {
