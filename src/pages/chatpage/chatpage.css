@@ -89,7 +89,7 @@
   height: 95vh;
   padding: 16px 16px;
   overflow-y: scroll;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #fff;
@@ -98,6 +98,7 @@
 .chatpage__cnt-chatdif {
   background-color: #fff;
   padding: 0px 0px;
+  padding-bottom: 4rem;
 }
 
 .chatpage__cnt-chat::-webkit-scrollbar {
