@@ -11,7 +11,7 @@
   z-index: 9999;
   height: 56px;
   padding: 0px 16px;
-  border-bottom: .1px solid rgba(63, 62, 62, 0.315);
+  border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
 }
 
 .hompageHeader__cnt-left {
@@ -153,7 +153,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 
   padding-bottom: 32px;
 }
@@ -232,7 +232,7 @@
   padding: 14px 0;
   align-items: center;
   justify-content: center;
-  border-top: .1px solid rgba(63, 62, 62, 0.315);
+  border-top: 0.1px solid rgba(63, 62, 62, 0.315);
 }
 
 .bottomnav__cnt-item {
@@ -263,7 +263,6 @@
   bottom: 4.5rem;
   right: 16px;
   cursor: pointer;
-  
 }
 
 /* Header bar */
@@ -395,7 +394,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 10px 16px;
-  border-bottom: .1px solid rgba(63, 62, 62, 0.315);
+  border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
 }
 
 .modal__cnt-top p {
@@ -645,7 +644,7 @@ p.tlctltaskdescription {
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
-  border-bottom: .1px solid rgba(63, 62, 62, 0.315);
+  border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
 }
 
 .chatmessagemodal__cnt-topleft {
@@ -706,7 +705,7 @@ p.tlctltaskdescription {
   padding: 16px 16px;
   display: flex;
   flex-direction: column;
-  
+
   height: 85vh;
 }
 
@@ -736,7 +735,7 @@ p.tlctltaskdescription {
 .leftChat__cnt-delivery {
   display: flex;
   gap: 0.4rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   align-items: center;
 }
 
@@ -747,7 +746,6 @@ p.tlctltaskdescription {
   margin-bottom: 0rem !important;
 }
 
-
 /* Right Chat */
 
 .rightChatcnt {
@@ -755,7 +753,7 @@ p.tlctltaskdescription {
   width: 100%;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .rightChat__cnt {
@@ -781,7 +779,7 @@ p.tlctltaskdescription {
   display: flex;
   gap: 0.4rem;
   align-items: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .rightChat__cnt-delivery p {
@@ -806,7 +804,7 @@ p.tlctltaskdescription {
   color: #fff;
 }
 
-.workspacecard__cnt-top p{
+.workspacecard__cnt-top p {
   font-weight: 500;
   font-size: 12px;
 }
@@ -881,7 +879,8 @@ p.tlctltaskdescription {
 }
 
 .workspacecard__cnt-bottom {
-  background-color: rgba(17, 17, 17, 0.397); padding: 16px 16px;
+  background-color: rgba(17, 17, 17, 0.123);
+  padding: 16px 16px;
   border-radius: 0px 0px 8px 8px;
 }
 
@@ -889,7 +888,6 @@ p.tlctltaskdescription {
   display: flex;
   align-items: center;
   gap: 10px;
- 
 }
 
 .workspacecard__cnt-bottomtop img {
@@ -904,7 +902,6 @@ p.tlctltaskdescription {
   font-weight: 500;
 }
 
-
 .workspacecard__creatorposition {
   background-color: rgba(255, 255, 255, 0.103);
   color: #fff;
@@ -912,7 +909,6 @@ p.tlctltaskdescription {
   padding: 3px 8px;
   border-radius: 8px;
   font-weight: 400;
-
 }
 
 .workspacecard__aboutworkspace {
