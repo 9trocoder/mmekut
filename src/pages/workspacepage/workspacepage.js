@@ -34,6 +34,7 @@ import {
 } from "../../Utils/tools";
 import "./workspacepage.css";
 import TaskListCard from "../../components/TaskListCard";
+import WorkspaceCard from "../../components/WorkspaceCard";
 
 function Workspacepage() {
   let navigate = useNavigate();
@@ -125,6 +126,8 @@ function Workspacepage() {
     }
   };
 
+  const workspacemembers = [p1, p2, p3, p4, p5];
+
   return (
     <>
       {/* <HeaderBar headerText="Project" addIcon={searchBig} /> */}
@@ -152,7 +155,7 @@ function Workspacepage() {
             <button>Tasks</button>
           </div>
         </div> */}
-        <div className="chatpage__cnt-topheader diffbottomna" >
+        <div className="chatpage__cnt-topheader diffbottomna">
           {/* <div
             onClick={() => setActiveChatButton("all")}
             className={
@@ -177,7 +180,7 @@ function Workspacepage() {
 
           <img src={p2} alt="" />
           <input type="text" placeholder="Search For Workspace" />
-         <button>{otherIcon}</button> 
+          <button>{otherIcon}</button>
         </div>
         {/* <div className="workspacepage__searchcnt">
           <input type="text" placeholder="Search Workspace" />
@@ -231,6 +234,18 @@ function Workspacepage() {
             progressNumber={100}
           />
         </AccordionLayout> */}
+              <WorkspaceCard
+                workspaceName="Mmekut App"
+                workspaceMembersImage={workspacemembers}
+                workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
+                aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
+                workspaceCreatorName="9trocoder"
+                workspaceCreatorImage={p2}
+                workspaceCategory="Mobile App & Web Development"
+                workspaceColor="#AD2089"
+                workspaceCreatorPosition="Mobile/Web Developer"
+              />
+
               <button
                 onClick={() => handleWorkspaceAddClick()}
                 className="showaddWorkspace"
