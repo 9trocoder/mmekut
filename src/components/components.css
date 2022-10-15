@@ -820,7 +820,7 @@ p.tlctltaskdescription {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  padding: 0px 16px 16px 16px;
+  padding: 0px 16px 0px 16px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -828,7 +828,7 @@ p.tlctltaskdescription {
 }
 
 .workspacecard__category {
-  padding: 0px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   color: #fff;
   font-size: 11px;
   font-weight: 300;
