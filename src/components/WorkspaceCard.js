@@ -1,5 +1,5 @@
 import React from "react";
-import {otherIconWorkspace } from "../Utils/tools";
+import { otherIconWorkspace } from "../Utils/tools";
 
 function WorkspaceCard({
   handleWorkspaceClick,
@@ -26,7 +26,7 @@ function WorkspaceCard({
           <button onClick={handleOptionClick}>{otherIconWorkspace}</button>
         </div>
         <div className="workspacecard__description">{workspaceDescription}</div>
-        <p>{workspaceCategory}</p>
+        <p className="workspacecard__category">{workspaceCategory}</p>
         <div className="workspacecard__cnt-middle">
           {workspaceMembersImage > 4 ? (
             <div className="workspacecard__cnt-middlememberscnt">
@@ -41,7 +41,7 @@ function WorkspaceCard({
                 </>
               ))}
               <div className="workspaceCard__cnt-middleimage-num">
-                {workspaceMembersImage.length - 4}
+                {workspaceMembersImage.length - 4} Members
               </div>
             </div>
           ) : (
@@ -56,6 +56,10 @@ function WorkspaceCard({
                   />
                 </>
               ))}
+
+              <div className="workspaceCard__cnt-middleimage-num">
+                {workspaceMembersImage.length} Members
+              </div>
             </div>
           )}
         </div>
