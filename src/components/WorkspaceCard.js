@@ -56,20 +56,18 @@ function WorkspaceCard({
                   />
                 </>
               ))}
-
-              <div className="workspaceCard__cnt-middleimage-num">
-                {workspaceMembersImage.length} Members
-              </div>
             </div>
           )}
         </div>
         <div className="workspacecard__cnt-bottom">
           <div className="workspacecard__cnt-bottomtop">
             <img src={workspaceCreatorImage} alt="" />
-            <p>{workspaceCreatorName}</p>
-            <p>{workspaceCreatorPosition}</p>
+            <p className="workspacecard__creatorname">{workspaceCreatorName}</p>
+            <p className="workspacecard__creatorposition">
+              {workspaceCreatorPosition}
+            </p>
           </div>
-          <p>{aboutWorkspace}</p>
+          <p className="workspacecard__aboutworkspace">{aboutWorkspace}</p>
         </div>
       </div>
     </>
