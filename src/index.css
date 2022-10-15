@@ -130,9 +130,27 @@ select {
 }
 
 .ddiverder {
-  border-bottom: 1px solid #9A9FBF15;
+  border-bottom: 1px solid #9a9fbf15;
 }
 
 .diffbottomna {
-  border-bottom: .1px solid rgba(63, 62, 62, 0.315);
+  border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
 }
+
+/* #DA342A;
+#AD2089;
+#9B62FA;
+#826B02;
+#0D1C63;
+#4B75BF;
+#143424;
+#6F5345;
+#367284;
+#443226;
+#675D8B;
+#172C86;
+#991B1A;
+#4A2118;
+#304B66;
+#954A21;
+#8B6B49; */
