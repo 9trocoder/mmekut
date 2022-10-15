@@ -1,5 +1,5 @@
 import React from "react";
-import { otherIcon } from "../Utils/tools";
+import {otherIconWorkspace } from "../Utils/tools";
 
 function WorkspaceCard({
   handleWorkspaceClick,
@@ -23,7 +23,7 @@ function WorkspaceCard({
       >
         <div className="workspacecard__cnt-top">
           <p className="workspacecard__cnt-topcategory">{workspaceName}</p>
-          <button onClick={handleOptionClick}>{otherIcon}</button>
+          <button onClick={handleOptionClick}>{otherIconWorkspace}</button>
         </div>
         <div className="workspacecard__description">{workspaceDescription}</div>
         <p>{workspaceCategory}</p>

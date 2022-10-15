@@ -797,3 +797,33 @@ p.tlctltaskdescription {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.workspacecard__cnt-top {
+  padding: 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.workspacecard__cnt-top p{
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.workspacecard__cnt-top button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.workspacecard__description {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0px 16px 16px 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
