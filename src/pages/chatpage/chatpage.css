@@ -92,11 +92,11 @@
   padding-bottom: 8rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  background-color: #fff;
+  background-color: #F4F8FD;
 }
 
 .chatpage__cnt-chatdif {
-  background-color: #fff;
+  background-color: #F4F8FD;
   padding: 0px 0px;
   padding-bottom: 4rem;
 }
