@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #F4F8FD;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -225,7 +225,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #F4F8FD;
+  background-color: #ffffff;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -378,7 +378,7 @@
   right: 0;
   left: 0;
 
-  background-color: #F4F8FD;
+  background-color: #ffffff;
 
   height: auto;
   pointer-events: all;
@@ -390,7 +390,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #F4F8FD;
+  background-color: #fff;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -629,7 +629,7 @@ p.tlctltaskdescription {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #F4F8FD;
+  background-color: #ffffff;
   height: auto;
   pointer-events: all;
   overflow: auto;
@@ -640,7 +640,7 @@ p.tlctltaskdescription {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #F4F8FD;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
