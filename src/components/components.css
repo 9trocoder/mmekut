@@ -968,3 +968,37 @@ p.tlctltaskdescription {
   height: 25px;
   object-fit: contain;
 }
+
+.taskcard__cnt-righttopleft {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.taskcard__organisationname {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.taskcard__taskcreatorname {
+  font-size: 11px;
+  font-weight: 400;
+  color: #7b7b7b
+}
+
+.taskcard__taskcreationtime {
+  font-size: 12px;
+  font-weight: 500;
+  color: #7b7b7b;
+}
+
+.taskcard__cnt-righttop button {
+  border: none;
+  background-color: transparent;
+}
+
+.taskcard__taskdescription {
+  font-size: 11px;
+  margin-top: .2rem;
+  margin-bottom: .5rem;
+}

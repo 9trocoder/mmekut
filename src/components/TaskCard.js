@@ -1,5 +1,5 @@
 import React from "react";
-import { otherIcon } from "../Utils/tools";
+import {  otherIconTask } from "../Utils/tools";
 
 function TaskCard({
   organizationImage,
@@ -23,7 +23,7 @@ function TaskCard({
               <p className="taskcard__taskcreatorname">{taskCreatorName}</p>
               <p className="taskcard__taskcreationtime">{taskCreationTime}</p>
             </div>
-            <button>{otherIcon}</button>
+            <button>{otherIconTask}</button>
           </div>
           <div className="taskcard__cnt-description">
             <p className="taskcard__taskdescription">{taskDescription}</p>
