@@ -54,7 +54,7 @@ function Taskpage() {
   let task2 = [p2, p3, p4];
   let task3 = [p4, p1, p5];
   let task4 = [p3, p1, p4, p2, p5];
-  let tasksimage = [task4image,task1image, task2image, task3image];
+  let tasksimage = [task1image, task2image, task3image, task4image];
 
   return (
     <>

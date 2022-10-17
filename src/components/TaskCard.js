@@ -30,12 +30,9 @@ function TaskCard({
           </div>
           <div className="taskcard__cnt-images">
             {taskImage.slice(0, 1).map((item, index) => (
-              <div className="layam">
+             
                 <img src={item} alt="" key={index} />
-                <div className="leayam">
-                  <p>{taskImage.length - 1}+</p>
-                </div>
-              </div>
+               
             ))}
           </div>
           <div className="taskcard__cnt-assigneeimage">

@@ -989,40 +989,14 @@ p.tlctltaskdescription {
   margin-bottom: 0.5rem;
 }
 
-.layam {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0.8rem;
-}
 
-.leayam {
-  /* background-color: rgba(17, 17, 17, 0.089); */
-  background: rgba(255, 255, 255, 0.2); 
-  backdrop-filter: blur(2px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-}
 
-.leayam p {
-  font-size: 24px;
-  font-weight: 700;
-  color: #0184fb;
-}
 
 .taskcard__cnt-images img {
   width: 100%;
   height: 307px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px;  margin-bottom: 0.6rem;
 }
 
 .taskcard__cnt-middlememberscnt {
