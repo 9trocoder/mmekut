@@ -929,7 +929,7 @@ p.tlctltaskdescription {
 .taskcard__cnt {
   display: grid;
   padding: 16px 16px;
-  grid-template-columns: 10vw 82vw;
+  grid-template-columns: 55px 82vw;
   gap: 10px;
 }
 
@@ -1013,7 +1013,7 @@ p.tlctltaskdescription {
 }
 
 .taskcard__cnt-middleimage-num {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
   font-size: 11px;
   color: #7b7b7b;
 }
