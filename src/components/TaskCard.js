@@ -1,5 +1,5 @@
 import React from "react";
-import {  otherIconTask } from "../Utils/tools";
+import { otherIconTask } from "../Utils/tools";
 
 function TaskCard({
   organizationImage,
@@ -29,8 +29,13 @@ function TaskCard({
             <p className="taskcard__taskdescription">{taskDescription}</p>
           </div>
           <div className="taskcard__cnt-images">
-            {taskImage.map((item, index) => (
-              <img src={item} alt="" key={index} />
+            {taskImage.slice(0, 1).map((item, index) => (
+              <div className="layam">
+                <img src={item} alt="" key={index} />
+                <div className="leayam">
+                  <p>{taskImage.length - 1}+</p>
+                </div>
+              </div>
             ))}
           </div>
           <div className="taskcard__cnt-assigneeimage">

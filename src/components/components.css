@@ -928,7 +928,7 @@ p.tlctltaskdescription {
 
 .taskcard__cnt {
   display: grid;
-  grid-template-columns: 55px 75vw;
+  grid-template-columns: 55px auto;
   padding: 16px 16px;
   gap: 10px;
 }
@@ -938,12 +938,10 @@ p.tlctltaskdescription {
 .taskcard_cnt-right {
 }
 .taskcard__cnt-left img {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
-
-
 
 .taskcard__cnt-righttop {
   display: flex;
@@ -991,22 +989,36 @@ p.tlctltaskdescription {
   margin-bottom: 0.5rem;
 }
 
-.taskcard__cnt-images {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 170px 170px 170px 170px;
-  gap: 8px;
-  margin-bottom: .8rem;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.layam {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
-.taskcard__cnt-images::-webkit-scrollbar {
-  display: none;
+
+.leayam {
+  background-color: rgba(17, 17, 17, 0.089);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
 }
+
+.leayam p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0184fb;
+}
+
 .taskcard__cnt-images img {
-  width: 170px;
-  height: 270px;
+  width: 100%;
+  height: 307px;
   object-fit: cover;
   border-radius: 8px;
 }
