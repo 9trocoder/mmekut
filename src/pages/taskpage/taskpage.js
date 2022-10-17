@@ -79,6 +79,26 @@ function Taskpage() {
               taskDescription="Create and check Daily Task for the team management and project management with solution provide app."
             />
 
+            <TaskCard
+              organizationImage={p1}
+              taskImage={[]}
+              assigneeImage={[]}
+              organizationName="Ushy"
+              taskCreatorName="Mmekut"
+              taskCreationTime="2h"
+              taskDescription="This project will need a brand new identity where they will get recognized"
+            />
+
+            <TaskCard
+              organizationImage={p4}
+              taskImage={[]}
+              assigneeImage={task4}
+              organizationName="9trocoder"
+              taskCreatorName="yemicodes"
+              taskCreationTime="2h"
+              taskDescription="'Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking. The big lesson in life, baby, is never be scared of anyone or anything. Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. Everybody wants to be famous, but nobody wants to do the work. I live by that. You grind hard so you can play hard. At the end of the day, you put all the work in, and eventually it’ll pay off. It could be in a year, it could be in 30 years. Eventually, your hard work will pay off."
+            />
+
             <button className="showaddWorkspace">{addIconWhiteSmall}</button>
           </div>
         </>
