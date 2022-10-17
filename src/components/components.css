@@ -923,3 +923,38 @@ p.tlctltaskdescription {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Task card */
+
+
+.taskcard__cnt {
+  display: grid;
+  padding: 16px 16px;
+  grid-template-columns: 55px auto;
+  gap: 10px;
+}
+
+
+.taskcard__cnt-left img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+
+.taskcard_cnt-right {
+
+}
+
+.taskcard__cnt-righttop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+.taskcard__cnt-images img {
+  width: 100%;
+}
