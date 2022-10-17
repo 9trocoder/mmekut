@@ -956,5 +956,15 @@ p.tlctltaskdescription {
 
 
 .taskcard__cnt-images img {
-  width: 100%;
+  width: 150px;
+  height: 302px;
+  object-fit: cover;
+}
+
+
+
+.taskcard__cnt-middlememberscnt img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
 }
