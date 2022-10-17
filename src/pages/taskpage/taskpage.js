@@ -82,7 +82,7 @@ function Taskpage() {
             <TaskCard
               organizationImage={p1}
               taskImage={[]}
-              assigneeImage={[]}
+              assigneeImage={[task1]}
               organizationName="Ushy"
               taskCreatorName="Mmekut"
               taskCreationTime="2h"
@@ -92,7 +92,7 @@ function Taskpage() {
             <TaskCard
               organizationImage={p4}
               taskImage={[]}
-              assigneeImage={task4}
+              assigneeImage={task3}
               organizationName="9trocoder"
               taskCreatorName="yemicodes"
               taskCreationTime="2h"
