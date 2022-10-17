@@ -926,14 +926,12 @@ p.tlctltaskdescription {
 
 /* Task card */
 
-
 .taskcard__cnt {
   display: grid;
   padding: 16px 16px;
-  grid-template-columns: 55px auto;
+  grid-template-columns: 10vw 82vw;
   gap: 10px;
 }
-
 
 .taskcard__cnt-left img {
   width: 55px;
@@ -941,9 +939,7 @@ p.tlctltaskdescription {
   object-fit: contain;
 }
 
-
 .taskcard_cnt-right {
-
 }
 
 .taskcard__cnt-righttop {
@@ -951,17 +947,6 @@ p.tlctltaskdescription {
   align-items: center;
   justify-content: space-between;
 }
-
-
-
-
-.taskcard__cnt-images img {
-  width: 170px;
-  height: 250px;
-  object-fit: cover;
-}
-
-
 
 .taskcard__cnt-middlememberscnt img {
   width: 25px;
@@ -972,7 +957,7 @@ p.tlctltaskdescription {
 .taskcard__cnt-righttopleft {
   display: flex;
   align-items: center;
-  gap: .3rem;
+  gap: 0.3rem;
 }
 
 .taskcard__organisationname {
@@ -983,7 +968,7 @@ p.tlctltaskdescription {
 .taskcard__taskcreatorname {
   font-size: 11px;
   font-weight: 400;
-  color: #7b7b7b
+  color: #7b7b7b;
 }
 
 .taskcard__taskcreationtime {
@@ -999,6 +984,36 @@ p.tlctltaskdescription {
 
 .taskcard__taskdescription {
   font-size: 11px;
-  margin-top: .2rem;
-  margin-bottom: .5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.taskcard__cnt-images {
+  width: inherit;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.taskcard__cnt-images::-webkit-scrollbar {
+  display: none;
+}
+.taskcard__cnt-images img {
+  width: 170px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.taskcard__cnt-middlememberscnt {
+  display: flex;
+  align-items: center;
+}
+
+.taskcard__cnt-middleimage-num {
+  margin-left: 0.5rem;
+  font-size: 11px;
+  color: #7b7b7b;
 }
