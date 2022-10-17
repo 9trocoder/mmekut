@@ -11,11 +11,13 @@ import p5 from "../../assets/images/p5.png";
 import {
   addIconActive,
   addIconBlue,
+  addIconWhiteSmall,
   chatNotActive,
   deleteSmallIcon,
   dividerr,
   homeIconNotActive,
   notificationNotActive,
+  otherIcon,
   profileNotActive,
   taskNotActive,
   tasksActive,
@@ -25,6 +27,7 @@ import TaskListCard from "../../components/TaskListCard";
 
 function Taskpage() {
   const [activeButton, setActiveButton] = useState("all");
+  const [showaddTaskButton, setShowaddTaskButton] = useState(true);
   let navigate = useNavigate();
 
   const handleProfileClick = () => {};
@@ -49,130 +52,20 @@ function Taskpage() {
 
   return (
     <>
-      <HeaderBar headerText="Tasks" addIcon={addIconBlue} />
+      {/* <HeaderBar headerText="Tasks" addIcon={addIconBlue} /> */}
 
-      <div className="taskpage__cnt">
-        <div className="taskpage__cnt-search">
-          <input type="text" placeholder="Search" />
+      <div className="workspacepage__cnt">
+        <div className="chatpage__cnt-topheader diffbottomna">
+          <img src={p2} alt="" />
+          <input type="text" placeholder="Search For Task" />
+          <button>{otherIcon}</button>
         </div>
 
-        <div className="taskpage__cnt-taskprojects">
-          <div
-            className={
-              activeButton === "all"
-                ? "taskpage__cnt-taskprojectsactive"
-                : "taskpage__cnt-taskprojectsbtn"
-            }
-            onClick={() => setActiveButton("all")}
-          >
-            All
+        <>
+          <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
+            <button className="showaddWorkspace">{addIconWhiteSmall}</button>
           </div>
-          <div
-            className={
-              activeButton === "todo"
-                ? "taskpage__cnt-taskprojectsactive"
-                : "taskpage__cnt-taskprojectsbtn"
-            }
-            onClick={() => setActiveButton("todo")}
-          >
-            To Do
-          </div>
-          <div
-            className={
-              activeButton === "inprogress"
-                ? "taskpage__cnt-taskprojectsactive"
-                : "taskpage__cnt-taskprojectsbtn"
-            }
-            onClick={() => setActiveButton("inprogress")}
-          >
-            In Progress
-          </div>
-          <div
-            className={
-              activeButton === "completed"
-                ? "taskpage__cnt-taskprojectsactive"
-                : "taskpage__cnt-taskprojectsbtn"
-            }
-            onClick={() => setActiveButton("completed")}
-          >
-            Completed
-          </div>
-        </div>
-        {dividerr}
-        <div className="taskpage__cnt-tasklist">
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task1}
-            priority="HIGH"
-            taskDate="45 mins ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="When you click on this, it will take you to the calender by the right"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task2}
-            priority="HIGH"
-            taskDate="1hr ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="See here ...the task screen"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task3}
-            priority="HIGH"
-            taskDate="15 days ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="Containers are add to enable the user click on the group"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task4}
-            priority="HIGH"
-            taskDate="12 days ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task1}
-            priority="HIGH"
-            taskDate="45 mins ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="When you click on this, it will take you to the calender by the right"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task2}
-            priority="HIGH"
-            taskDate="1hr ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="See here ...the task screen"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task3}
-            priority="HIGH"
-            taskDate="15 days ago"
-          />
-          <TaskListCard
-            projectName="Food Delivery App"
-            taskTitle="Design two app screens"
-            taskDescription="Containers are add to enable the user click on the group"
-            deleteIcon={deleteSmallIcon}
-            taskImage={task4}
-            priority="HIGH"
-            taskDate="12 days ago"
-          />
-        </div>
+        </>
       </div>
 
       <BottomNav
