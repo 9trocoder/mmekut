@@ -928,19 +928,22 @@ p.tlctltaskdescription {
 
 .taskcard__cnt {
   display: grid;
-  padding: 16px 16px;
   grid-template-columns: 55px 80vw;
+  padding: 16px 16px;
   gap: 10px;
 }
 
+.taskcard__cnt-left {
+}
+.taskcard_cnt-right {
+}
 .taskcard__cnt-left img {
   width: 55px;
   height: 55px;
   object-fit: contain;
 }
 
-.taskcard_cnt-right {
-}
+
 
 .taskcard__cnt-righttop {
   display: flex;
@@ -989,8 +992,9 @@ p.tlctltaskdescription {
 }
 
 .taskcard__cnt-images {
-  width: inherit;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 170px 170px 170px 170px;
   gap: 8px;
   margin-bottom: .8rem;
   overflow-x: scroll;
