@@ -49,7 +49,7 @@ function TaskCard({
                   </>
                 ))}
                 <div className="taskcard__cnt-middleimage-num">
-                  {assigneeImage.length}+
+                  {assigneeImage.length - 1}+
                 </div>
               </div>
             ) : (
