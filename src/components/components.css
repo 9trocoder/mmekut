@@ -928,7 +928,7 @@ p.tlctltaskdescription {
 
 .taskcard__cnt {
   display: grid;
-  grid-template-columns: 55px 80vw;
+  grid-template-columns: 55px 75vw;
   padding: 16px 16px;
   gap: 10px;
 }
