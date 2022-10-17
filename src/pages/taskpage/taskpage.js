@@ -15,8 +15,10 @@ import {
   deleteSmallIcon,
   dividerr,
   homeIconNotActive,
+  notificationNotActive,
   profileNotActive,
   taskNotActive,
+  tasksActive,
 } from "../../Utils/tools";
 import "./taskpage.css";
 import TaskListCard from "../../components/TaskListCard";
@@ -177,7 +179,8 @@ function Taskpage() {
         addIcon={addIconActive}
         taskIcon={taskNotActive}
         chatIcon={chatNotActive}
-        profileIcon={profileNotActive}
+        profileIcon={tasksActive}
+        notificationIcon={notificationNotActive}
         homeIcon={homeIconNotActive}
         handleHomeClick={handleHomeClick}
         handleTaskClick={handleTaskClick}

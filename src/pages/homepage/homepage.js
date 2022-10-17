@@ -33,7 +33,9 @@ import { useNavigate } from "react-router-dom";
 
 function Homepage() {
   let navigate = useNavigate();
-  const handleProfileClick = () => {};
+  const handleProfileClick = () => {
+    navigate("/task");
+  };
 
   const handleCalendarClick = () => {};
 
@@ -225,7 +227,7 @@ function Homepage() {
       </div>
 
       <BottomNav
-      showAddButton={true}
+        showAddButton={true}
         homeIcon={homeIconActive}
         // homeText={homeTextActive}
         taskIcon={taskNotActive}

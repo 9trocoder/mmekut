@@ -35,7 +35,9 @@ let task4 = [p3image, p1image, p4image, p2image, p5image];
 function Chatpage() {
   const [activeChatButton, setActiveChatButton] = useState("all");
   let navigate = useNavigate();
-  const handleProfileClick = () => {};
+  const handleProfileClick = () => {
+    navigate("/task");
+  };
   const handleTaskClick = () => {
     navigate("/workspace");
   };
@@ -81,7 +83,7 @@ function Chatpage() {
 
           <img src={p2image} alt="" />
           <input type="text" placeholder="Search Direct Messages" />
-         <button>{otherIcon}</button> 
+          <button>{otherIcon}</button>
         </div>
 
         <div className="chatpage__cnt-chat">
