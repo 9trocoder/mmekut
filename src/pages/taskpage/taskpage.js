@@ -19,6 +19,7 @@ import {
   chatNotActive,
   deleteSmallIcon,
   dividerr,
+  headerBackIcon,
   homeIconNotActive,
   notificationNotActive,
   otherIcon,
@@ -29,10 +30,12 @@ import {
 import "./taskpage.css";
 import TaskListCard from "../../components/TaskListCard";
 import TaskCard from "../../components/TaskCard";
+import Modal from "../../components/Modal";
 
 function Taskpage() {
   const [activeButton, setActiveButton] = useState("all");
   const [showaddTaskButton, setShowaddTaskButton] = useState(true);
+  const [showcreatetask, setShowcreatetask] = useState(false);
   let navigate = useNavigate();
 
   const handleProfileClick = () => {};
@@ -48,6 +51,14 @@ function Taskpage() {
   };
   const handleHomeClick = () => {
     navigate("/");
+  };
+
+  const handleAddTaskClick = () => {
+    setShowcreatetask(true);
+  };
+
+  const handleAddTaskClose = () => {
+    setShowcreatetask(false);
   };
 
   let task1 = [p1];
@@ -99,10 +110,33 @@ function Taskpage() {
               taskDescription="'Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking. The big lesson in life, baby, is never be scared of anyone or anything. Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth. Everybody wants to be famous, but nobody wants to do the work. I live by that. You grind hard so you can play hard. At the end of the day, you put all the work in, and eventually it’ll pay off. It could be in a year, it could be in 30 years. Eventually, your hard work will pay off."
             />
 
-            <button className="showaddWorkspace">{addIconWhiteSmall}</button>
+            <button
+              className="showaddWorkspace"
+              onClick={() => handleAddTaskClick()}
+            >
+              {addIconWhiteSmall}
+            </button>
           </div>
         </>
       </div>
+
+      {showcreatetask && (
+        <Modal
+          zIndex={10002}
+          modalName="New Task"
+          closeIcon={headerBackIcon}
+          handleCloseClick={handleAddTaskClose}
+        >
+
+          <div className="createworkspace__cnt">
+            <div className="createworkspace__inputitem">
+              <p>TASK TITLE</p>
+              <input type="text" placeholder="Make a summary of your task..." />
+            </div>
+          </div>
+
+        </Modal>
+      )}
 
       <BottomNav
         addIcon={addIconActive}

@@ -91,7 +91,9 @@ function Workspacepage() {
       image: p5,
     },
   ];
-  const handleProfileClick = () => {navigate("/task")};
+  const handleProfileClick = () => {
+    navigate("/task");
+  };
   const handleTaskClick = () => {
     navigate("/workspace");
   };
