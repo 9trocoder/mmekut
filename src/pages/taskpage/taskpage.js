@@ -227,7 +227,7 @@ function Taskpage() {
             >
               {selected.length < 1 && (
                 <>
-                  <p>PATICIPANTS</p>
+                  <p>PARTICIPANTS</p>
                   <button className="workspaceaddmemberbutton">
                     <svg
                       width="14"
