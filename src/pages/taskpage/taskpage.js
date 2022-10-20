@@ -16,6 +16,7 @@ import {
   addIconActive,
   addIconBlue,
   addIconWhiteSmall,
+  calendarSmallIcon,
   chatNotActive,
   deleteSmallIcon,
   dividerr,
@@ -138,6 +139,24 @@ function Taskpage() {
                 <button className="addtaskcategoryitems btna">Personal</button>
                 <button className="addtaskcategoryitems btnb">Project</button>
                 <button className="addtaskcategoryitems btnc">Others</button>
+              </div>
+            </div>
+            <div className="createworkspace__inputitem">
+              <div className="addtaskdate">
+                <div className="addtaskdateitem">
+                  <p className="addtaskdatetitle">Starts</p>
+                  <div className="addtaskdate__cnt">
+                    <p className="addtaskdate__cnt-date">20 October</p>
+                    {calendarSmallIcon}
+                  </div>
+                </div>
+                <div className="addtaskdateitem">
+                  <p className="addtaskdatetitle">Ends</p>
+                  <div className="addtaskdate__cnt">
+                    <p className="addtaskdate__cnt-date">End Date</p>
+                    {calendarSmallIcon}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
