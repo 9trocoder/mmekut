@@ -127,14 +127,20 @@ function Taskpage() {
           closeIcon={headerBackIcon}
           handleCloseClick={handleAddTaskClose}
         >
-
           <div className="createworkspace__cnt">
             <div className="createworkspace__inputitem">
               <p>TASK TITLE</p>
               <input type="text" placeholder="Make a summary of your task..." />
             </div>
+            <div className="createworkspace__inputitem">
+              <p>CATEGORY</p>
+              <div className="addtaskcategory">
+                <button className="addtaskcategoryitems btna">Personal</button>
+                <button className="addtaskcategoryitems btnb">Project</button>
+                <button className="addtaskcategoryitems btnc">Others</button>
+              </div>
+            </div>
           </div>
-
         </Modal>
       )}
 

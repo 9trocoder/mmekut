@@ -78,3 +78,33 @@
 .taskpage__cnt-tasklist {
   padding: 16px;
 }
+
+.addtaskcategory {
+  display: flex;
+  gap: .5rem;
+}
+
+.addtaskcategoryitems {
+  padding: 4px 8px;
+  border: none;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+
+.btna {
+  color:#0184fb;
+  background-color: #0182fb15;
+}
+
+.btnb {
+  color: #27ae60;
+  background-color: #27ae6015;
+}
+
+.btnc {
+  color: #9b62fa;
+  background-color: #9b62fa15;
+}

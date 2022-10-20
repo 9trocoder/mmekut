@@ -500,7 +500,7 @@ function Workspacepage() {
               {selected.length < 1 && (
                 <>
                   <p>MEMBER</p>
-                  <button>
+                  <button className="workspaceaddmemberbutton">
                     <svg
                       width="14"
                       height="14"
