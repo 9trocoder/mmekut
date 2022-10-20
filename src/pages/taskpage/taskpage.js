@@ -20,6 +20,7 @@ import {
   chatNotActive,
   deleteSmallIcon,
   dividerr,
+  editIcon,
   headerBackIcon,
   homeIconNotActive,
   notificationNotActive,
@@ -32,8 +33,13 @@ import "./taskpage.css";
 import TaskListCard from "../../components/TaskListCard";
 import TaskCard from "../../components/TaskCard";
 import Modal from "../../components/Modal";
+import BigButton from "../../components/BigButton";
 
 function Taskpage() {
+  const [searchText, setSearchText] = useState("");
+  const [selected, setSelected] = useState([]);
+  const [showAddWorkspaceMember, setShowAddWorkspaceMember] = useState(false);
+
   const [activeButton, setActiveButton] = useState("all");
   const [showaddTaskButton, setShowaddTaskButton] = useState(true);
   const [showcreatetask, setShowcreatetask] = useState(false);
@@ -43,7 +49,9 @@ function Taskpage() {
   const handleTaskClick = () => {
     navigate("/workspace");
   };
-
+  const handleShowWorkspaceMemeber = () => {
+    setShowAddWorkspaceMember(false);
+  };
   const handleChatClick = () => {
     navigate("/chat");
   };
@@ -68,6 +76,60 @@ function Taskpage() {
   let task4 = [p3, p1, p4, p2, p5];
   let tasksimage = [task1image, task2image, task3image, task4image];
 
+  const onSearch = (text) => {
+    setSearchText(text.length > 0 ? text.toLowerCase() : "");
+  };
+
+  function filterByText(list, searchText) {
+    return list.filter(
+      (item) =>
+        item.first_name.toLowerCase().search(searchText.toLowerCase()) === 0
+    );
+  }
+
+  const orgmembers = [
+    {
+      id: 1,
+      first_name: "Alexander",
+      position: "UI/Ux",
+      image: p1,
+    },
+    {
+      id: 2,
+      first_name: "Alex Ayodele",
+      position: "Frontend Developer",
+      image: p2,
+    },
+    {
+      id: 3,
+      first_name: "Mosope",
+      position: "User Interface Designer",
+      image: p3,
+    },
+    {
+      id: 4,
+      first_name: "Oladimeji Emmanuel",
+      position: "FullStack Developer",
+      image: p4,
+    },
+    {
+      id: 5,
+      first_name: "Mmekut Mfon",
+      position: "Head of Design",
+      image: p5,
+    },
+  ];
+  const filteredList = searchText
+    ? filterByText(orgmembers, searchText)
+    : orgmembers;
+  const handleSelectedWorker = (id) => {
+    if (selected.includes(id)) {
+      setSelected((prevSelected) => prevSelected.filter((s) => s !== id));
+    } else {
+      setSelected((prevSelected) => [...prevSelected, id]);
+    }
+  };
+  const workspacemembers = [p1, p2, p3, p4, p5];
   return (
     <>
       {/* <HeaderBar headerText="Tasks" addIcon={addIconBlue} /> */}
@@ -159,11 +221,150 @@ function Taskpage() {
                 </div>
               </div>
             </div>
+            <div
+              className="createworkspace__inputitem"
+              onClick={() => setShowAddWorkspaceMember(true)}
+            >
+              {selected.length < 1 && (
+                <>
+                  <p>PATICIPANTS</p>
+                  <button className="workspaceaddmemberbutton">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447715 14 1 14V12ZM25 14C25.5523 14 26 13.5523 26 13C26 12.4477 25.5523 12 25 12V14ZM14 1C14 0.447715 13.5523 0 13 0C12.4477 0 12 0.447715 12 1H14ZM12 25C12 25.5523 12.4477 26 13 26C13.5523 26 14 25.5523 14 25H12ZM1 14H25V12H1V14ZM12 1V25H14V1H12Z"
+                        fill="#0184FB"
+                      />
+                    </svg>
+                    Add Workspace Members
+                  </button>
+                </>
+              )}
+
+              {selected.length > 1 && (
+                <div
+                  className="edit__workspace-member"
+                  onClick={() => setShowAddWorkspaceMember(true)}
+                >
+                  <p className="selected__members-num">
+                    {selected.length} members add
+                  </p>
+                  <div className="edit__workspace-membericon">{editIcon}</div>
+                </div>
+              )}
+
+              {selected.length > 4 ? (
+                <div className="selected__image_cnt">
+                  {selected.slice(0, 4).map((item, index) => (
+                    <>
+                      <img
+                        className={`image${index}`}
+                        key={index}
+                        src={item}
+                        alt=""
+                      />
+                    </>
+                  ))}
+                  <div className="selected__image-remaining">
+                    {selected.length - 4}
+                  </div>
+                </div>
+              ) : (
+                <div className="selected__image_cnt">
+                  {selected.map((item, index) => (
+                    <>
+                      <img
+                        className={`image${index}`}
+                        key={index}
+                        src={item}
+                        alt=""
+                      />
+                    </>
+                  ))}
+                </div>
+              )}
+              {/* <>
+                {selected.map((item, index) => (
+                  <img key={index} src={item} alt="" />
+                ))}
+              </> */}
+            </div>
             <div className="createworkspace__inputitem">
               <p>DESCRIPTION</p>
               <textarea type="text" placeholder="Type some description..." />
             </div>
           </div>
+        </Modal>
+      )}
+
+      {showAddWorkspaceMember && (
+        <Modal
+          zIndex={10002}
+          modalName="Add Workspace Members"
+          closeIcon={headerBackIcon}
+          handleCloseClick={handleShowWorkspaceMemeber}
+        >
+          <div className="workspacesearch">
+            <input
+              type="text"
+              onChange={(e) => onSearch(e.target.value)}
+              placeholder="Search Members"
+            />
+          </div>
+          <div className="workspace__selected-members">
+            {selected.map((item) => (
+              <img src={item} alt="" />
+            ))}
+          </div>
+          {dividerr}
+          <div className="workspace__memberscnt">
+            {filteredList.map((item, index) => (
+              <>
+                <div
+                  key={index}
+                  style={{ position: "relative" }}
+                  className="assignee__cnt"
+                  onClick={() => handleSelectedWorker(item.image)}
+                >
+                  <button
+                    key={item.id}
+                    type="button"
+                    className="assignee__left"
+                  >
+                    <img src={item.image} alt="" />
+                    <div className="assignee__left-profile">
+                      <p className="assignee__left-name">{item.first_name}</p>
+                      <p className="assignee__left-position">{item.position}</p>
+                    </div>
+                  </button>
+
+                  <div
+                    className={
+                      selected.includes(item.image)
+                        ? "workspace__selected"
+                        : "worspace__notselected"
+                    }
+                  ></div>
+                </div>
+                {dividerr}
+              </>
+            ))}
+          </div>
+
+          {/* <div className="">{selected}</div>
+        {selected.map((item) => (
+          <img src={item} alt="" />
+        ))} */}
+
+          <BigButton
+            buttonName="Add Members"
+            handleClick={handleShowWorkspaceMemeber}
+          />
         </Modal>
       )}
 
