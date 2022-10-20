@@ -159,6 +159,10 @@ function Taskpage() {
                 </div>
               </div>
             </div>
+            <div className="createworkspace__inputitem">
+              <p>DESCRIPTION</p>
+              <textarea type="text" placeholder="Type some description..." />
+            </div>
           </div>
         </Modal>
       )}
