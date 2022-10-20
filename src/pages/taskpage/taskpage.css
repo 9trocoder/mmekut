@@ -81,7 +81,7 @@
 
 .addtaskcategory {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .addtaskcategoryitems {
@@ -93,9 +93,8 @@
   border-radius: 5px;
 }
 
-
 .btna {
-  color:#0184fb;
+  color: #0184fb;
   background-color: #0182fb15;
 }
 
@@ -107,4 +106,31 @@
 .btnc {
   color: #9b62fa;
   background-color: #9b62fa15;
+}
+
+.addtaskdate {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.addtaskdatetitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.addtaskdate__cnt {
+  border: 1px solid rgba(154, 159, 191, 0.15);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+}
+
+.addtaskdate__cnt-date {
+  font-size: 13px;
+  color: #757575 !important;
 }
