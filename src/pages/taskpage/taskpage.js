@@ -224,11 +224,11 @@ function Taskpage() {
             <div
               className="createworkspace__inputitem"
               onClick={() => setShowAddWorkspaceMember(true)}
-            >
+            ><p>PARTICIPANTS</p>
               {selected.length < 1 && (
                 <>
-                  <p>PARTICIPANTS</p>
-                  <button className="workspaceaddmemberbutton">
+                  
+                  <button className="addtaskmembers">
                     <svg
                       width="14"
                       height="14"
@@ -241,12 +241,11 @@ function Taskpage() {
                         fill="#0184FB"
                       />
                     </svg>
-                    Add Workspace Members
                   </button>
                 </>
               )}
 
-              {selected.length > 1 && (
+              {selected.length >= 1 && (
                 <div
                   className="edit__workspace-member"
                   onClick={() => setShowAddWorkspaceMember(true)}

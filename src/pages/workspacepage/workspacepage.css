@@ -70,6 +70,14 @@
   cursor: pointer;
 }
 
+.addtaskmembers {
+  border: 1px solid rgba(154, 159, 191, 0.15);
+  background-color: transparent;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .createworkspace__privacy-cnt {
   border: 1px solid rgba(154, 159, 191, 0.15);
   height: 50px;
@@ -245,7 +253,7 @@
 
 .selected__image_cnt {
   display: flex;
-  padding: 16px 16px 16px 0px;
+  padding: 0px 16px 16px 0px;
   position: relative;
 }
 
@@ -368,7 +376,6 @@
   color: #000b23;
 }
 
-
 .workspacepage__searchcnt {
   padding: 8px 16px;
   width: 100%;
@@ -376,7 +383,7 @@
 
 .workspacepage__searchcnt input {
   background-color: rgba(154, 159, 191, 0.05);
-  border: .5px solid #9A9FBF15;
+  border: 0.5px solid #9a9fbf15;
   width: 100%;
   border-radius: 9999px;
   padding: 10px 16px;

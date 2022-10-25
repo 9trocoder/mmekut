@@ -496,11 +496,11 @@ function Workspacepage() {
             <div
               className="createworkspace__inputitem"
               onClick={() => setShowAddWorkspaceMember(true)}
-            >
+            ><p>MEMBER</p>
               {selected.length < 1 && (
                 <>
-                  <p>MEMBER</p>
-                  <button className="workspaceaddmemberbutton">
+                  
+                  <button className="addtaskmembers">
                     <svg
                       width="14"
                       height="14"
@@ -513,7 +513,6 @@ function Workspacepage() {
                         fill="#0184FB"
                       />
                     </svg>
-                    Add Workspace Members
                   </button>
                 </>
               )}
