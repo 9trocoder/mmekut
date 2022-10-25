@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HomepageHeader from "../../components/HompageHeader";
 import p2image from "../../assets/images/p2.png";
+import p4image from "../../assets/images/p4.png"
 import "./notificationpage.css";
 import {
   addIconNotActive,
@@ -59,7 +60,7 @@ function Notificationpage() {
           </div>
         </div>
         <div className="notification__card diffbottomna">
-          <img src={p2image} alt="" />
+          <img src={p4image} alt="" />
           <div className="notification__card-right">
             <div className="notification__card-righttop">
               <p className="notification__card-author">9trocoder</p>
