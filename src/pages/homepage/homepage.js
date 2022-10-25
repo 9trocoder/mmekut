@@ -243,6 +243,7 @@ function Homepage() {
         handleAddClick={handleAddClick}
         handleChatClick={handleChatClick}
         handleProfileClick={handleProfileClick}
+        handleNotificationClick={() => navigate("/notification")}
       />
     </>
   );

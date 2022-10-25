@@ -223,6 +223,7 @@ function Chatpage() {
         handleAddClick={handleAddClick}
         handleChatClick={handleChatClick}
         handleProfileClick={handleProfileClick}
+        handleNotificationClick={() => navigate("/notification")}
       />
     </>
   );

@@ -379,6 +379,7 @@ function Taskpage() {
         handleAddClick={handleAddClick}
         handleChatClick={handleChatClick}
         handleProfileClick={handleProfileClick}
+        handleNotificationClick={() => navigate("/notification")}
       />
     </>
   );
