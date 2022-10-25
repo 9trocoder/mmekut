@@ -83,6 +83,7 @@
   padding: 10px;
   cursor: pointer;
   border: none;
+  color: #757575;
 }
 
 .chatpage__cnt-chat {
