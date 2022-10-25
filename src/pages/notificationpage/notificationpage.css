@@ -1,0 +1,37 @@
+.notification__card {
+  padding: 16px 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.notification__card img {
+  width: 50px;
+  height: 50px;
+}
+
+.notification__card-right {
+  width: 100%;
+}
+
+.notification__card-righttop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification__card-author {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.notification__card-time {
+  font-size: 11px;
+  font-weight: 400;
+  color: #7b7b7b;
+}
+
+.notification__card-bottom {
+  font-size: 11px;
+  margin-top: 0.2rem;
+  
+}

@@ -58,6 +58,18 @@ function Notificationpage() {
             <button>Tasks</button>
           </div>
         </div>
+        <div className="notification__card diffbottomna">
+          <img src={p2image} alt="" />
+          <div className="notification__card-right">
+            <div className="notification__card-righttop">
+              <p className="notification__card-author">9trocoder</p>
+              <p className="notification__card-time">9 min ago</p>
+            </div>
+            <p className="notification__card-bottom">
+              Marked the task make a summary table as done and also move the task update to progress.
+            </p>
+          </div>
+        </div>
       </div>
       <BottomNav
         showAddButton={false}
