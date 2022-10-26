@@ -18,7 +18,7 @@ function WorkspaceProjectpage() {
   return (
     <>
       <ChatMessageModal
-        zIndex={10003}
+        zIndex={10004}
         handleCloseClick={handleCloseClick}
         closeIcon={headerBackIcon}
         userName="Mmekut App"
