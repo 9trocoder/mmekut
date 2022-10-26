@@ -1,29 +1,94 @@
 .workspaceprojectpage__cnt-navigation {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .workspaceprojectbutton button {
-    background-color: #0184fb;
-    cursor: pointer;
-    border: none;
-    padding: 10px 16px;
-    font-family: inherit;
-    font-size: 12px;
-    border-radius: 9999px;
-    font-weight: 600;
-    color: #fff;
+  background-color: #0184fb;
+  cursor: pointer;
+  border: none;
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .workspaceprojectbutton__notactive button {
-    background-color: transparent;
-    border: none;
-    padding: 10px 16px;
-    font-family: inherit;
-    font-size: 12px;
+  background-color: transparent;
+  border: none;
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #000b23;
+}
+
+.workspaceprojectpagename {
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.workspaceprojectpagememnum {
+  margin-top: 0.5rem;
+  font-size: 10px;
+  color: #7b7b7b;
+  font-weight: 500;
+}
+
+.workspaceprojectimages__cnt {
+    display: flex;
+    margin: 16px 0px;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+
+.workspaceprojectimages__cnt img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.workspaceprojectfinalnum {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
     border-radius: 9999px;
+    font-size: 12px;
     font-weight: 600;
-    color: #000b23;
+    color: #0184fb;
+}
+
+.workspaceprojectimg {
+    margin-left: -10px;
+}
+
+
+.workspaceprojectpagemem {
+    display: flex;
+    align-items: center;
+}
+
+.workspaceprojectpagemem button {
+    background-color: #0184fb;
+    height: 32px;
+    width: 32px;
+    border: none;
+    border-radius: 9999px;
+    margin-left: -10px;
+}
+
+.workspaceprojectabout {
+    font-size: 12px;
+    color:#000b23;
 }

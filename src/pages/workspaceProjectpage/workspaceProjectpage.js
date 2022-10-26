@@ -8,6 +8,7 @@ import p5image from "../../assets/images/p5.png";
 import ChatMessageModal from "../../components/ChatMessageHeader";
 import {
   addIconBlue,
+  addIconWhiteSmall,
   headerBackIcon,
   otherIcon,
   searchBig,
@@ -57,10 +58,12 @@ function WorkspaceProjectpage() {
               </div>
             </div>
             <div className="workspacepageabout">
-              <p>Mobile App & Web Development</p>
-              <p>6 Members</p>
+              <p className="workspaceprojectpagename">
+                Mobile App & Web Development
+              </p>
+              <p className="workspaceprojectpagememnum">6 Members</p>
             </div>
-            <div className="">
+            <div className="workspaceprojectpagemem">
               {workspacemembers.length > 4 ? (
                 <div className="workspaceprojectimages__cnt">
                   {workspacemembers.slice(0, 4).map((item, index) => (
@@ -69,10 +72,13 @@ function WorkspaceProjectpage() {
                         src={item}
                         alt=""
                         key={index}
-                        className={`workspaceprojectimg${index}`}
+                        className="workspaceprojectimg"
                       />
                     </>
                   ))}
+                  <div className="workspaceprojectfinalnum">
+                    {workspacemembers.length}
+                  </div>
                 </div>
               ) : (
                 <div className="workspaceprojectimages__cnt">
@@ -82,16 +88,19 @@ function WorkspaceProjectpage() {
                         src={item}
                         alt=""
                         key={index}
-                        className={`workspaceprojectimg${index}`}
+                        className="workspaceprojectimg"
                       />
                     </>
                   ))}
+                  <div className="workspaceprojectfinalnum">
+                    {workspacemembers.length}
+                  </div>
                 </div>
               )}
 
-              <button>{addIconBlue}</button>
+              <button>{addIconWhiteSmall}</button>
             </div>
-            <p>
+            <p className="workspaceprojectabout">
               The super fast tasking app is an app that connects organisation
               and it's workers together in other tomake work effective, the app
               is used for tasking and chatting.
