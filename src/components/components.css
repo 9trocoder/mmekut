@@ -641,6 +641,7 @@ p.tlctltaskdescription {
   left: 0;
   right: 0;
   background-color: #ffffff;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -702,7 +703,7 @@ p.tlctltaskdescription {
 
 .chatmessagemodal__cnt-bottom {
   position: relative;
-  margin-top: 3.2rem;
+  margin-top: 3.3rem;
   padding: 16px 16px;
   display: flex;
   flex-direction: column;
