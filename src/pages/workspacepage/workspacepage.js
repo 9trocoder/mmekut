@@ -115,6 +115,9 @@ function Workspacepage() {
     setShowcreateworkspace(false);
   };
   const handleCreateWorkspace = () => {};
+  const handleWorkspaceClick = () => {
+    navigate("/workspace_project");
+  };
 
   const filteredList = searchText
     ? filterByText(orgmembers, searchText)
@@ -246,6 +249,7 @@ function Workspacepage() {
                 workspaceCategory="Mobile App & Web Development"
                 workspaceColor="#AD2089"
                 workspaceCreatorPosition="Creator"
+                handleWorkspaceClick={handleWorkspaceClick}
               />
 
               <WorkspaceCard
@@ -258,6 +262,7 @@ function Workspacepage() {
                 workspaceCategory="Mobile App & Web Development"
                 workspaceColor="#9B62FA"
                 workspaceCreatorPosition="Creator"
+                handleWorkspaceClick={handleWorkspaceClick}
               />
 
               <WorkspaceCard
@@ -270,6 +275,7 @@ function Workspacepage() {
                 workspaceCategory="Mobile App & Web Development"
                 workspaceColor="#826B02"
                 workspaceCreatorPosition="Creator"
+                handleWorkspaceClick={handleWorkspaceClick}
               />
 
               <WorkspaceCard
@@ -282,6 +288,7 @@ function Workspacepage() {
                 workspaceCategory="Mobile App & Web Development"
                 workspaceColor="#0D1C63"
                 workspaceCreatorPosition="Creator"
+                handleWorkspaceClick={handleWorkspaceClick}
               />
 
               <button

@@ -10,6 +10,7 @@ import Settingspage from "./pages/settingspage/settingspage";
 import Taskpage from "./pages/taskpage/taskpage";
 import UserChatProfilepage from "./pages/userChatProfilepage/userChatProfilepage";
 import Workspacepage from "./pages/workspacepage/workspacepage";
+import WorkspaceProjectpage from "./pages/workspaceProjectpage/workspaceProjectpage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/task" element={<Taskpage />} />
         <Route path="/user_chat_profile" element={<UserChatProfilepage />} />
         <Route path="/workspace" element={<Workspacepage />} />
+        <Route path="/workspace_project"element={<WorkspaceProjectpage />} />
       </Routes>
     </BrowserRouter>
   );

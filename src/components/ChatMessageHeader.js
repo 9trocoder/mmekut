@@ -23,8 +23,14 @@ function ChatMessageModal({
                 <button onClick={handleCloseClick}>{closeIcon}</button>
                 <div className="chatmessagemodal__cnt-topleftprofile">
                   <div className="cmmctlp_image-cnt">
-                    <img src={userImage} alt="" />
-                    {userStatus && <div className="cmmctlp_image-cntstatus" />}
+                    {userImage && (
+                      <>
+                        <img src={userImage} alt="" />
+                        {userStatus && (
+                          <div className="cmmctlp_image-cntstatus" />
+                        )}
+                      </>
+                    )}
                   </div>
                   <p>{userName}</p>
                 </div>
