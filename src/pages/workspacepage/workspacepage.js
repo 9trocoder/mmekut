@@ -671,6 +671,7 @@ function Workspacepage() {
         handleAddClick={handleWorkspaceAddClick}
         handleChatClick={handleChatClick}
         handleProfileClick={handleProfileClick}
+        handleNotificationClick={() => navigate("/notification")}
       />
     </>
   );
