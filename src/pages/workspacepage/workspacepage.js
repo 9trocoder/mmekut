@@ -86,7 +86,7 @@ function Workspacepage() {
     },
     {
       id: 5,
-      first_name: "Mmekut Mfon",
+      first_name: "Mmekut Mfon",  
       position: "Head of Design",
       image: p5,
     },

@@ -706,7 +706,7 @@ p.tlctltaskdescription {
   padding: 16px 16px;
   display: flex;
   flex-direction: column;
-
+  z-index: -1;
   height: 85vh;
 }
 
