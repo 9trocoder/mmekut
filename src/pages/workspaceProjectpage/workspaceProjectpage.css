@@ -1,3 +1,11 @@
+.workspaceprojectpage__cnt {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #9a9fbf15;
+}
 .workspaceprojectpage__cnt-navigation {
   display: flex;
   gap: 10px;
@@ -42,53 +50,51 @@
 }
 
 .workspaceprojectimages__cnt {
-    display: flex;
-    margin: 16px 0px;
-    margin-left: 10px;
-    align-items: center;
-    
+  display: flex;
+  margin: 16px 0px;
+  margin-left: 10px;
+  align-items: center;
 }
 
 .workspaceprojectimages__cnt img {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
 }
 
 .workspaceprojectfinalnum {
-    background-color: #fff;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -10px;
-    border-radius: 9999px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #0184fb;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0184fb;
 }
 
 .workspaceprojectimg {
-    margin-left: -10px;
+  margin-left: -10px;
 }
 
-
 .workspaceprojectpagemem {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .workspaceprojectpagemem button {
-    background-color: #0184fb;
-    height: 32px;
-    width: 32px;
-    border: none;
-    border-radius: 9999px;
-    margin-left: -10px;
+  background-color: #0184fb;
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 9999px;
+  margin-left: -10px;
 }
 
 .workspaceprojectabout {
-    font-size: 12px;
-    color:#000b23;
+  font-size: 12px;
+  color: #000b23;
 }
