@@ -34,7 +34,7 @@ function WorkspaceProjectpage() {
       >
         <div className="workspaceprojectpage__cnt">
           <div className="workspaceprojectpage__cnt-top">
-            <div className="workspaceprojectpage__cnt-navigation">
+            {/* <div className="workspaceprojectpage__cnt-navigation">
               <div
                 onClick={() => setActiveButton("overview")}
                 className={
@@ -56,7 +56,7 @@ function WorkspaceProjectpage() {
               >
                 <button>Calendar</button>
               </div>
-            </div>
+            </div> */}
             <div className="workspacepageabout">
               <p className="workspaceprojectpagename">
                 Mobile App & Web Development
