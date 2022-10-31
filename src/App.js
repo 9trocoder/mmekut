@@ -6,6 +6,7 @@ import Chatpage from "./pages/chatpage/chatpage";
 import Homepage from "./pages/homepage/homepage";
 import Messagepage from "./pages/messagepage/messagepage";
 import Notificationpage from "./pages/notificationpage/notificationpage";
+import Projectpage from "./pages/projectpage/projectpage";
 import Settingspage from "./pages/settingspage/settingspage";
 import Taskpage from "./pages/taskpage/taskpage";
 import UserChatProfilepage from "./pages/userChatProfilepage/userChatProfilepage";
@@ -27,7 +28,8 @@ function App() {
         <Route path="/task" element={<Taskpage />} />
         <Route path="/user_chat_profile" element={<UserChatProfilepage />} />
         <Route path="/workspace" element={<Workspacepage />} />
-        <Route path="/workspace_project"element={<WorkspaceProjectpage />} />
+        <Route path="/workspace_project" element={<WorkspaceProjectpage />} />
+        <Route path="/projects" element={<Projectpage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -118,7 +118,10 @@ function WorkspaceProjectpage() {
             </p>
           </div>
         </div>
-        <div className="workspaceprojectpage__cnt-bottom">
+        <div
+          className="workspaceprojectpage__cnt-bottom"
+          onClick={() => navigate("/projects")}
+        >
           <div className="workspaceprojectpage__cntbottom-items">
             <p className="wspciprojects">Projects</p>
             <p className="wspcinumbers">6</p>
