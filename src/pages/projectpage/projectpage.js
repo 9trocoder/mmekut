@@ -7,6 +7,8 @@ import {
   chatActive,
   headerBackIcon,
 } from "../../Utils/tools";
+import ProjectsCard from "../../components/ProjectsCard";
+import "./projectpage.css"
 
 function Projectpage() {
   let navigate = useNavigate();
@@ -20,23 +22,7 @@ function Projectpage() {
         // searchIcon={chatActive}
       >
         <div className="projectpage__cnt">
-          <div className="projectpage__items">
-            <div className="projectpage__items-top">
-              <img src={p3} alt="" />
-              <div className="projectpage__items-topmiddle">
-                <p className="projectpage__name">Ushy Dashboard</p>
-                <p className="projectpage__category">Design</p>
-              </div>
-              <div className="projectpage__workcount">
-                <p>15/20</p>
-              </div>
-            </div>
-            <div className="projectpage__items-bottom">
-              <div className="projectpage__items-progress">
-                <div className="projectpage__items-percentage" />
-              </div>
-            </div>
-          </div>
+          <ProjectsCard projectCategory="Design" projectIcon={p3} projectName="Ushy Dashboard" projectpercentage="50%" projectColor="#9B62FA" projectWorkCount="15/20" />
         </div>
         <button onClick={() => {}} className="showaddWorkspace">
           {addIconWhiteSmall}

@@ -1003,3 +1003,58 @@ p.tlctltaskdescription {
   font-size: 11px;
   color: #7b7b7b;
 }
+
+
+/* Projects Card */
+.projectpage__items {
+  padding: 16px 16px;
+}
+
+.projectpage__items-top {
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.projectpage__items-top img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.projectpage__name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.projectpage__category {
+  font-size: 11px;
+  font-weight: 400;
+  color: #7b7b7b;
+}
+
+.projectpage__workcount {
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.projectpage__workcount p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.projectpage__items-progress {
+  width: 100%;
+  height: 8px;
+  background-color: #9a9fbf15;
+  margin-top: 16px;
+  border-radius: 5px;
+}
+
+.projectpage__items-percentage {
+  height: 8px;
+  border-radius: 5px;
+}
