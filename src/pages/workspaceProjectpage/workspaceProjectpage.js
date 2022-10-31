@@ -9,6 +9,7 @@ import ChatMessageModal from "../../components/ChatMessageHeader";
 import {
   addIconBlue,
   addIconWhiteSmall,
+  chatActive,
   headerBackIcon,
   otherIcon,
   searchBig,
@@ -29,13 +30,13 @@ function WorkspaceProjectpage() {
         handleCloseClick={handleCloseClick}
         closeIcon={headerBackIcon}
         userName="Mmekut App"
-        searchIcon={searchBig}
+        searchIcon={chatActive}
         moreIcon={otherIcon}
       >
         <div className="workspaceprojectpage__cnt">
           <div className="workspaceprojectpage__cnt-top">
             <div className="workspaceprojectpage__cnt-navigation">
-              <div
+              {/* <div
                 onClick={() => setActiveButton("overview")}
                 className={
                   activeButton === "overview"
@@ -44,9 +45,9 @@ function WorkspaceProjectpage() {
                 }
               >
                 <button>Overview</button>
-              </div>
+              </div> */}
 
-              <div
+              {/* <div
                 onClick={() => setActiveButton("project")}
                 className={
                   activeButton === "project"
@@ -65,9 +66,7 @@ function WorkspaceProjectpage() {
                 }
               >
                 <button>Chat</button>
-              </div>
-
-              
+              </div> */}
             </div>
             <div className="workspacepageabout">
               <p className="workspaceprojectpagename">
@@ -117,6 +116,12 @@ function WorkspaceProjectpage() {
               and it's workers together in other tomake work effective, the app
               is used for tasking and chatting.
             </p>
+          </div>
+        </div>
+        <div className="workspaceprojectpage__cnt-bottom">
+          <div className="workspaceprojectpage__cntbottom-items">
+            <p className="wspciprojects">Projects</p>
+            <p className="wspcinumbers">6</p>
           </div>
         </div>
       </ChatMessageModal>

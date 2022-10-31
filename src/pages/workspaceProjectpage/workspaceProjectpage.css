@@ -1,13 +1,18 @@
 .workspaceprojectpage__cnt {
   margin-left: -16px;
   margin-right: -16px;
+
+  margin-top: -16px;
+
+  border-bottom: 1px solid #9a9fbf15;
+  background-color: #f7f5f515;
+}
+
+.workspaceprojectpage__cnt-top {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
-  margin-top: -16px;
   padding-top: 16px;
-  border-bottom: 1px solid #9a9fbf15;
-  background-color: #f7f5f515;
 }
 .workspaceprojectpage__cnt-navigation {
   display: flex;
@@ -101,4 +106,29 @@
 .workspaceprojectabout {
   font-size: 12px;
   color: #000b23;
+}
+
+.workspaceprojectpage__cnt-bottom {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.workspaceprojectpage__cntbottom-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px;
+  border-bottom: 1px solid #9a9fbf15;
+  cursor: pointer;
+}
+
+.wspciprojects {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.wspcinumbers {
+  font-weight: 500;
+  font-size: 13px;
+  color: #7b7b7b;
 }
