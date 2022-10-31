@@ -34,7 +34,7 @@ function WorkspaceProjectpage() {
       >
         <div className="workspaceprojectpage__cnt">
           <div className="workspaceprojectpage__cnt-top">
-            {/* <div className="workspaceprojectpage__cnt-navigation">
+            <div className="workspaceprojectpage__cnt-navigation">
               <div
                 onClick={() => setActiveButton("overview")}
                 className={
@@ -47,16 +47,28 @@ function WorkspaceProjectpage() {
               </div>
 
               <div
-                onClick={() => setActiveButton("calendar")}
+                onClick={() => setActiveButton("project")}
                 className={
-                  activeButton === "calendar"
+                  activeButton === "project"
                     ? "workspaceprojectbutton"
                     : "workspaceprojectbutton__notactive"
                 }
               >
-                <button>Calendar</button>
+                <button>Projects</button>
               </div>
-            </div> */}
+              <div
+                onClick={() => setActiveButton("Chat")}
+                className={
+                  activeButton === "Chat"
+                    ? "workspaceprojectbutton"
+                    : "workspaceprojectbutton__notactive"
+                }
+              >
+                <button>Chat</button>
+              </div>
+
+              
+            </div>
             <div className="workspacepageabout">
               <p className="workspaceprojectpagename">
                 Mobile App & Web Development

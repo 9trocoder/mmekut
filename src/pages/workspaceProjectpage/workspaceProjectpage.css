@@ -26,6 +26,7 @@
   border-radius: 9999px;
   font-weight: 600;
   color: #fff;
+  cursor: pointer;
 }
 
 .workspaceprojectbutton__notactive button {
@@ -37,6 +38,7 @@
   border-radius: 9999px;
   font-weight: 600;
   color: #000b23;
+  cursor: pointer;
 }
 
 .workspaceprojectpagename {
