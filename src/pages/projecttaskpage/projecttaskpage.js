@@ -83,7 +83,7 @@ function Projecttaskpage() {
       {tasknot && (
         <div className="projecttaskpage__alert">
           <p>
-            You have <span>6 tasks</span> assigned to you
+            You have <span>  6 tasks </span> assigned to you
           </p>
           <div onClick={() => setTaskNot(false)}>{closeIcon}</div>
         </div>
