@@ -32,6 +32,7 @@
   font-weight: 600;
   color: #fff;
   cursor: pointer;
+  border: 2px solid #0184fb;
 }
 
 .workspaceprojectbutton__notactive button {
@@ -44,6 +45,7 @@
   font-weight: 600;
   color: #000b23;
   cursor: pointer;
+  border: 2px solid #9a9fbf15;
 }
 
 .workspaceprojectpagename {
