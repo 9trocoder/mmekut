@@ -14,16 +14,24 @@
 }
 
 .projecttaskpage__alert p {
-  font-size: 12px;
+  font-size: 11px;
   color: #7b7b7b;
 }
 
 .projecttaskpage__alert p span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #000;
 }
 
 .projecttaskpage__alert div {
     cursor: pointer;
+}
+
+.projecttaskpage__cnt {
+    margin-top: 3.5rem;
+}
+
+.projecttaskpage__nav {
+    padding: 16px 16px;
 }

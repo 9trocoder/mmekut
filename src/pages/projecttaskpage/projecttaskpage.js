@@ -26,6 +26,7 @@ import { useState } from "react";
 
 function Projecttaskpage() {
   const [tasknot, setTaskNot] = useState(true);
+  const [activeButton, setActiveButton] = useState("overview");
   let navigate = useNavigate();
   let task1 = [p1];
   let task2 = [p2, p3, p4];
@@ -40,7 +41,44 @@ function Projecttaskpage() {
         projectCategory="Web Development"
         handleCloseClick={() => navigate(-1)}
       />
-      <div className="projecttaskpage__cnt"></div>
+      <div className="projecttaskpage__cnt">
+        <div className="projecttaskpage__nav">
+            <div className="workspaceprojectpage__cnt-navigation">
+          <div
+            onClick={() => setActiveButton("overview")}
+            className={
+              activeButton === "overview"
+                ? "workspaceprojectbutton"
+                : "workspaceprojectbutton__notactive"
+            }
+          >
+            <button>Overview</button>
+          </div>
+
+          <div
+            onClick={() => setActiveButton("inprogress")}
+            className={
+              activeButton === "inprogress"
+                ? "workspaceprojectbutton"
+                : "workspaceprojectbutton__notactive"
+            }
+          >
+            <button>In Progress</button>
+          </div>
+          <div
+            onClick={() => setActiveButton("ready")}
+            className={
+              activeButton === "ready"
+                ? "workspaceprojectbutton"
+                : "workspaceprojectbutton__notactive"
+            }
+          >
+            <button>Ready</button>
+          </div>
+        </div>
+        </div>
+        
+      </div>
 
       {tasknot && (
         <div className="projecttaskpage__alert">
