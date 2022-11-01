@@ -31,6 +31,7 @@ function Projectpage() {
             projectpercentage="80%"
             projectColor="#9B62FA"
             projectWorkCount="15/20"
+            handleClick={() => navigate("/projecttaskpage")}
           />
           <ProjectsCard
             projectCategory="Web Development"
@@ -39,6 +40,7 @@ function Projectpage() {
             projectpercentage="20%"
             projectColor="#AD2089"
             projectWorkCount="8/20"
+            handleClick={() => navigate("/projecttaskpage")}
           />
           <ProjectsCard
             projectCategory="Marketing"
@@ -47,6 +49,7 @@ function Projectpage() {
             projectpercentage="40%"
             projectColor="#4B75BF"
             projectWorkCount="10/20"
+            handleClick={() => navigate("/projecttaskpage")}
           />
         </div>
         <button onClick={() => {}} className="showaddWorkspace">
