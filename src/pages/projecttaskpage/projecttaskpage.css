@@ -1,0 +1,29 @@
+.projecttaskpage__alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin: 16px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px 4px 16px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.projecttaskpage__alert p {
+  font-size: 12px;
+  color: #7b7b7b;
+}
+
+.projecttaskpage__alert p span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.projecttaskpage__alert div {
+    cursor: pointer;
+}

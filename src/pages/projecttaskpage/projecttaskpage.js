@@ -15,14 +15,17 @@ import task4image from "../../assets/images/task4image.jpg";
 
 import {
   addIconWhiteSmall,
+  closeIcon,
   headerBackIcon,
   otherIcon,
   searchBig,
 } from "../../Utils/tools";
 import TaskCard from "../../components/TaskCard";
 import ProjectHeader from "../../components/ProjectHeader";
+import { useState } from "react";
 
 function Projecttaskpage() {
+  const [tasknot, setTaskNot] = useState(true);
   let navigate = useNavigate();
   let task1 = [p1];
   let task2 = [p2, p3, p4];
@@ -31,7 +34,22 @@ function Projecttaskpage() {
   let tasksimage = [task1image, task2image, task3image, task4image];
   return (
     <>
-     <ProjectHeader projectImage={p3} projectName="Ushy Dashboard" projectCategory="Web Development" handleCloseClick={() => navigate(-1)} />
+      <ProjectHeader
+        projectImage={p3}
+        projectName="Ushy Dashboard"
+        projectCategory="Web Development"
+        handleCloseClick={() => navigate(-1)}
+      />
+      <div className="projecttaskpage__cnt"></div>
+
+      {tasknot && (
+        <div className="projecttaskpage__alert">
+          <p>
+            You have <span>6 tasks</span> assigned to you
+          </p>
+          <div onClick={() => setTaskNot(false)}>{closeIcon}</div>
+        </div>
+      )}
     </>
   );
 }
