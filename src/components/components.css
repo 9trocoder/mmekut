@@ -1139,6 +1139,7 @@ p.tlctltaskdescription {
 .projecttaskcard__top {
   display: flex;
   align-items: center;
+  padding-bottom: 5px;
   gap: 1rem;
 }
 
