@@ -929,8 +929,8 @@ p.tlctltaskdescription {
 
 .taskcard__cnt {
   display: grid;
-  grid-template-columns: 55px auto;
-  padding: 16px 16px;
+  grid-template-columns: 35px auto;
+  padding: 10px 10px;
   border: 1px solid #9a9fbf15;
   margin: 10px 16px;
   border-radius: 8px;
@@ -938,8 +938,8 @@ p.tlctltaskdescription {
 }
 
 .taskcard__cnt-left img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 }
 
@@ -1009,7 +1009,7 @@ p.tlctltaskdescription {
 
 /* Projects Card */
 .projectpage__items {
-  padding: 16px 16px;
+  padding: 10px 10px;
   cursor: pointer;
   border: 1px solid #9a9fbf15;
   margin: 10px 16px;
@@ -1055,7 +1055,7 @@ p.tlctltaskdescription {
   width: 100%;
   height: 6px;
   background-color: #9a9fbf15;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 8px;
 }
 
@@ -1140,7 +1140,7 @@ p.tlctltaskdescription {
 
 /* Project Task Card */
 .projecttaskcard__cnt {
-  padding: 16px 16px;
+  padding: 10px 10px;
   border: 1px solid #9a9fbf15;
   margin: 10px 16px;
   border-radius: 8px;
