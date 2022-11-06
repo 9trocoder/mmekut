@@ -81,6 +81,8 @@ function Projecttaskpage() {
             <ProjectTaskCard
               assigneeImages={task4}
               taskTitle="Complete the documentations"
+              taskDate="Today 12:45"
+              numComments={1}
             />
           </div>
         </div>

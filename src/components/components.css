@@ -1128,3 +1128,77 @@ p.tlctltaskdescription {
   border-radius: 9999px;
   border: 3px solid #fff;
 }
+
+
+/* Project Task Card */
+.projecttaskcard__cnt {
+  padding: 16px 16px;
+  cursor: pointer;
+}
+
+.projecttaskcard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projecttaskcard__title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.projecttaskcard__comments {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.projecttaskcard__numcomments {
+  font-size: 11px;
+  color:#7b7b7b;
+}
+
+.projecttaskcard__bottom {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.projecttaskcard__date {
+  display: flex;
+  gap: 10px;
+}
+
+.projecttaskcard__taskdate {
+  font-size: 12px;
+  color:#7b7b7b;
+}
+
+.projecttaskcard__assignee {
+  margin-left: auto;
+}
+
+.projecttaskcard__assigneecnt {
+  display: flex;
+  align-items: center;
+
+}
+
+.projecttaskcard__asigneeimages {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-right: -10px;
+}
+
+.projecttaskcard__assignneimage-num {
+  background-color: #fff;
+  height: 25px;
+  width: 25px;
+  font-size: 10px;
+  color: #7b7b7b;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

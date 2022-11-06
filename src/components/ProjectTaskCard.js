@@ -7,15 +7,19 @@ function ProjectTaskCard({ taskTitle, taskDate, numComments, assigneeImages }) {
     <>
       <div className="projecttaskcard__cnt diffbottomna">
         <div className="projecttaskcard__top">
-          <p className="prjecttaskcard__title">{taskTitle}</p>
-          <div className="projecttaskcard__comments">
-            <p className="projecttaskcard__numcomments">{numComments}</p>
-            {commentIcon}
-          </div>
+          <p className="projecttaskcard__title">{taskTitle}</p>
+          {numComments >= 1 ?(
+            <div className="projecttaskcard__comments">
+              <p className="projecttaskcard__numcomments">{numComments}</p>
+              <div className="">{commentIcon}</div>
+              
+            </div>
+          ) : <></>}
         </div>
         <div className="projecttaskcard__bottom">
           <div className="projecttaskcard__date">
-            {calendarIconSmall}
+            <div className="">{calendarIconSmall}</div>
+            
             <p className="projecttaskcard__taskdate">{taskDate}</p>
           </div>
           <div className="projecttaskcard__assignee">
@@ -32,7 +36,7 @@ function ProjectTaskCard({ taskTitle, taskDate, numComments, assigneeImages }) {
                   </>
                 ))}
                 <div className="projecttaskcard__assignneimage-num">
-                 +{assigneeImages.length - 4}
+                  +{assigneeImages.length - 4}
                 </div>
               </div>
             ) : (
