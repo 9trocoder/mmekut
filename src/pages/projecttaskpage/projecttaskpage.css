@@ -19,26 +19,25 @@
 }
 
 .projecttaskpage__alert p span {
-    font-size: 14px;
-    font-weight: 700;
-    color: #000;
-    padding: 0 5px 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  padding: 0 5px 0 5px;
 }
 
 .projecttaskpage__alert div {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .projecttaskpage__cnt {
-    margin-top: 3.5rem;
+  margin-top: 3.5rem;
 }
 
 .projecttaskpage-topfix {
   padding: 10px 16px 0px 16px;
 }
 .projecttaskpage__nav {
-    padding: 16px 16px;
-    height: 86vh;
-    overflow-y: scroll;
-
+  padding: 6px 0px 16px 0px;
+  height: 86vh;
+  overflow-y: scroll;
 }
