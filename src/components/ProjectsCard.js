@@ -11,7 +11,7 @@ function ProjectsCard({
 }) {
   return (
     <>
-      <div onClick={handleClick} className="projectpage__items diffbottomna">
+      <div onClick={handleClick} className="projectpage__items ">
         <div className="projectpage__items-top">
           <img src={projectIcon} alt="" />
           <div className="projectpage__items-topmiddle">

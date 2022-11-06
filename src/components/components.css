@@ -931,6 +931,9 @@ p.tlctltaskdescription {
   display: grid;
   grid-template-columns: 55px auto;
   padding: 16px 16px;
+  border: 1px solid #9a9fbf15;
+  margin: 10px 16px;
+  border-radius: 8px;
   gap: 10px;
 }
 
@@ -1008,6 +1011,9 @@ p.tlctltaskdescription {
 .projectpage__items {
   padding: 16px 16px;
   cursor: pointer;
+  border: 1px solid #9a9fbf15;
+  margin: 10px 16px;
+  border-radius: 8px;
 }
 
 .projectpage__items-top {
@@ -1050,10 +1056,12 @@ p.tlctltaskdescription {
   height: 6px;
   background-color: #9a9fbf15;
   margin-top: 20px;
+  border-radius: 8px;
 }
 
 .projectpage__items-percentage {
   height: 6px;
+  border-radius: 8px;
 }
 
 /* Project Header */
