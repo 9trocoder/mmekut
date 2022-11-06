@@ -1053,14 +1053,14 @@ p.tlctltaskdescription {
 
 .projectpage__items-progress {
   width: 100%;
-  height: 6px;
+  height: 4px;
   background-color: #9a9fbf15;
   margin-top: 10px;
   border-radius: 8px;
 }
 
 .projectpage__items-percentage {
-  height: 6px;
+  height: 4px;
   border-radius: 8px;
 }
 
