@@ -79,10 +79,22 @@ function Projecttaskpage() {
         <div className="projecttaskpage__nav">
           <div className="projecttaskpage__cards-cnt">
             <ProjectTaskCard
-              assigneeImages={task4}
+              assigneeImages={task3}
               taskTitle="Complete the documentations"
               taskDate="Today 12:45"
               numComments={1}
+            />
+             <ProjectTaskCard
+              assigneeImages={task1}
+              taskTitle="Analyse the samples"
+              taskDate="18 August 2022 15:06"
+              numComments={3}
+            />
+             <ProjectTaskCard
+              assigneeImages={task4}
+              taskTitle="Meet the client in office"
+              taskDate="18 August 2022 15:06"
+              numComments={0}
             />
           </div>
         </div>

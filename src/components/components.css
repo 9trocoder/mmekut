@@ -1139,7 +1139,7 @@ p.tlctltaskdescription {
 .projecttaskcard__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .projecttaskcard__title {
@@ -1160,12 +1160,13 @@ p.tlctltaskdescription {
 
 .projecttaskcard__bottom {
   display: flex;
+  align-items: center;
   width: 100%;
-  margin-top: 10px;
 }
 
 .projecttaskcard__date {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -1189,6 +1190,10 @@ p.tlctltaskdescription {
   height: 25px;
   object-fit: cover;
   margin-right: -10px;
+}
+
+.projecttcimage {
+  margin-right: 10px;
 }
 
 .projecttaskcard__assignneimage-num {

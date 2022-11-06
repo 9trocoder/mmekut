@@ -40,20 +40,17 @@ function ProjectTaskCard({ taskTitle, taskDate, numComments, assigneeImages }) {
                 </div>
               </div>
             ) : (
-              <div className="projecttaskcard__assigneecnt">
+              <div className="projecttaskcard__assigneecnt projecttcimage">
                 {assigneeImages.map((item, index) => (
                   <>
                     <img
                       src={item}
                       alt=""
                       key={index}
-                      className="projecttaskcard__asigneeimages"
+                      className="projecttaskcard__asigneeimages "
                     />
                   </>
                 ))}
-                <div className="projecttaskcard__assignneimage-num">
-                  {assigneeImages.length}
-                </div>
               </div>
             )}
           </div>
