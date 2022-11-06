@@ -23,6 +23,7 @@ import {
 import TaskCard from "../../components/TaskCard";
 import ProjectHeader from "../../components/ProjectHeader";
 import { useState } from "react";
+import ProjectTaskCard from "../../components/ProjectTaskCard";
 
 function Projecttaskpage() {
   const [tasknot, setTaskNot] = useState(true);
@@ -42,8 +43,7 @@ function Projecttaskpage() {
         handleCloseClick={() => navigate(-1)}
       />
       <div className="projecttaskpage__cnt">
-        <div className="projecttaskpage__nav">
-            <div className="workspaceprojectpage__cnt-navigation">
+        <div className="workspaceprojectpage__cnt-navigation projecttaskpage-topfix">
           <div
             onClick={() => setActiveButton("overview")}
             className={
@@ -76,14 +76,20 @@ function Projecttaskpage() {
             <button>Ready</button>
           </div>
         </div>
+        <div className="projecttaskpage__nav">
+          <div className="projecttaskpage__cards-cnt">
+            <ProjectTaskCard
+              assigneeImages={task4}
+              taskTitle="Complete the documentations"
+            />
+          </div>
         </div>
-        
       </div>
 
       {tasknot && (
         <div className="projecttaskpage__alert">
           <p>
-            You have <span>  6 tasks </span> assigned to you
+            You have <span> 6 tasks </span> assigned to you
           </p>
           <div onClick={() => setTaskNot(false)}>{closeIcon}</div>
         </div>

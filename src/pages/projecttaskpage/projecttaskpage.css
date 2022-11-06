@@ -33,6 +33,12 @@
     margin-top: 3.5rem;
 }
 
+.projecttaskpage-topfix {
+  padding: 16px 16px 0px 16px;
+}
 .projecttaskpage__nav {
     padding: 16px 16px;
+    height: 80vh;
+    overflow-y: scroll;
+
 }
