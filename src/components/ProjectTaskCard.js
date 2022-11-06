@@ -5,7 +5,7 @@ import "./components.css";
 function ProjectTaskCard({ taskTitle, taskDate, numComments, assigneeImages }) {
   return (
     <>
-      <div className="projecttaskcard__cnt diffbottomna">
+      <div className="projecttaskcard__cnt ">
         <div className="projecttaskcard__top">
           <p className="projecttaskcard__title">{taskTitle}</p>
           {numComments >= 1 ?(

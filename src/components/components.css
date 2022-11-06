@@ -1133,6 +1133,10 @@ p.tlctltaskdescription {
 /* Project Task Card */
 .projecttaskcard__cnt {
   padding: 16px 16px;
+  border: 1px solid #9a9fbf15;
+  margin: 10px 16px;
+  border-radius: 8px;
+
   cursor: pointer;
 }
 
