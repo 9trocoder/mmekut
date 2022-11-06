@@ -40,4 +40,11 @@
   padding: 6px 0px 16px 0px;
   height: 86vh;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #fff;
+}
+
+.projecttaskpage__nav::-webkit-scrollbar {
+  display: none;
 }
