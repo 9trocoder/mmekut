@@ -21,7 +21,7 @@ const CreateModal = ({
           style={{
             left: `${modalPaddingLR}`,
             right: `${modalPaddingLR}`,
-            top: `${modalPaddingTP}`,
+            top: `${modalPaddingTP}`,  
             borderRadius: `${modalRadius}`,
             minHeight: `${modalHeight}`
           }}

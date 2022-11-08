@@ -36,6 +36,7 @@ import "./workspacepage.css";
 import TaskListCard from "../../components/TaskListCard";
 import WorkspaceCard from "../../components/WorkspaceCard";
 import CreateModal from "../../components/CreateModal";
+import AddMemberModal from "../../components/AddMemberModal";
 
 function Workspacepage() {
   let navigate = useNavigate();
@@ -48,6 +49,9 @@ function Workspacepage() {
   const [activeButton, setActiveButton] = useState("all");
   const [showaddTaskButton, setShowaddTaskButton] = useState(true);
   const [showaddTaskMenu, setShowaddTaskMenu] = useState(false);
+  const [modalPaddingLRc, setModalPaddingLRc] = useState("0px");
+  const [modalPaddingTpc, setModalPaddingTpc] = useState("98vh");
+  // const [modalPaddingTPm, setModalPaddingTPm] = useState("96vh");
 
   const onSearch = (text) => {
     setSearchText(text.length > 0 ? text.toLowerCase() : "");
@@ -111,6 +115,8 @@ function Workspacepage() {
   };
   const handleShowWorkspaceMemeber = () => {
     setShowAddWorkspaceMember(false);
+    setModalPaddingLRc("0px");
+    setModalPaddingTpc("98vh");
   };
   const handleWorkspaceAddCloseClick = () => {
     setShowcreateworkspace(false);
@@ -579,10 +585,10 @@ function Workspacepage() {
       {showcreateworkspace && (
         <CreateModal
           zIndex={10001}
-          modalPaddingLR="0px"
+          modalPaddingLR={modalPaddingLRc}
           modalTitle="New Workspace"
           modalRadius="10px 10px 0px 0px"
-          modalHeight="98vh"
+          modalHeight={modalPaddingTpc}
           handleCloseClick={handleWorkspaceAddCloseClick}
         >
           <div className="createworkspace__cnt">
@@ -596,7 +602,11 @@ function Workspacepage() {
             </div>
             <div
               className="createworkspace__inputitem"
-              onClick={() => setShowAddWorkspaceMember(true)}
+              onClick={() => {
+                setShowAddWorkspaceMember(true);
+                setModalPaddingLRc("16px");
+                setModalPaddingTpc("99vh");
+              }}
             >
               <p>MEMBER</p>
               {selected.length < 1 && (
@@ -621,7 +631,9 @@ function Workspacepage() {
               {selected.length > 1 && (
                 <div
                   className="edit__workspace-member"
-                  onClick={() => setShowAddWorkspaceMember(true)}
+                  onClick={() => {
+                    setShowAddWorkspaceMember(true);
+                  }}
                 >
                   <p className="selected__members-num">
                     {selected.length} members add
@@ -661,17 +673,19 @@ function Workspacepage() {
                 </div>
               )}
             </div>
-           
           </div>
         </CreateModal>
       )}
 
       {showAddWorkspaceMember && (
-        <Modal
+        <AddMemberModal
           zIndex={10002}
-          modalName="Add Workspace Members"
-          closeIcon={headerBackIcon}
+          modalPaddingLR="0px"
+          modalTitle="New Workspace"
+          modalRadius="10px 10px 0px 0px"
+          modalHeight="98vh"
           handleCloseClick={handleShowWorkspaceMemeber}
+          handleCreate={handleShowWorkspaceMemeber}
         >
           <div className="workspacesearch">
             <input
@@ -724,12 +738,7 @@ function Workspacepage() {
         {selected.map((item) => (
           <img src={item} alt="" />
         ))} */}
-
-          <BigButton
-            buttonName="Add Members"
-            handleClick={handleShowWorkspaceMemeber}
-          />
-        </Modal>
+        </AddMemberModal>
       )}
 
       <BottomNav
