@@ -1271,12 +1271,13 @@ p.tlctltaskdescription {
 
 .createmodal__btn {
   background-color: #0184fb;
+  display: flex;
   border: none;
   font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   color: #fff;
-  padding: 8px 10px;
+  padding: 7px 10px;
   border-radius: 9999px;
 }
 
