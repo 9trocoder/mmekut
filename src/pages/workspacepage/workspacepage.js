@@ -35,6 +35,7 @@ import {
 import "./workspacepage.css";
 import TaskListCard from "../../components/TaskListCard";
 import WorkspaceCard from "../../components/WorkspaceCard";
+import CreateModal from "../../components/CreateModal";
 
 function Workspacepage() {
   let navigate = useNavigate();
@@ -86,7 +87,7 @@ function Workspacepage() {
     },
     {
       id: 5,
-      first_name: "Mmekut Mfon",  
+      first_name: "Mmekut Mfon",
       position: "Head of Design",
       image: p5,
     },
@@ -484,7 +485,7 @@ function Workspacepage() {
         )}
       </div>
 
-      {showcreateworkspace && (
+      {/* {showcreateworkspace && (
         <Modal
           zIndex={10001}
           modalName="Create a Workspace"
@@ -566,26 +567,103 @@ function Workspacepage() {
                   ))}
                 </div>
               )}
-              {/* <>
-                {selected.map((item, index) => (
-                  <img key={index} src={item} alt="" />
-                ))}
-              </> */}
             </div>
-
-            {/* <div className="createworkspace__inputitem">
-              <p>PRIVACY</p>
-              <div className="createworkspace__privacy-cnt">
-                <p>Public</p>
-                {arrowdownbutton}
-              </div>
-            </div> */}
             <BigButton
               buttonName="Create Workspace"
               handleClick={handleCreateWorkspace}
             />
           </div>
         </Modal>
+      )} */}
+
+      {showcreateworkspace && (
+        <CreateModal
+          zIndex={10001}
+          modalPaddingLR="0px"
+          modalTitle="New Workspace"
+          modalRadius="10px 10px 0px 0px"
+          modalHeight="98vh"
+          handleCloseClick={handleWorkspaceAddCloseClick}
+        >
+          <div className="createworkspace__cnt">
+            <div className="createworkspace__inputitem">
+              <p>WORKSPACE NAME</p>
+              <input type="text" placeholder="Enter Workspace Name" />
+            </div>
+            <div className="createworkspace__inputitem">
+              <p>DESCRIPTION</p>
+              <textarea type="text" placeholder="Type some description..." />
+            </div>
+            <div
+              className="createworkspace__inputitem"
+              onClick={() => setShowAddWorkspaceMember(true)}
+            >
+              <p>MEMBER</p>
+              {selected.length < 1 && (
+                <>
+                  <button className="addtaskmembers">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447715 14 1 14V12ZM25 14C25.5523 14 26 13.5523 26 13C26 12.4477 25.5523 12 25 12V14ZM14 1C14 0.447715 13.5523 0 13 0C12.4477 0 12 0.447715 12 1H14ZM12 25C12 25.5523 12.4477 26 13 26C13.5523 26 14 25.5523 14 25H12ZM1 14H25V12H1V14ZM12 1V25H14V1H12Z"
+                        fill="#0184FB"
+                      />
+                    </svg>
+                  </button>
+                </>
+              )}
+
+              {selected.length > 1 && (
+                <div
+                  className="edit__workspace-member"
+                  onClick={() => setShowAddWorkspaceMember(true)}
+                >
+                  <p className="selected__members-num">
+                    {selected.length} members add
+                  </p>
+                  <div className="edit__workspace-membericon">{editIcon}</div>
+                </div>
+              )}
+
+              {selected.length > 4 ? (
+                <div className="selected__image_cnt">
+                  {selected.slice(0, 4).map((item, index) => (
+                    <>
+                      <img
+                        className={`image${index}`}
+                        key={index}
+                        src={item}
+                        alt=""
+                      />
+                    </>
+                  ))}
+                  <div className="selected__image-remaining">
+                    {selected.length - 4}
+                  </div>
+                </div>
+              ) : (
+                <div className="selected__image_cnt">
+                  {selected.map((item, index) => (
+                    <>
+                      <img
+                        className={`image${index}`}
+                        key={index}
+                        src={item}
+                        alt=""
+                      />
+                    </>
+                  ))}
+                </div>
+              )}
+            </div>
+           
+          </div>
+        </CreateModal>
       )}
 
       {showAddWorkspaceMember && (
