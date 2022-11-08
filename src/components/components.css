@@ -1259,6 +1259,7 @@ p.tlctltaskdescription {
 
 .createmodal__close {
   margin-right: auto;
+  margin-left: -8px;
   cursor: pointer;
 }
 
