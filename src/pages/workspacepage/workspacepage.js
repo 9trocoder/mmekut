@@ -109,6 +109,7 @@ function Workspacepage() {
   };
   const handleWorkspaceAddCloseClick = () => {
     setShowcreateworkspace(false);
+    setThemeColor("#fff");
   };
   const handleWorkspaceClick = () => {
     navigate("/workspace_project");
