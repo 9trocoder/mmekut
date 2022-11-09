@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import AccordionLayout from "../../components/AccordionLayout";
-import BigButton from "../../components/BigButton";
 import BottomNav from "../../components/BottomNav";
-import Modal from "../../components/Modal";
 // import WorkspaceTasklist from "../../components/WorkspaceTasklist";
 import p1 from "../../assets/images/p1.png";
 import p2 from "../../assets/images/p2.png";
@@ -16,24 +14,15 @@ import {
   addIconWhiteSmall,
   // arrowdownbutton,
   chatNotActive,
-  chatTextNotActive,
-  deleteSmallIcon,
   dividerr,
   editIcon,
-  headerBackIcon,
   homeIconNotActive,
-  homeTextNotActive,
-  notificationActive,
   notificationNotActive,
   otherIcon,
-  profileNotActive,
-  profileTextNotActive,
   taskActive,
   tasksNotActive,
-  workspaceTextActive,
 } from "../../Utils/tools";
 import "./workspacepage.css";
-import TaskListCard from "../../components/TaskListCard";
 import WorkspaceCard from "../../components/WorkspaceCard";
 import CreateModal from "../../components/CreateModal";
 import AddMemberModal from "../../components/AddMemberModal";
@@ -45,13 +34,9 @@ function Workspacepage() {
   const [showAddWorkspaceMember, setShowAddWorkspaceMember] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [selected, setSelected] = useState([]);
-  const [activeTaskButton, setActiveTaskButton] = useState("workspace");
-  const [activeButton, setActiveButton] = useState("all");
-  const [showaddTaskButton, setShowaddTaskButton] = useState(true);
-  const [showaddTaskMenu, setShowaddTaskMenu] = useState(false);
   const [modalPaddingLRc, setModalPaddingLRc] = useState("0px");
   const [modalPaddingTpc, setModalPaddingTpc] = useState("98vh");
-  // const [modalPaddingTPm, setModalPaddingTPm] = useState("96vh");
+  const [theModalAnim, setTheModalAnim] = useState(false);
 
   const onSearch = (text) => {
     setSearchText(text.length > 0 ? text.toLowerCase() : "");
@@ -115,13 +100,13 @@ function Workspacepage() {
   };
   const handleShowWorkspaceMemeber = () => {
     setShowAddWorkspaceMember(false);
-    setModalPaddingLRc("0px");
+    setTheModalAnim(true);
     setModalPaddingTpc("98vh");
+    setModalPaddingLRc("0px");
   };
   const handleWorkspaceAddCloseClick = () => {
     setShowcreateworkspace(false);
   };
-  const handleCreateWorkspace = () => {};
   const handleWorkspaceClick = () => {
     navigate("/workspace_project");
   };
@@ -145,451 +130,85 @@ function Workspacepage() {
       {/* <HeaderBar headerText="Project" addIcon={searchBig} /> */}
 
       <div className="workspacepage__cnt">
-        {/* <div className="chatpage__cnt-top">
-          <div
-            onClick={() => setActiveTaskButton("workspace")}
-            className={
-              activeTaskButton === "workspace"
-                ? "chatpage__cnt-allbutton"
-                : "chatpage__cnt-allbuttonnotactive"
-            }
-          >
-            <button>Workspace</button>
-          </div>
-          <div
-            onClick={() => setActiveTaskButton("task")}
-            className={
-              activeTaskButton === "task"
-                ? "chatpage__cnt-allbutton"
-                : "chatpage__cnt-allbuttonnotactive"
-            }
-          >
-            <button>Tasks</button>
-          </div>
-        </div> */}
         <div className="chatpage__cnt-topheader diffbottomna">
-          {/* <div
-            onClick={() => setActiveChatButton("all")}
-            className={
-              activeChatButton === "all"
-                ? "chatpage__cnt-allbutton"
-                : "chatpage__cnt-allbuttonnotactive"
-            }
-          >
-            <button>Direct Messages</button>
-          </div>
-
-          <div
-            onClick={() => setActiveChatButton("group")}
-            className={
-              activeChatButton === "group"
-                ? "chatpage__cnt-allbutton"
-                : "chatpage__cnt-allbuttonnotactive"
-            }
-          >
-            <button>Groups</button>
-          </div> */}
-
           <img src={p2} alt="" />
           <input type="text" placeholder="Search For Workspace" />
           <button>{otherIcon}</button>
         </div>
-        {/* <div className="workspacepage__searchcnt">
-          <input type="text" placeholder="Search Workspace" />
-        </div> */}
 
-        {activeTaskButton === "workspace" && (
-          <>
-            <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
-              {/* <TitleCard name="My Work Spaces" />
-
-
-              
-              {dividerr}
-              <LinkCards cardName="Mmekut App" handleClick={() => {}} />
-              {dividerr}
-              <LinkCards cardName="Ushy" handleClick={() => {}} />
-              {dividerr} */}
-              {/* <AccordionLayout
-          title="Mmekut App"
-          index={1}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        >
-          <WorkspaceTasklist
-            projectName="Githarita FrontEnd"
-            numtask="15/20"
-            progressNumber={50}
-          />
-          {dividerr}
-          <WorkspaceTasklist
-            projectName="9trocoder Launching page"
-            numtask="4/16"
-            progressNumber={20}
-          />
-        </AccordionLayout>
-        <AccordionLayout
-          title="Ushy"
-          index={2}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        >
-          <WorkspaceTasklist
-            projectName="LC Wakiki"
-            numtask="2/4"
-            progressNumber={50}
-          />
-          {dividerr}
-          <WorkspaceTasklist
-            projectName="Gloria Jeans Clothing"
-            numtask="20/20"
-            progressNumber={100}
-          />
-        </AccordionLayout> */}
-              <WorkspaceCard
-                workspaceName="Mmekut App"
-                workspaceMembersImage={workspacemembers}
-                workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
-                aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
-                workspaceCreatorName="9trocoder"
-                workspaceCreatorImage={p2}
-                workspaceCategory="Mobile App & Web Development"
-                workspaceColor="#AD2089"
-                workspaceCreatorPosition="Creator"
-                handleWorkspaceClick={handleWorkspaceClick}
-              />
-
-              <WorkspaceCard
-                workspaceName="Mmekut App"
-                workspaceMembersImage={workspacemembers}
-                workspaceDescription="Yes we are trying to build this very soon they are gonna see us in the future. Mmekut the Super fast Tasking and Chatting app in Nigeria"
-                aboutWorkspace="The super fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
-                workspaceCreatorName="9trocoder"
-                workspaceCreatorImage={p2}
-                workspaceCategory="Mobile App & Web Development"
-                workspaceColor="#9B62FA"
-                workspaceCreatorPosition="Creator"
-                handleWorkspaceClick={handleWorkspaceClick}
-              />
-
-              <WorkspaceCard
-                workspaceName="Mmekut App"
-                workspaceMembersImage={workspacemembers}
-                workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
-                aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
-                workspaceCreatorName="9trocoder"
-                workspaceCreatorImage={p2}
-                workspaceCategory="Mobile App & Web Development"
-                workspaceColor="#826B02"
-                workspaceCreatorPosition="Creator"
-                handleWorkspaceClick={handleWorkspaceClick}
-              />
-
-              <WorkspaceCard
-                workspaceName="Mmekut App"
-                workspaceMembersImage={workspacemembers}
-                workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
-                aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
-                workspaceCreatorName="9trocoder"
-                workspaceCreatorImage={p2}
-                workspaceCategory="Mobile App & Web Development"
-                workspaceColor="#0D1C63"
-                workspaceCreatorPosition="Creator"
-                handleWorkspaceClick={handleWorkspaceClick}
-              />
-
-              <button
-                onClick={() => handleWorkspaceAddClick()}
-                className="showaddWorkspace"
-              >
-                {addIconWhiteSmall}
-              </button>
-            </div>
-          </>
-        )}
-
-        {activeTaskButton === "task" && (
-          <>
-            <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
-              {/* <div className="taskpage__cnt-search">
-                <input type="text" placeholder="Search" />
-              </div> */}
-              <div className="taskpage__cnt-taskprojects">
-                <div
-                  className={
-                    activeButton === "all"
-                      ? "taskpage__cnt-taskprojectsactive"
-                      : "taskpage__cnt-taskprojectsbtn"
-                  }
-                  onClick={() => setActiveButton("all")}
-                >
-                  All
-                </div>
-                <div
-                  className={
-                    activeButton === "todo"
-                      ? "taskpage__cnt-taskprojectsactive"
-                      : "taskpage__cnt-taskprojectsbtn"
-                  }
-                  onClick={() => setActiveButton("todo")}
-                >
-                  To Do
-                </div>
-                <div
-                  className={
-                    activeButton === "inprogress"
-                      ? "taskpage__cnt-taskprojectsactive"
-                      : "taskpage__cnt-taskprojectsbtn"
-                  }
-                  onClick={() => setActiveButton("inprogress")}
-                >
-                  In Progress
-                </div>
-                <div
-                  className={
-                    activeButton === "completed"
-                      ? "taskpage__cnt-taskprojectsactive"
-                      : "taskpage__cnt-taskprojectsbtn"
-                  }
-                  onClick={() => setActiveButton("completed")}
-                >
-                  Completed
-                </div>
-              </div>
-              {dividerr}
-              <div className="taskpage__cnt-tasklist">
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="45 mins ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="When you click on this, it will take you to the calender by the right"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="1hr ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="See here ...the task screen"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="15 days ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="Containers are add to enable the user click on the group"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="12 days ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="On the home screen, that first content when you click on the 'view task', it will take you her. see here ....the task screen"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="45 mins ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="When you click on this, it will take you to the calender by the right"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="1hr ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="See here ...the task screen"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="15 days ago"
-                />
-                <TaskListCard
-                  projectName="Food Delivery App"
-                  taskTitle="Design two app screens"
-                  taskDescription="Containers are add to enable the user click on the group"
-                  deleteIcon={deleteSmallIcon}
-                  priority="HIGH"
-                  taskDate="12 days ago"
-                />
-              </div>
-              {showaddTaskMenu && (
-                <div className="showaddtaskmenu">
-                  <div
-                    onClick={() => {
-                      setShowaddTaskMenu(false);
-                      setShowaddTaskButton(true);
-                    }}
-                    className="showmetaskmenuoverlay"
-                  />
-                  <div className="showmetaskmenubody">
-                    <div
-                      onClick={() => {
-                        setShowaddTaskMenu(false);
-                        setShowaddTaskButton(true);
-                      }}
-                      className="showmetaskmenu-item"
-                    >
-                      <p>Search</p>
-                    </div>
-                    {dividerr}
-                    <div
-                      onClick={() => {
-                        setShowaddTaskMenu(false);
-                        setShowaddTaskButton(true);
-                      }}
-                      className="showmetaskmenu-item"
-                    >
-                      <p>Create a new Task</p>
-                    </div>
-                    {dividerr}
-                    <div
-                      onClick={() => {
-                        setShowaddTaskMenu(false);
-                        setShowaddTaskButton(true);
-                      }}
-                      className="showmetaskmenu-item"
-                    >
-                      <p>Create a To-do</p>
-                    </div>
-                    {dividerr}
-                    <div
-                      onClick={() => {
-                        setShowaddTaskMenu(false);
-                        setShowaddTaskButton(true);
-                      }}
-                      className="showmetaskmenu-item"
-                    >
-                      <p>Assign a Task</p>
-                    </div>
-                  </div>
-                </div>
-              )}
-              {showaddTaskButton && (
-                <button
-                  onClick={() => {
-                    setShowaddTaskMenu(true);
-                    setShowaddTaskButton(false);
-                  }}
-                  className="showaddWorkspace"
-                >
-                  {addIconWhiteSmall}
-                </button>
-              )}
-            </div>
-          </>
-        )}
-      </div>
-
-      {/* {showcreateworkspace && (
-        <Modal
-          zIndex={10001}
-          modalName="Create a Workspace"
-          closeIcon={headerBackIcon}
-          handleCloseClick={handleWorkspaceAddCloseClick}
-        >
-          <div className="createworkspace__cnt">
-            <div className="createworkspace__inputitem">
-              <p>WORKSPACE NAME</p>
-              <input type="text" placeholder="Enter Workspace Name" />
-            </div>
-            <div className="createworkspace__inputitem">
-              <p>DESCRIPTION</p>
-              <textarea type="text" placeholder="Type some description..." />
-            </div>
-            <div
-              className="createworkspace__inputitem"
-              onClick={() => setShowAddWorkspaceMember(true)}
-            >
-              <p>MEMBER</p>
-              {selected.length < 1 && (
-                <>
-                  <button className="addtaskmembers">
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447715 14 1 14V12ZM25 14C25.5523 14 26 13.5523 26 13C26 12.4477 25.5523 12 25 12V14ZM14 1C14 0.447715 13.5523 0 13 0C12.4477 0 12 0.447715 12 1H14ZM12 25C12 25.5523 12.4477 26 13 26C13.5523 26 14 25.5523 14 25H12ZM1 14H25V12H1V14ZM12 1V25H14V1H12Z"
-                        fill="#0184FB"
-                      />
-                    </svg>
-                  </button>
-                </>
-              )}
-
-              {selected.length > 1 && (
-                <div
-                  className="edit__workspace-member"
-                  onClick={() => setShowAddWorkspaceMember(true)}
-                >
-                  <p className="selected__members-num">
-                    {selected.length} members add
-                  </p>
-                  <div className="edit__workspace-membericon">{editIcon}</div>
-                </div>
-              )}
-
-              {selected.length > 4 ? (
-                <div className="selected__image_cnt">
-                  {selected.slice(0, 4).map((item, index) => (
-                    <>
-                      <img
-                        className={`image${index}`}
-                        key={index}
-                        src={item}
-                        alt=""
-                      />
-                    </>
-                  ))}
-                  <div className="selected__image-remaining">
-                    {selected.length - 4}
-                  </div>
-                </div>
-              ) : (
-                <div className="selected__image_cnt">
-                  {selected.map((item, index) => (
-                    <>
-                      <img
-                        className={`image${index}`}
-                        key={index}
-                        src={item}
-                        alt=""
-                      />
-                    </>
-                  ))}
-                </div>
-              )}
-            </div>
-            <BigButton
-              buttonName="Create Workspace"
-              handleClick={handleCreateWorkspace}
+        <>
+          <div className="chatpage__cnt-chat chatpage__cnt-chatdif">
+            <WorkspaceCard
+              workspaceName="Mmekut App"
+              workspaceMembersImage={workspacemembers}
+              workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
+              aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
+              workspaceCreatorName="9trocoder"
+              workspaceCreatorImage={p2}
+              workspaceCategory="Mobile App & Web Development"
+              workspaceColor="#AD2089"
+              workspaceCreatorPosition="Creator"
+              handleWorkspaceClick={handleWorkspaceClick}
             />
+
+            <WorkspaceCard
+              workspaceName="Mmekut App"
+              workspaceMembersImage={workspacemembers}
+              workspaceDescription="Yes we are trying to build this very soon they are gonna see us in the future. Mmekut the Super fast Tasking and Chatting app in Nigeria"
+              aboutWorkspace="The super fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
+              workspaceCreatorName="9trocoder"
+              workspaceCreatorImage={p2}
+              workspaceCategory="Mobile App & Web Development"
+              workspaceColor="#9B62FA"
+              workspaceCreatorPosition="Creator"
+              handleWorkspaceClick={handleWorkspaceClick}
+            />
+
+            <WorkspaceCard
+              workspaceName="Mmekut App"
+              workspaceMembersImage={workspacemembers}
+              workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
+              aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
+              workspaceCreatorName="9trocoder"
+              workspaceCreatorImage={p2}
+              workspaceCategory="Mobile App & Web Development"
+              workspaceColor="#826B02"
+              workspaceCreatorPosition="Creator"
+              handleWorkspaceClick={handleWorkspaceClick}
+            />
+
+            <WorkspaceCard
+              workspaceName="Mmekut App"
+              workspaceMembersImage={workspacemembers}
+              workspaceDescription="Mmekut the Super fast Tasking and Chatting app in Nigeria"
+              aboutWorkspace="The upe fast tasking app is an app that connects orgainzation and it's workers together in other to make work effective, the app is used for tasking and chatting"
+              workspaceCreatorName="9trocoder"
+              workspaceCreatorImage={p2}
+              workspaceCategory="Mobile App & Web Development"
+              workspaceColor="#0D1C63"
+              workspaceCreatorPosition="Creator"
+              handleWorkspaceClick={handleWorkspaceClick}
+            />
+
+            <button
+              onClick={() => handleWorkspaceAddClick()}
+              className="showaddWorkspace"
+            >
+              {addIconWhiteSmall}
+            </button>
           </div>
-        </Modal>
-      )} */}
+        </>
+      </div>
 
       {showcreateworkspace && (
         <CreateModal
           zIndex={10001}
-          modalPaddingLR={modalPaddingLRc}
           modalTitle="New Workspace"
           modalRadius="10px 10px 0px 0px"
-          modalHeight={modalPaddingTpc}
           handleCloseClick={handleWorkspaceAddCloseClick}
+          modalAnim={theModalAnim}
+          modalPaddingLR={modalPaddingLRc}
+          modalHeight={modalPaddingTpc}
         >
           <div className="createworkspace__cnt">
             <div className="createworkspace__inputitem">
@@ -604,8 +223,9 @@ function Workspacepage() {
               className="createworkspace__inputitem"
               onClick={() => {
                 setShowAddWorkspaceMember(true);
-                setModalPaddingLRc("16px");
+                setTheModalAnim(true);
                 setModalPaddingTpc("99vh");
+                setModalPaddingLRc("16px");
               }}
             >
               <p>MEMBER</p>
@@ -680,10 +300,8 @@ function Workspacepage() {
       {showAddWorkspaceMember && (
         <AddMemberModal
           zIndex={10002}
-          modalPaddingLR="0px"
           modalTitle="New Workspace"
           modalRadius="10px 10px 0px 0px"
-          modalHeight="98vh"
           handleCloseClick={handleShowWorkspaceMemeber}
           handleCreate={handleShowWorkspaceMemeber}
         >
@@ -733,11 +351,6 @@ function Workspacepage() {
               </>
             ))}
           </div>
-
-          {/* <div className="">{selected}</div>
-        {selected.map((item) => (
-          <img src={item} alt="" />
-        ))} */}
         </AddMemberModal>
       )}
 

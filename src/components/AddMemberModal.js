@@ -17,7 +17,7 @@ const AddMemberModal = ({
       <div className="createmodal__cnt" style={{ zIndex: `${zIndex}` }}>
         <div className="createmodal__overlay" />
         <div
-          className="createmodal"
+          className="createaddmodal"
           style={{
             left: `${modalPaddingLR}`,
             right: `${modalPaddingLR}`,

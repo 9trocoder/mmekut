@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/BottomNav";
-import HeaderBar from "../../components/HeaderBar";
 import p1 from "../../assets/images/p1.png";
 import p2 from "../../assets/images/p2.png";
 import p3 from "../../assets/images/p3.png";
@@ -14,23 +13,19 @@ import task4image from "../../assets/images/task4image.jpg";
 
 import {
   addIconActive,
-  addIconBlue,
   addIconWhiteSmall,
   calendarSmallIcon,
   chatNotActive,
-  deleteSmallIcon,
   dividerr,
   editIcon,
   headerBackIcon,
   homeIconNotActive,
   notificationNotActive,
   otherIcon,
-  profileNotActive,
   taskNotActive,
   tasksActive,
 } from "../../Utils/tools";
 import "./taskpage.css";
-import TaskListCard from "../../components/TaskListCard";
 import TaskCard from "../../components/TaskCard";
 import Modal from "../../components/Modal";
 import BigButton from "../../components/BigButton";
@@ -40,8 +35,7 @@ function Taskpage() {
   const [selected, setSelected] = useState([]);
   const [showAddWorkspaceMember, setShowAddWorkspaceMember] = useState(false);
 
-  const [activeButton, setActiveButton] = useState("all");
-  const [showaddTaskButton, setShowaddTaskButton] = useState(true);
+
   const [showcreatetask, setShowcreatetask] = useState(false);
   let navigate = useNavigate();
 
@@ -71,7 +65,6 @@ function Taskpage() {
   };
 
   let task1 = [p1];
-  let task2 = [p2, p3, p4];
   let task3 = [p4, p1, p5];
   let task4 = [p3, p1, p4, p2, p5];
   let tasksimage = [task1image, task2image, task3image, task4image];
@@ -129,7 +122,6 @@ function Taskpage() {
       setSelected((prevSelected) => [...prevSelected, id]);
     }
   };
-  const workspacemembers = [p1, p2, p3, p4, p5];
   return (
     <>
       {/* <HeaderBar headerText="Tasks" addIcon={addIconBlue} /> */}
@@ -224,10 +216,10 @@ function Taskpage() {
             <div
               className="createworkspace__inputitem"
               onClick={() => setShowAddWorkspaceMember(true)}
-            ><p>PARTICIPANTS</p>
+            >
+              <p>PARTICIPANTS</p>
               {selected.length < 1 && (
                 <>
-                  
                   <button className="addtaskmembers">
                     <svg
                       width="14"

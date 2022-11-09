@@ -11,6 +11,7 @@ const CreateModal = ({
   modalRadius,
   modalHeight,
   zIndex,
+  modalAnim,
 }) => {
   return (
     <>
@@ -21,13 +22,15 @@ const CreateModal = ({
           style={{
             left: `${modalPaddingLR}`,
             right: `${modalPaddingLR}`,
-            top: `${modalPaddingTP}`,  
+            top: `${modalPaddingTP}`,
             borderRadius: `${modalRadius}`,
-            minHeight: `${modalHeight}`
+            minHeight: `${modalHeight}`,
           }}
         >
           <div className="createmodal__cnt-top">
-            <div className="createmodal__close" onClick={handleCloseClick}>{closeIcon}</div>
+            <div className="createmodal__close" onClick={handleCloseClick}>
+              {closeIcon}
+            </div>
             <p className="createmodal__title">{modalTitle}</p>
             <button className="createmodal__btn">Create</button>
           </div>

@@ -1238,6 +1238,21 @@ p.tlctltaskdescription {
   animation-fill-mode: forwards;
 }
 
+.createaddmodal {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.3s;
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+  padding: 0px 16px 16px 16px;
+  left: 0;
+  right: 0;
+  min-height: 98vh;
+}
+
+
 .createmodal {
   position: fixed;
   bottom: 0;
@@ -1247,7 +1262,9 @@ p.tlctltaskdescription {
   animation-name: slideIn;
   animation-duration: 0.4s;
   padding: 0px 16px 16px 16px;
-
+  left: 0;
+  right: 0;
+  min-height: 98vh;
 }
 
 .createmodal__cnt-top {
@@ -1267,7 +1284,6 @@ p.tlctltaskdescription {
   font-size: 14px;
   font-weight: 700;
   margin-right: auto;
-
 }
 
 .createmodal__btn {
@@ -1283,16 +1299,14 @@ p.tlctltaskdescription {
   cursor: pointer;
 }
 
-
-
 /* Key Frame Createmodal */
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 @-webkit-keyframes slideIn {
   from {
