@@ -204,7 +204,7 @@ function Workspacepage() {
         <CreateModal
           zIndex={10001}
           modalTitle="New Workspace"
-          modalRadius="10px 10px 0px 0px"
+          modalRadius="20px 20px 0px 0px"
           handleCloseClick={handleWorkspaceAddCloseClick}
           modalAnim={theModalAnim}
           modalPaddingLR={modalPaddingLRc}
@@ -301,7 +301,7 @@ function Workspacepage() {
         <AddMemberModal
           zIndex={10002}
           modalTitle="New Workspace"
-          modalRadius="10px 10px 0px 0px"
+          modalRadius="20px 20px 0px 0px"
           handleCloseClick={handleShowWorkspaceMemeber}
           handleCreate={handleShowWorkspaceMemeber}
         >
