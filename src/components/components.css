@@ -396,6 +396,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 10px 16px;
+  z-index: 10001;
   border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
 }
 
