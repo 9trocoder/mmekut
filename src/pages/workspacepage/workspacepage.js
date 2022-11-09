@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 // import AccordionLayout from "../../components/AccordionLayout";
 import BottomNav from "../../components/BottomNav";
@@ -37,6 +38,7 @@ function Workspacepage() {
   const [modalPaddingLRc, setModalPaddingLRc] = useState("0px");
   const [modalPaddingTpc, setModalPaddingTpc] = useState("98vh");
   const [theModalAnim, setTheModalAnim] = useState(false);
+  const [themeColor, setThemeColor] = useState("#ffffff");
 
   const onSearch = (text) => {
     setSearchText(text.length > 0 ? text.toLowerCase() : "");
@@ -97,6 +99,7 @@ function Workspacepage() {
 
   const handleWorkspaceAddClick = () => {
     setShowcreateworkspace(true);
+    setThemeColor("#00000080");
   };
   const handleShowWorkspaceMemeber = () => {
     setShowAddWorkspaceMember(false);
@@ -127,6 +130,9 @@ function Workspacepage() {
 
   return (
     <>
+      <Helmet>
+        <meta name="theme-color" content={themeColor} />
+      </Helmet>
       {/* <HeaderBar headerText="Project" addIcon={searchBig} /> */}
 
       <div className="workspacepage__cnt">

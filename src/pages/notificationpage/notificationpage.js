@@ -34,6 +34,7 @@ function Notificationpage() {
   };
   return (
     <>
+   
       <HomepageHeader profileImage={p2image} calendarIcon={otherIcon} />
 
       <div className="workspacepage__cnt">

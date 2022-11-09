@@ -1232,7 +1232,7 @@ p.tlctltaskdescription {
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #00000080;
   animation: fadeInAnimation ease 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
