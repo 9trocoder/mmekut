@@ -37,7 +37,9 @@ function Homepage() {
     navigate("/task");
   };
 
-  const handleCalendarClick = () => {};
+  const handleCalendarClick = () => {
+    navigate("/calendar")
+  };
 
   const handleNotificationClick = () => {};
 
