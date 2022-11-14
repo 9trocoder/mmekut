@@ -88,7 +88,7 @@ function Calendarpage() {
   });
   let navigate = useNavigate();
   const handleCloseClick = () => {
-    navigate(-1);
+    navigate("/");
   };
 
   function previousMonth() {

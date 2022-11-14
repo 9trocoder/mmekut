@@ -172,7 +172,7 @@
 .calendarpage__tasktitle {
   font-size: 12px;
   font-weight: 600;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .calendarpage__taskprojectname {
@@ -201,7 +201,7 @@
   color: #9a9fbf;
 }
 
-.calendarpage__taskprojectimage img{
+.calendarpage__taskprojectimage img {
   width: 30px;
   height: 30px;
   object-fit: cover;
