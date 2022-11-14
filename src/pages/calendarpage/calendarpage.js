@@ -153,13 +153,13 @@ function Calendarpage() {
             </button>
           </div>
           <div className="calendarpage__cnt-daylist">
-            <p className="calendardaylist">SUN</p>
-            <p className="calendardaylist">MON</p>
-            <p className="calendardaylist">TUE</p>
-            <p className="calendardaylist">WED</p>
-            <p className="calendardaylist">THUR</p>
-            <p className="calendardaylist">FRI</p>
-            <p className="calendardaylist">SAT</p>
+            <p className="calendardaylist">Sun</p>
+            <p className="calendardaylist">Mon</p>
+            <p className="calendardaylist">Tue</p>
+            <p className="calendardaylist">Wed</p>
+            <p className="calendardaylist">Thur</p>
+            <p className="calendardaylist">Fri</p>
+            <p className="calendardaylist">Sat</p>
           </div>
           <div className="calendarpage__cnt-daydate">
             {days.map((day, dayIndex) => (

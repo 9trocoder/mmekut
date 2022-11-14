@@ -36,6 +36,7 @@
 .calendardaylist {
   justify-self: center;
   font-size: 12px;
+  text-transform: capitalize;
   font-weight: 500;
   color: #7b7b7b;
 }
@@ -51,6 +52,7 @@
   background-color: transparent;
   cursor: pointer;
   font-family: inherit;
+  font-size: 12px;
 }
 .col-start-2 {
   grid-column-start: 2;
