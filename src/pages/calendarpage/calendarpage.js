@@ -43,7 +43,7 @@ const tasks = [
     projectName: "Mmmekut App",
     task: "Create Calendar page for mmekut",
     imageUrl: p2image,
-    startDatetime: "2022-11-15T09:00",
+    startDatetime: "2022-11-14T09:00",
     endDatetime: "2022-11-15T11:30",
   },
   {
@@ -75,8 +75,8 @@ const tasks = [
   },
 ];
 function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
+  return classes.filter(Boolean).join(" ");
+}
 function Calendarpage() {
   let today = startOfToday();
   let [selectedDay, setSelectedDay] = useState(today);
@@ -103,7 +103,6 @@ function Calendarpage() {
   let selectedDayTasks = tasks.filter((task) =>
     isSameDay(parseISO(task.startDatetime), selectedDay)
   );
-  
 
   return (
     <>
@@ -168,7 +167,26 @@ function Calendarpage() {
                   "pyam"
                 )}
               >
-                <button onClick={() => setSelectedDay(day)}>
+                <button
+                  onClick={() => setSelectedDay(day)}
+                  className={classNames(
+                    isEqual(day, selectedDay) && "whitetext",
+                    !isEqual(day, selectedDay) && isToday(day) && "textblue",
+                    !isEqual(day, selectedDay) &&
+                      !isToday(day) &&
+                      isSameMonth(day, firstDayCurrentMonth) &&
+                      "textgray",
+                    !isEqual(day, selectedDay) &&
+                      !isToday(day) &&
+                      !isSameMonth(day, firstDayCurrentMonth) &&
+                      "textgrayfh",
+                    isEqual(day, selectedDay) && isToday(day) && "bgblue",
+                    isEqual(day, selectedDay) && !isToday(day) && "bggray",
+                    !isEqual(day, selectedDay) && "bggrayhover",
+                    (isEqual(day, selectedDay) || isToday(day)) && "istodaynaa",
+                    "istodayna"
+                  )}
+                >
                   <time datetime={format(day, "yyyy-MM-dd")}>
                     {format(day, "d")}
                   </time>
@@ -182,12 +200,12 @@ function Calendarpage() {
             ))}
           </div>
           <section className="calendarpage__cnt-daydatetitle">
-            <h2>
+            <p className="calendarpage__cnt-daydatemtitle">
               Taskes Scheduled for{" "}
               <time datetime={format(selectedDay, "yyyy-MM-dd")}>
                 {format(selectedDay, "MMM dd, yyy")}
               </time>
-            </h2>
+            </p>
 
             <div className="taskesdlist">
               {selectedDayTasks.length > 0 ? (
@@ -195,7 +213,7 @@ function Calendarpage() {
                   <Task task={task} key={task.id} />
                 ))
               ) : (
-                <p>No Task for today.</p>
+                <p className="calendarpage__notask">No Task for today.</p>
               )}
             </div>
           </section>
@@ -209,16 +227,16 @@ function Task({ task }) {
   let startDateTime = parseISO(task.startDatetime);
   let endDateTime = parseISO(task.endDatetime);
   return (
-    <div>
-      <div className="">
-        <div className="">
-          <p>{task.task}</p>
-          <p>{task.projectName}</p>
+    <div className="calendarpage__taskcn">
+      <div className="calendarpage__task">
+        <div className="calendarpage__tasktop">
+          <p className="calendarpage__tasktitle">{task.task}</p>
+          <p className="calendarpage__taskprojectname">{task.projectName}</p>
         </div>
         <div className="">{otherIconTask}</div>
       </div>
-      <div className="">
-        <div className="">
+      <div className="calendarpage__taskprojectclock">
+        <div className="calendarpage__taskprojecttime">
           {clockIcon}
           <p>
             <time datetime={task.startDatetime}>
@@ -230,7 +248,7 @@ function Task({ task }) {
             </time>
           </p>
         </div>
-        <div className="">
+        <div className="calendarpage__taskprojectimage">
           <img src={task.imageUrl} alt="" />
         </div>
       </div>

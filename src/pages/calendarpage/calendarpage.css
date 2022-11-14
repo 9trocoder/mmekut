@@ -92,6 +92,9 @@
   color: #0184fb;
 }
 
+.bgblue {
+  background: #0184fb !important;
+}
 .textgray {
   color: rgb(17 24 29 / 1);
 }
@@ -101,28 +104,110 @@
 }
 
 .bggray {
-  color: rgb(17 24 39 / 1);
+  background: rgb(17 24 39 / 1) !important;
 }
 
-.bggrayhover {
+.bggrayhover:hover {
   color: rgb(229 231 235 / 1);
 }
 
-.istodayna {
+.istodaynaa {
   font-weight: 700;
-  width: 8px;
-  height: 8px;
+}
+.istodayna {
+  width: 30px;
+  height: 30px;
   border-radius: 9999px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: center;
 }
 
-
+.daydateWork {
+  width: 4px;
+  height: 4px;
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9999px;
+}
 .letsamsee {
-    background-color: #0184fb;
-    height: 2px;
-    width: 5px;
-    margin: auto;
-    border-radius: 9999px;
+  background-color: #0184fb;
+  height: 4px;
+  width: 4px;
+  margin: auto;
+  border-radius: 9999px;
+}
+
+.calendarpage__cnt-daydatetitle {
+  border-top: 1px solid #9a9fbf15;
+}
+
+.calendarpage__cnt-daydatemtitle {
+  font-size: 14px;
+  padding: 32px 0px 20px 0px;
+  font-weight: 700;
+}
+
+.calendarpage__taskcn {
+  border: 1px solid #9a9fbf15;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 8px 8px;
+}
+
+.calendarpage__task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px dotted #9a9fbf15;
+}
+
+.calendarpage__tasktop {
+  width: 100%;
+}
+
+.calendarpage__tasktitle {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.calendarpage__taskprojectname {
+  font-size: 10px;
+  font-weight: 600;
+  color: #7b7b7b;
+  padding-bottom: 8px;
+}
+
+.calendarpage__taskprojectclock {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendarpage__taskprojecttime {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calendarpage__taskprojecttime p {
+  font-size: 11px;
+  font-weight: 500;
+  color: #9a9fbf;
+}
+
+.calendarpage__taskprojectimage img{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.calendarpage__notask {
+  font-size: 14px;
+  color: #9a9fbf;
 }
