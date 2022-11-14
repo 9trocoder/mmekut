@@ -100,6 +100,10 @@ function Calendarpage() {
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
   }
 
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+
   let selectedDayTasks = tasks.filter((task) =>
     isSameDay(parseISO(task.startDatetime), selectedDay)
   );
@@ -116,8 +120,8 @@ function Calendarpage() {
           <div className="calendarpage__cnt-top">
             <button onClick={previousMonth}>
               <svg
-                width="15"
-                height="15"
+                width="18"
+                height="18"
                 viewBox="0 0 15 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -130,11 +134,11 @@ function Calendarpage() {
                 ></path>
               </svg>
             </button>
-            <h2>{format(firstDayCurrentMonth, "MMMM yyyy")}</h2>
+            <p>{format(firstDayCurrentMonth, "MMMM yyyy")}</p>
             <button onClick={nextMonth}>
               <svg
-                width="15"
-                height="15"
+                width="18"
+                height="18"
                 viewBox="0 0 15 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +163,9 @@ function Calendarpage() {
           </div>
           <div className="calendarpage__cnt-daydate">
             {days.map((day, dayIndex) => (
-              <div key={day.toString()}>
+              <div key={day.toString()} className={classNames(
+                dayIndex === 0 && colStartClasses[getDay(day)], 'pyam'
+              )}>
                 <button onClick={() => setSelectedDay(day)}>
                   <time datetime={format(day, "yyyy-MM-dd")}>
                     {format(day, "d")}
@@ -183,38 +189,9 @@ function Calendarpage() {
 
             <div className="taskesdlist">
               {selectedDayTasks.length > 0 ? (
-                selectedDayTasks.map((task) => {
-                  let startDateTime = parseISO(task.startDatetime);
-                  let endDateTime = parseISO(task.endDatetime);
-                  return (
-                    <div>
-                      <div className="">
-                        <div className="">
-                          <p>{task.task}</p>
-                          <p>{task.projectName}</p>
-                        </div>
-                        <div className="">{otherIconTask}</div>
-                      </div>
-                      <div className="">
-                        <div className="">
-                          {clockIcon}
-                          <p>
-                            <time datetime={task.startDatetime}>
-                              {format(startDateTime, "h:mm a ")}
-                            </time>{" "}
-                            -{" "}
-                            <time datetime={task.endDatetime}>
-                              {format(endDateTime, "h:mm a")}
-                            </time>
-                          </p>
-                        </div>
-                        <div className="">
-                          <img src={task.imageUrl} alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })
+                selectedDayTasks.map((task) => (
+                  <Task task={task} key={task.id} />
+                ))
               ) : (
                 <p>No Task for today.</p>
               )}
@@ -225,5 +202,49 @@ function Calendarpage() {
     </>
   );
 }
+
+function Task({ task }) {
+  let startDateTime = parseISO(task.startDatetime);
+  let endDateTime = parseISO(task.endDatetime);
+  return (
+    <div>
+      <div className="">
+        <div className="">
+          <p>{task.task}</p>
+          <p>{task.projectName}</p>
+        </div>
+        <div className="">{otherIconTask}</div>
+      </div>
+      <div className="">
+        <div className="">
+          {clockIcon}
+          <p>
+            <time datetime={task.startDatetime}>
+              {format(startDateTime, "h:mm a ")}
+            </time>{" "}
+            -{" "}
+            <time datetime={task.endDatetime}>
+              {format(endDateTime, "h:mm a")}
+            </time>
+          </p>
+        </div>
+        <div className="">
+          <img src={task.imageUrl} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+let colStartClasses = [
+  '',
+  'col-start-2',
+  'col-start-3',
+  'col-start-4',
+  'col-start-5',
+  'col-start-6',
+  'col-start-7',
+]
+
 
 export default Calendarpage;
