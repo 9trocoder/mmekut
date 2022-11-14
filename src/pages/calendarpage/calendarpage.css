@@ -117,3 +117,12 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.letsamsee {
+    background-color: #0184fb;
+    height: 2px;
+    width: 5px;
+    margin: auto;
+    border-radius: 9999px;
+}

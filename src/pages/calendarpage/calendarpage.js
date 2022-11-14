@@ -27,7 +27,56 @@ import p3image from "../../assets/images/p3.png";
 import p4image from "../../assets/images/p4.png";
 import p5image from "../../assets/images/p5.png";
 import "./calendarpage.css";
-
+const tasks = [
+  {
+    id: 1,
+    name: "9trocoder",
+    projectName: "Ushy Dashboard",
+    task: "Work on the user settings page",
+    imageUrl: p1image,
+    startDatetime: "2022-11-14T13:00",
+    endDatetime: "2022-11-14T14:30",
+  },
+  {
+    id: 2,
+    name: "Mmekut",
+    projectName: "Mmmekut App",
+    task: "Create Calendar page for mmekut",
+    imageUrl: p2image,
+    startDatetime: "2022-11-15T09:00",
+    endDatetime: "2022-11-15T11:30",
+  },
+  {
+    id: 3,
+    name: "Mosope",
+    projectName: "Ushy App",
+    task: "Design alert dialog for backout",
+    imageUrl: p3image,
+    startDatetime: "2022-11-16T17:00",
+    endDatetime: "2022-11-16T18:30",
+  },
+  {
+    id: 4,
+    name: "9trocoder",
+    projectName: "Instagram Feeds",
+    task: "Upload mmekut news design feed to instagram!!",
+    imageUrl: p4image,
+    startDatetime: "2022-11-17T13:00",
+    endDatetime: "2022-11-17T14:30",
+  },
+  {
+    id: 5,
+    name: "Mmekut",
+    projectName: "SEO Optimization",
+    task: "Please kindly make the app visible on google search.",
+    imageUrl: p5image,
+    startDatetime: "2022-11-18T14:00",
+    endDatetime: "2022-11-18T14:30",
+  },
+];
+function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
 function Calendarpage() {
   let today = startOfToday();
   let [selectedDay, setSelectedDay] = useState(today);
@@ -42,54 +91,6 @@ function Calendarpage() {
     navigate(-1);
   };
 
-  const tasks = [
-    {
-      id: 1,
-      name: "9trocoder",
-      projectName: "Ushy Dashboard",
-      task: "Work on the user settings page",
-      imageUrl: p1image,
-      startDatetime: "2022-11-14T13:00",
-      endDatetime: "2022-11-14T14:30",
-    },
-    {
-      id: 2,
-      name: "Mmekut",
-      projectName: "Mmmekut App",
-      task: "Create Calendar page for mmekut",
-      imageUrl: p2image,
-      startDatetime: "2022-11-15T09:00",
-      endDatetime: "2022-11-15T11:30",
-    },
-    {
-      id: 3,
-      name: "Mosope",
-      projectName: "Ushy App",
-      task: "Design alert dialog for backout",
-      imageUrl: p3image,
-      startDatetime: "2022-11-16T17:00",
-      endDatetime: "2022-11-16T18:30",
-    },
-    {
-      id: 4,
-      name: "9trocoder",
-      projectName: "Instagram Feeds",
-      task: "Upload mmekut news design feed to instagram!!",
-      imageUrl: p4image,
-      startDatetime: "2022-11-17T13:00",
-      endDatetime: "2022-11-17T14:30",
-    },
-    {
-      id: 5,
-      name: "Mmekut",
-      projectName: "SEO Optimization",
-      task: "Please kindly make the app visible on google search.",
-      imageUrl: p5image,
-      startDatetime: "2022-11-18T14:00",
-      endDatetime: "2022-11-18T14:30",
-    },
-  ];
-
   function previousMonth() {
     let firstDayNextMonth = add(firstDayCurrentMonth, { months: -1 });
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
@@ -99,14 +100,11 @@ function Calendarpage() {
     let firstDayNextMonth = add(firstDayCurrentMonth, { months: 1 });
     setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
   }
-
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-  }
-
   let selectedDayTasks = tasks.filter((task) =>
     isSameDay(parseISO(task.startDatetime), selectedDay)
   );
+  
+
   return (
     <>
       <ChatMessageModal
@@ -163,9 +161,13 @@ function Calendarpage() {
           </div>
           <div className="calendarpage__cnt-daydate">
             {days.map((day, dayIndex) => (
-              <div key={day.toString()} className={classNames(
-                dayIndex === 0 && colStartClasses[getDay(day)], 'pyam'
-              )}>
+              <div
+                key={day.toString()}
+                className={classNames(
+                  dayIndex === 0 && colStartClasses[getDay(day)],
+                  "pyam"
+                )}
+              >
                 <button onClick={() => setSelectedDay(day)}>
                   <time datetime={format(day, "yyyy-MM-dd")}>
                     {format(day, "d")}
@@ -174,7 +176,7 @@ function Calendarpage() {
                 <div className="daydateWork">
                   {tasks.some((task) =>
                     isSameDay(parseISO(task.startDatetime), day)
-                  ) && <div></div>}
+                  ) && <div className="letsamsee"></div>}
                 </div>
               </div>
             ))}
@@ -237,14 +239,13 @@ function Task({ task }) {
 }
 
 let colStartClasses = [
-  '',
-  'col-start-2',
-  'col-start-3',
-  'col-start-4',
-  'col-start-5',
-  'col-start-6',
-  'col-start-7',
-]
-
+  "",
+  "col-start-2",
+  "col-start-3",
+  "col-start-4",
+  "col-start-5",
+  "col-start-6",
+  "col-start-7",
+];
 
 export default Calendarpage;
