@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   add,
@@ -10,6 +10,7 @@ import {
   isSameDay,
   isSameMonth,
   isToday,
+  parse,
   parseISO,
   startOfToday,
 } from "date-fns";
@@ -23,6 +24,14 @@ import p5image from "../../assets/images/p5.png";
 import "./calendarpage.css";
 
 function Calendarpage() {
+  let today = startOfToday();
+  let [selectedDay, setSelectedDay] = useState(today);
+  let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));
+  let firstDayCurrentMonth = parse(currentMonth, "MMM-yyyy", new Date());
+  let days = eachDayOfInterval({
+    start: firstDayCurrentMonth,
+    end: endOfMonth(firstDayCurrentMonth),
+  });
   let navigate = useNavigate();
   const handleCloseClick = () => {
     navigate(-1);
@@ -65,6 +74,20 @@ function Calendarpage() {
       endDatetime: "2022-11-18T14:30",
     },
   ];
+
+  function previousMonth() {
+    let firstDayNextMonth = add(firstDayCurrentMonth, { months: -1 });
+    setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
+  }
+
+  function nextMonth() {
+    let firstDayNextMonth = add(firstDayCurrentMonth, { months: 1 });
+    setCurrentMonth(format(firstDayNextMonth, "MMM-yyyy"));
+  }
+
+  let selectedDayTasks = tasks.filter((task) =>
+    isSameDay(parseISO(task.startDatetime), selectedDay)
+  );
   return (
     <>
       <ChatMessageModal
@@ -73,7 +96,19 @@ function Calendarpage() {
         handleCloseClick={handleCloseClick}
         userName="Calendar"
         moreIcon={otherIcon}
-      ></ChatMessageModal>
+      >
+
+        <div className="calendarpage__cnt">
+            <button onClick={previousMonth}>
+              previous
+            </button>
+            <h2>{format(firstDayCurrentMonth,'MMMM yyyy')}</h2>
+            <button onClick={nextMonth}>
+              Next
+            </button>
+        </div>
+
+      </ChatMessageModal>
     </>
   );
 }
