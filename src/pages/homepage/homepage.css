@@ -97,12 +97,55 @@
   background-color: #fff;
   z-index: 10005;
   border-radius: 20px 20px 0 0;
-  padding: 16px 16px;
   -webkit-animation-name: bottomnavslideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: bottomnavslideIn;
   animation-duration: 0.4s;
 }
+
+
+.homepageaddmodal__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #9a9fbf15;
+}
+
+.homepageaddmodal__title {
+  grid-column-start: 2;
+  justify-self: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.homepageaddmodal__close {
+  grid-column-start: 3;
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.homepageaddmodal__bottom {
+  display: grid;
+  padding: 16px;
+  gap: 10px;
+  padding-bottom: 42px;
+}
+
+.homepageaddmodal__bottom button {
+  height: 40px;
+  border-radius: 9999px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.homepageaddmodal__newwork {
+  background-color: #0184fb;
+  color: #fff;
+}
+
 
 @-webkit-keyframes bottomnavslideIn {
   from {

@@ -237,6 +237,15 @@ function Homepage() {
             <p className="homepageaddmodal__title">9trocoder</p>
             <div className="homepageaddmodal__close">{closeIcon}</div>
           </div>
+          <div className="homepageaddmodal__bottom">
+            <button className="homepageaddmodal__newwork">
+              Create new Workspace
+            </button>
+            <button className="homepageaddmodal__newproject">
+              Add new Project
+            </button>
+            <button className="homepageaddmodal__newtask">Add new task</button>
+          </div>
         </div>
       </div>
 
