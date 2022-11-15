@@ -31,9 +31,11 @@ import HomepageTaskCard from "../../components/HomepageTaskCard";
 import ChatCardHomepage from "../../components/ChatCardHomepage";
 import BottomNav from "../../components/BottomNav";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Homepage() {
   let navigate = useNavigate();
+  const [showaddButton, setShowAddButton] = useState(false);
   const handleProfileClick = () => {
     navigate("/task");
   };
@@ -59,7 +61,7 @@ function Homepage() {
     navigate("/chat");
   };
   const handleAddClick = () => {
-    navigate("/task");
+    setShowAddButton(true);
   };
   const handleHomeClick = () => {
     navigate("/");
@@ -230,24 +232,33 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="homepageaddmodal">
-        <div className="homepageaddmodal__overlay" />
-        <div className="homepageaddmodal__content">
-          <div className="homepageaddmodal__top">
-            <p className="homepageaddmodal__title">9trocoder</p>
-            <div className="homepageaddmodal__close">{closeIcon}</div>
-          </div>
-          <div className="homepageaddmodal__bottom">
-            <button className="homepageaddmodal__newwork">
-              Create new Workspace
-            </button>
-            <button className="homepageaddmodal__newproject">
-              Add new Project
-            </button>
-            <button className="homepageaddmodal__newtask">Add new task</button>
+      {showaddButton && (
+        <div className="homepageaddmodal">
+          <div className="homepageaddmodal__overlay" onClick={() => setShowAddButton(false)} />
+          <div className="homepageaddmodal__content">
+            <div className="homepageaddmodal__top">
+              <p className="homepageaddmodal__title">9trocoder</p>
+              <div
+                className="homepageaddmodal__close"
+                onClick={() => setShowAddButton(false)}
+              >
+                {closeIcon}
+              </div>
+            </div>
+            <div className="homepageaddmodal__bottom">
+              <button className="homepageaddmodal__newwork">
+                Create new Workspace
+              </button>
+              <button className="homepageaddmodal__newproject">
+                Add new Project
+              </button>
+              <button className="homepageaddmodal__newtask">
+                Add new task
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <BottomNav
         showAddButton={true}
