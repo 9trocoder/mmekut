@@ -108,8 +108,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  padding: 16px;
-  border-bottom: 1px solid #9a9fbf15;
+  padding: 10px 16px 10px 16px;
+  border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
 }
 
 .homepageaddmodal__title {
