@@ -26,7 +26,7 @@ const BottomNav = ({
       {showAddButton && (
         <div
           onClick={handleAddClick}
-          className="bottomnav__cnt-item bottomnav__cnt-itemadd"
+          className="bottomnav__cnt-item showaddWorkspace"
         >
           <button>{addIconWhiteSmall}</button>
         </div>
