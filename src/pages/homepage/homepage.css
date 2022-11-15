@@ -69,3 +69,59 @@
   padding: 32px 16px 0px 16px;
   background-color: rgba(154, 159, 191, 0.05);
 }
+
+.homepageaddmodal {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10003;
+  height: 100%;
+}
+
+.homepageaddmodal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10004;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.homepageaddmodal__content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 10005;
+  border-radius: 20px 20px 0 0;
+  padding: 16px 16px;
+  -webkit-animation-name: bottomnavslideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: bottomnavslideIn;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes bottomnavslideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bottomnavslideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

@@ -11,6 +11,7 @@ import {
   calendarIcon,
   chatNotActive,
   chatTextNotActive,
+  closeIcon,
   deliveredIcon,
   headerNotificationIcon,
   homeIconActive,
@@ -38,7 +39,7 @@ function Homepage() {
   };
 
   const handleCalendarClick = () => {
-    navigate("/calendar")
+    navigate("/calendar");
   };
 
   const handleNotificationClick = () => {};
@@ -78,159 +79,167 @@ function Homepage() {
         handleNotificationClick={handleNotificationClick}
       />
       <div className="homepagewies">
-          <div className="hompagetaskoverview__cnt">
-        <div className="hompagetaskoverview__cnt-left">
-          <p>
-            Your today's task <br /> almost done!
-          </p>
-          <button>View Tasks</button>
+        <div className="hompagetaskoverview__cnt">
+          <div className="hompagetaskoverview__cnt-left">
+            <p>
+              Your today's task <br /> almost done!
+            </p>
+            <button>View Tasks</button>
+          </div>
+          <div className="hompagetaskoverview__cnt-right">
+            <ProgressBar
+              progress={60}
+              circleHeight="70"
+              circleWidth="70"
+              borderWidth="5px"
+              borderColor="#ffffff"
+              strokeColor="#ffffff"
+            />
+          </div>
         </div>
-        <div className="hompagetaskoverview__cnt-right">
-          <ProgressBar
-            progress={60}
-            circleHeight="70"
-            circleWidth="70"
-            borderWidth="5px"
-            borderColor="#ffffff"
-            strokeColor="#ffffff"
+
+        <HeaderWithButton
+          headerName="Projects"
+          headerButtonName="View All"
+          handleClick={handleMyTaskClick}
+        />
+
+        <div className="hompagetask__cnt">
+          <HomepageTaskCard
+            workspaceName="Mmekut App"
+            taskTitle="Create a taxi Landing Page"
+            progressNumber={60}
+            cardColor="#F1EEFD"
+            progressColor="#0184fb"
+            handleClick={handleTaskClick}
+          />
+          <HomepageTaskCard
+            workspaceName="Ushy App"
+            taskTitle="Add new Schemas to the backend"
+            progressNumber={40}
+            cardColor="#FEF2E5"
+            progressColor="#FFB057"
+            handleClick={handleTaskClick}
+          />
+        </div>
+        <HeaderWithButton
+          headerName="Chat"
+          headerButtonName="View All"
+          handleClick={handleMyChatClick}
+        />
+
+        <div className="homepagethechat__cnt">
+          <ChatCardHomepage
+            userImage={p1image}
+            userStatus={true}
+            userName="Alexander"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="Ok, I'll call you when i get there. and bring more snacks"
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p2image}
+            userStatus={true}
+            userName="Joseph Ayodele"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="Start Coding na"
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p3image}
+            userStatus={true}
+            userName="Mosope"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="On the home screen, that first content, when you click on the 'view task', it will take you here."
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p4image}
+            userStatus={true}
+            userName="Oladimeji Emmanuel"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="The containers are added to enable the user click on the group"
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p5image}
+            userStatus={true}
+            userName="Mmmekut Mfon"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="See here ....the task screen emmanuel adeyemi"
+            handleClick={handleMessagePage}
+          />
+          <ChatCardHomepage
+            userImage={p1image}
+            userStatus={true}
+            userName="Alexander"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="Ok, I'll call you when i get there. and bring more snacks"
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p2image}
+            userStatus={true}
+            userName="Joseph Ayodele"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="Start Coding na"
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p3image}
+            userStatus={true}
+            userName="Mosope"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="On the home screen, that first content, when you click on the 'view task', it will take you here."
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p4image}
+            userStatus={true}
+            userName="Oladimeji Emmanuel"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="The containers are added to enable the user click on the group"
+            handleClick={handleMessagePage}
+          />
+
+          <ChatCardHomepage
+            userImage={p5image}
+            userStatus={true}
+            userName="Mmmekut Mfon"
+            messageStatus={deliveredIcon}
+            messageTime="11:44 AM"
+            message="See here ....the task screen emmanuel adeyemi"
+            handleClick={handleMessagePage}
           />
         </div>
       </div>
 
-      <HeaderWithButton
-        headerName="Projects"
-        headerButtonName="View All"
-        handleClick={handleMyTaskClick}
-      />
-
-      <div className="hompagetask__cnt">
-        <HomepageTaskCard
-          workspaceName="Mmekut App"
-          taskTitle="Create a taxi Landing Page"
-          progressNumber={60}
-          cardColor="#F1EEFD"
-          progressColor="#0184fb"
-          handleClick={handleTaskClick}
-        />
-        <HomepageTaskCard
-          workspaceName="Ushy App"
-          taskTitle="Add new Schemas to the backend"
-          progressNumber={40}
-          cardColor="#FEF2E5"
-          progressColor="#FFB057"
-          handleClick={handleTaskClick}
-        />
-      </div>
-      <HeaderWithButton
-        headerName="Chat"
-        headerButtonName="View All"
-        handleClick={handleMyChatClick}
-      />
-
-      <div className="homepagethechat__cnt">
-        <ChatCardHomepage
-          userImage={p1image}
-          userStatus={true}
-          userName="Alexander"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="Ok, I'll call you when i get there. and bring more snacks"
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p2image}
-          userStatus={true}
-          userName="Joseph Ayodele"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="Start Coding na"
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p3image}
-          userStatus={true}
-          userName="Mosope"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="On the home screen, that first content, when you click on the 'view task', it will take you here."
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p4image}
-          userStatus={true}
-          userName="Oladimeji Emmanuel"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="The containers are added to enable the user click on the group"
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p5image}
-          userStatus={true}
-          userName="Mmmekut Mfon"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="See here ....the task screen emmanuel adeyemi"
-          handleClick={handleMessagePage}
-        />
-        <ChatCardHomepage
-          userImage={p1image}
-          userStatus={true}
-          userName="Alexander"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="Ok, I'll call you when i get there. and bring more snacks"
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p2image}
-          userStatus={true}
-          userName="Joseph Ayodele"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="Start Coding na"
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p3image}
-          userStatus={true}
-          userName="Mosope"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="On the home screen, that first content, when you click on the 'view task', it will take you here."
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p4image}
-          userStatus={true}
-          userName="Oladimeji Emmanuel"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="The containers are added to enable the user click on the group"
-          handleClick={handleMessagePage}
-        />
-
-        <ChatCardHomepage
-          userImage={p5image}
-          userStatus={true}
-          userName="Mmmekut Mfon"
-          messageStatus={deliveredIcon}
-          messageTime="11:44 AM"
-          message="See here ....the task screen emmanuel adeyemi"
-          handleClick={handleMessagePage}
-        />
+      <div className="homepageaddmodal">
+        <div className="homepageaddmodal__overlay" />
+        <div className="homepageaddmodal__content">
+          <div className="homepageaddmodal__top">
+            <p className="homepageaddmodal__title">9trocoder</p>
+            <div className="homepageaddmodal__close">{closeIcon}</div>
+          </div>
+        </div>
       </div>
 
-      </div>
-
-    
       <BottomNav
         showAddButton={true}
         homeIcon={homeIconActive}
