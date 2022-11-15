@@ -96,7 +96,7 @@
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 10005;
-  border-radius: 20px;
+  border-radius: 8px;
   -webkit-animation-name: bottomnavslideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: bottomnavslideIn;
@@ -146,6 +146,7 @@
 .homepageaddmodal__newwork {
   background-color: #0184fb;
   color: #fff;
+  border-radius: 8px !important;
 }
 
 
