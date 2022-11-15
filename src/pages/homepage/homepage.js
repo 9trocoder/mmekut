@@ -47,7 +47,7 @@ function Homepage() {
   const handleNotificationClick = () => {};
 
   const handleMyTaskClick = () => {
-    navigate("/task");
+    navigate("/projects");
   };
   const handleMyChatClick = () => {
     navigate("/chat");
@@ -246,13 +246,13 @@ function Homepage() {
               </div>
             </div>
             <div className="homepageaddmodal__bottom">
-              <button className="homepageaddmodal__newwork">
+              <button onClick={() => navigate("/workspace")} className="homepageaddmodal__newwork">
                 Create new workspace
               </button>
-              <button className="homepageaddmodal__newproject">
+              <button  onClick={() => navigate("/projects")}  className="homepageaddmodal__newproject">
                 Add new project
               </button>
-              <button className="homepageaddmodal__newtask">
+              <button  onClick={() => navigate("/task")}  className="homepageaddmodal__newtask">
                 Add new task
               </button>
             </div>
