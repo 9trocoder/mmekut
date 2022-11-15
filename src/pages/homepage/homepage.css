@@ -1,4 +1,5 @@
 .homepagewies {
+  height: 95vh;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
