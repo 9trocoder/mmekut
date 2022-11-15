@@ -77,8 +77,8 @@ function Homepage() {
         handleCalendarClick={handleCalendarClick}
         handleNotificationClick={handleNotificationClick}
       />
-
-      <div className="hompagetaskoverview__cnt">
+      <div className="homepagewies">
+          <div className="hompagetaskoverview__cnt">
         <div className="hompagetaskoverview__cnt-left">
           <p>
             Your today's task <br /> almost done!
@@ -228,6 +228,9 @@ function Homepage() {
         />
       </div>
 
+      </div>
+
+    
       <BottomNav
         showAddButton={true}
         homeIcon={homeIconActive}

@@ -1,3 +1,13 @@
+.homepagewies {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.homepagewies::-webkit-scrollbar {
+  display: none;
+}
+
 .hompagetaskoverview__cnt {
   margin-top: 4rem;
   margin-bottom: 32px;
