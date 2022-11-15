@@ -86,17 +86,17 @@
   right: 0;
   z-index: 10004;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .homepageaddmodal__content {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: 16px;
+  right:16px;
+  bottom: 16px;
   background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 10005;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
   -webkit-animation-name: bottomnavslideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: bottomnavslideIn;
@@ -109,7 +109,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   padding: 10px 16px 10px 16px;
-  border-bottom: 0.1px solid rgba(63, 62, 62, 0.315);
+  border-bottom: 0.1px solid #9a9fbf15;
 }
 
 .homepageaddmodal__title {
@@ -140,6 +140,7 @@
   border: none;
   font-family: inherit;
   font-weight: 600;
+  font-size: 12px;
 }
 
 .homepageaddmodal__newwork {

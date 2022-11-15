@@ -247,10 +247,10 @@ function Homepage() {
             </div>
             <div className="homepageaddmodal__bottom">
               <button className="homepageaddmodal__newwork">
-                Create new Workspace
+                Create new workspace
               </button>
               <button className="homepageaddmodal__newproject">
-                Add new Project
+                Add new project
               </button>
               <button className="homepageaddmodal__newtask">
                 Add new task
