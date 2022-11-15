@@ -234,7 +234,10 @@ function Homepage() {
 
       {showaddButton && (
         <div className="homepageaddmodal">
-          <div className="homepageaddmodal__overlay" onClick={() => setShowAddButton(false)} />
+          <div
+            className="homepageaddmodal__overlay"
+            onClick={() => setShowAddButton(false)}
+          />
           <div className="homepageaddmodal__content">
             <div className="homepageaddmodal__top">
               <p className="homepageaddmodal__title">9trocoder Space</p>
@@ -246,13 +249,22 @@ function Homepage() {
               </div>
             </div>
             <div className="homepageaddmodal__bottom">
-              <button onClick={() => navigate("/workspace")} className="homepageaddmodal__newwork">
+              <button
+                onClick={() => navigate("/workspace")}
+                className="homepageaddmodal__newwork"
+              >
                 Create new workspace
               </button>
-              <button  onClick={() => navigate("/projects")}  className="homepageaddmodal__newproject">
+              <button
+                onClick={() => navigate("/projects")}
+                className="homepageaddmodal__newproject"
+              >
                 Add new project
               </button>
-              <button  onClick={() => navigate("/task")}  className="homepageaddmodal__newtask">
+              <button
+                onClick={() => navigate("/task")}
+                className="homepageaddmodal__newtask"
+              >
                 Add new task
               </button>
             </div>
