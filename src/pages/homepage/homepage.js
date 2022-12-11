@@ -91,9 +91,11 @@ function Homepage() {
               onClick={() => {
                 Notification.requestPermission().then((perm) => {
                   if (perm === "granted") {
-                    new Notification("Mmekut notification", {
-                      body: "This is a test to see if the notification is working",
-                    });
+                    alert(
+                      new Notification("Mmekut notification", {
+                        body: "This is a test to see if the notification is working",
+                      })
+                    );
                   }
                 });
               }}
