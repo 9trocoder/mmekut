@@ -32,6 +32,7 @@ import ChatCardHomepage from "../../components/ChatCardHomepage";
 import BottomNav from "../../components/BottomNav";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import addNotification, { Notifications } from "react-push-notification";
 
 function Homepage() {
   let navigate = useNavigate();
@@ -71,8 +72,35 @@ function Homepage() {
     navigate("/message");
   };
 
+  // function warningNotification (){
+  //   addNotification({
+  //     title: 'Warning',
+  //     subtitle: 'Please fill it',
+  //     message: 'You have to enter name',
+  //     theme: 'red',
+  //     closeButton:"X",
+  //   })
+  // };
+
+  function successNotification() {
+    addNotification({
+      title: "Success",
+      subtitle: "You have successfully submitted",
+      message: "Welcome to GeeksforGeeks",
+      theme: "light",
+      closeButton: "X",
+      backgroundTop: "green",
+      backgroundBottom: "yellowgreen",
+    });
+  }
+
+  function handleSubmit() {
+    successNotification();
+  }
+
   return (
     <>
+      <Notifications />
       <HomepageHeader
         profileImage={p2image}
         calendarIcon={calendarIcon}
@@ -87,21 +115,7 @@ function Homepage() {
             <p>
               Your today's task <br /> almost done!
             </p>
-            <button
-              onClick={() => {
-                Notification.requestPermission().then((perm) => {
-                  if (perm === "granted") {
-                    alert(
-                      new Notification("Mmekut notification", {
-                        body: "This is a test to see if the notification is working",
-                      })
-                    );
-                  }
-                });
-              }}
-            >
-              View Tasks
-            </button>
+            <button onClick={handleSubmit}>View Tasks</button>
           </div>
           <div className="hompagetaskoverview__cnt-right">
             <ProgressBar
