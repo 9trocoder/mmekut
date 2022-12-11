@@ -71,17 +71,13 @@ function Homepage() {
     navigate("/message");
   };
 
-  const CheckNotify = () => {
+  function CheckNotify() {
     Notification.requestPermission().then((perm) => {
       if (perm === "granted") {
         new Notification("Mmekut notification", {
           body: "This is a test to see if the notification is working",
         });
-      } else if (perm === "denied") {
-        new Notification("Mmekut notification", {
-          body: "Notication access is denied",
-        });
-      }
+      } 
     });
   };
   return (
