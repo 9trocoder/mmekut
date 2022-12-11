@@ -70,6 +70,20 @@ function Homepage() {
   const handleMessagePage = () => {
     navigate("/message");
   };
+
+  const CheckNotify = () => {
+    Notification.requestPermission().then((perm) => {
+      if (perm === "granted") {
+        new Notification("Mmekut notification", {
+          body: "This is a test to see if the notification is working",
+        });
+      } else if (perm === "denied") {
+        new Notification("Mmekut notification", {
+          body: "Notication access is denied",
+        });
+      }
+    });
+  };
   return (
     <>
       <HomepageHeader
@@ -86,7 +100,7 @@ function Homepage() {
             <p>
               Your today's task <br /> almost done!
             </p>
-            <button>View Tasks</button>
+            <button onClick={() => CheckNotify()}>View Tasks</button>
           </div>
           <div className="hompagetaskoverview__cnt-right">
             <ProgressBar
