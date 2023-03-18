@@ -120,7 +120,7 @@ function Taskpage() {
       setSelected((prevSelected) => prevSelected.filter((s) => s !== id));
     } else {
       setSelected((prevSelected) => [...prevSelected, id]);
-    }
+    }   
   };
   return (
     <>
